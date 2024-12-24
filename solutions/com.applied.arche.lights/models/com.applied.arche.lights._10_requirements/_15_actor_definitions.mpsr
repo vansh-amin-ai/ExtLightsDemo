@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:8f2e5694-e7a9-461c-a9f9-44128f833ca6(com.applied.arche.lights._10_requirements_clone)" content="root">
+<model ref="r:8f2e5694-e7a9-461c-a9f9-44128f833ca6(com.applied.arche.lights._10_requirements)" content="root">
   <persistence version="9" />
   <imports />
   <registry>
