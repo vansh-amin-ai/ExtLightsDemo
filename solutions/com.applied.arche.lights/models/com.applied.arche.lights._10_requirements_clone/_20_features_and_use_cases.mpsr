@@ -37,6 +37,9 @@
       <concept id="5456942074480057099" name="com.cso.enabler.arch.activity.structure.ActivityElement" flags="ng" index="3uZEzG">
         <property id="2168856987860592879" name="thenFlag" index="1$5bGv" />
       </concept>
+      <concept id="1474569661733755562" name="com.cso.enabler.arch.activity.structure.ActionDef" flags="ng" index="1wgYfx">
+        <child id="1786379762318078534" name="comment" index="3680MF" />
+      </concept>
       <concept id="2170980074018555019" name="com.cso.enabler.arch.activity.structure.ForkExtJoin" flags="ng" index="3wsLDk" />
       <concept id="8199478060884560887" name="com.cso.enabler.arch.activity.structure.EndPoint" flags="ng" index="3Vq6SH" />
       <concept id="8199478060884536343" name="com.cso.enabler.arch.activity.structure.StartPoint" flags="ng" index="3VqWBd" />
@@ -114,6 +117,7 @@
       </concept>
       <concept id="7622941762527757260" name="com.cso.enabler.arch.feature.structure.BehavioralAnalysis" flags="ng" index="1NfMbD">
         <child id="819144314737801772" name="stateMachine" index="0T1l6" />
+        <child id="1474569661733773052" name="reusableActions" index="1wgMuR" />
         <child id="7622941762527757287" name="usecases" index="1NfMb2" />
         <child id="7622941762527757289" name="actorLikeRefs" index="1NfMbc" />
       </concept>
@@ -581,6 +585,16 @@
         </node>
         <node concept="3Vq6SH" id="42iml4GkwI3" role="7pYvX">
           <property role="1$5bGv" value="true" />
+        </node>
+      </node>
+    </node>
+    <node concept="1wgYfx" id="42iml4GkPy4" role="1wgMuR">
+      <property role="TrG5h" value="HazardLogic" />
+      <node concept="2UkUo_" id="42iml4GkPy5" role="3680MF">
+        <node concept="19SGf9" id="42iml4GkPy6" role="OjmMu">
+          <node concept="19SUe$" id="42iml4GkPy7" role="19SJt6">
+            <property role="19SUeA" value=" " />
+          </node>
         </node>
       </node>
     </node>
