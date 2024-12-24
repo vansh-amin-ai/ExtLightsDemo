@@ -10,6 +10,9 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
+  <dependencies>
+    <dependency reexport="false">70279fbc-af91-4065-a7ef-2bf38ce4e494(tech.cariad.arche.tutorial)</dependency>
+  </dependencies>
   <languageVersions>
     <language slang="l:4080500a-b49d-42e8-a2c7-f34e510e1119:com.cariad.arche.arch.sums" version="0" />
     <language slang="l:952013ed-5e6c-4f56-afbe-070aef09d3c7:com.cariad.arche.buildconfig" version="0" />
@@ -255,6 +258,7 @@
   <dependencyVersions>
     <module reference="5841b3b0-e306-4a21-8e9a-9c517b600b78(com.applied.arche.lights)" version="0" />
     <module reference="1c761cfd-81b1-4794-9999-148fa76881b8(org.iets3.core.expr.typetags.units.si)" version="0" />
+    <module reference="70279fbc-af91-4065-a7ef-2bf38ce4e494(tech.cariad.arche.tutorial)" version="0" />
   </dependencyVersions>
 </solution>
 
