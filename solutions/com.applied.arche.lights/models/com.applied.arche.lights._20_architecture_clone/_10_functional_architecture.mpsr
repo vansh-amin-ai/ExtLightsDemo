@@ -3,9 +3,25 @@
   <persistence version="9" />
   <imports />
   <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
     <language id="53cd74b1-7ad6-4624-9ef9-8b289da26fdd" name="com.cso.enabler.arch.components.functional">
       <concept id="2863340231636584646" name="com.cso.enabler.arch.components.functional.structure.FunctionalActorRealm" flags="ng" index="6t2w3" />
       <concept id="7231161730460316642" name="com.cso.enabler.arch.components.functional.structure.FunctionalRealm" flags="ng" index="1P9$ME" />
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
+      <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
+        <child id="4052432714772608243" name="text" index="1w35rA" />
+      </concept>
     </language>
     <language id="0e530434-6261-4ef4-98d8-ebfa2f94dde0" name="com.cso.enabler.arch.usecase2functional">
       <concept id="5601080448567809141" name="com.cso.enabler.arch.usecase2functional.structure.RealizesActionAttribute" flags="ng" index="2MZxM8" />
@@ -19,6 +35,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -26,6 +43,7 @@
     </language>
     <language id="68b16187-1d03-4fff-975a-475207b3ad31" name="com.cso.enabler.arch.components">
       <concept id="1787216701874669181" name="com.cso.enabler.arch.components.structure.AbstractComponent" flags="ng" index="jbZTy">
+        <child id="6134549382679482325" name="inPort" index="u$ofW" />
         <child id="6134549382679497236" name="outPort" index="u_$oX" />
         <child id="566142508885477956" name="attributes" index="2TxlRo" />
       </concept>
@@ -52,31 +70,55 @@
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="_10_functional_architecture" />
     <node concept="1P9$ME" id="42iml4GkQPG" role="3QPU1a" />
-    <node concept="3UVubE" id="42iml4GkQPH" role="3UUxLy">
-      <property role="TrG5h" value="HazardLightIntent" />
-      <node concept="0q2Zy" id="42iml4GkQQb" role="3UVubv">
-        <ref role="0q2Zt" node="42iml4GkQPI" resolve="HazardLightOnFlow" />
+    <node concept="3UUxL_" id="42iml4GkQQ2" role="3UUxLy">
+      <node concept="1z9TsT" id="3aJvklu1aMg" role="lGtFl">
+        <node concept="OjmMv" id="3aJvklu1aMh" role="1w35rA">
+          <node concept="19SGf9" id="3aJvklu1aMi" role="OjmMu">
+            <node concept="19SUe$" id="3aJvklu1aMj" role="19SJt6">
+              <property role="19SUeA" value=" Cameo Diagram" />
+            </node>
+          </node>
+        </node>
       </node>
-      <node concept="1P9$ME" id="42iml4GkQQc" role="2Ve3hN" />
-      <node concept="0q2Zy" id="42iml4GkQQd" role="3UVubv">
-        <ref role="0q2Zt" node="42iml4GkQPJ" resolve="HazardLightOffFlow" />
+    </node>
+    <node concept="3UVubE" id="3aJvklu1aOF" role="3UUxLy">
+      <property role="TrG5h" value="HazardLightButtonRawInformation" />
+      <node concept="1P9$ME" id="3aJvklu1aOD" role="2Ve3hN" />
+      <node concept="1z9TsT" id="3aJvklu1aSr" role="lGtFl">
+        <node concept="OjmMv" id="3aJvklu1aSs" role="1w35rA">
+          <node concept="19SGf9" id="3aJvklu1aSt" role="OjmMu">
+            <node concept="19SUe$" id="3aJvklu1aSu" role="19SJt6">
+              <property role="19SUeA" value="From body control to exterior light intent" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="0q2K8" id="42iml4GkQPI" role="3UUxLy">
-      <property role="TrG5h" value="HazardLightOnFlow" />
+    <node concept="3UVubE" id="3aJvklu1bdA" role="3UUxLy">
+      <property role="TrG5h" value="HazardLightButtonState" />
+      <node concept="1P9$ME" id="3aJvklu1bd$" role="2Ve3hN" />
     </node>
-    <node concept="0q2K8" id="42iml4GkQPJ" role="3UUxLy">
-      <property role="TrG5h" value="HazardLightOffFlow" />
+    <node concept="3UVubE" id="3aJvklu1bp_" role="3UUxLy">
+      <property role="TrG5h" value="HazardLightState" />
+      <node concept="1P9$ME" id="3aJvklu1bpz" role="2Ve3hN" />
     </node>
-    <node concept="3UUxL_" id="42iml4GkQPK" role="3UUxLy" />
+    <node concept="3UVubE" id="3aJvklu1bt_" role="3UUxLy">
+      <property role="TrG5h" value="HazardLightFeedbackState" />
+      <node concept="1P9$ME" id="3aJvklu1btz" role="2Ve3hN" />
+    </node>
+    <node concept="3UVubE" id="3aJvklu1bvM" role="3UUxLy">
+      <property role="TrG5h" value="HazardLightFeedbackRawInformation" />
+      <node concept="1P9$ME" id="3aJvklu1bvK" role="2Ve3hN" />
+    </node>
+    <node concept="3UUxL_" id="3aJvklu1b_k" role="3UUxLy" />
     <node concept="3UVubE" id="42iml4GkQPL" role="3UUxLy">
       <property role="TrG5h" value="HazardLightCommand" />
       <node concept="1P9$ME" id="42iml4GkQQe" role="2Ve3hN" />
       <node concept="0q2Zy" id="42iml4GkQQf" role="3UVubv">
-        <ref role="0q2Zt" node="42iml4GkQPM" resolve="HazardLightActivateReq" />
+        <ref role="0q2Zt" node="42iml4GkQPM" />
       </node>
       <node concept="0q2Zy" id="42iml4GkQQg" role="3UVubv">
-        <ref role="0q2Zt" node="42iml4GkQPN" resolve="HazardLightDeactivateReq" />
+        <ref role="0q2Zt" node="42iml4GkQPN" />
       </node>
     </node>
     <node concept="0q2K8" id="42iml4GkQPM" role="3UUxLy">
@@ -85,73 +127,85 @@
     <node concept="0q2K8" id="42iml4GkQPN" role="3UUxLy">
       <property role="TrG5h" value="HazardLightDeactivateReq" />
     </node>
-    <node concept="3UUxL_" id="42iml4GkQPO" role="3UUxLy" />
-    <node concept="3UVubE" id="42iml4GkQPP" role="3UUxLy">
-      <property role="TrG5h" value="HazardLightFeedback" />
-      <node concept="1P9$ME" id="42iml4GkQQh" role="2Ve3hN" />
-      <node concept="0q2Zy" id="42iml4GkQQi" role="3UVubv">
-        <ref role="0q2Zt" node="42iml4GkQPQ" resolve="HazardLightActivatedFb" />
+    <node concept="3UUxL_" id="3aJvklu1b_J" role="3UUxLy" />
+    <node concept="3UVubE" id="42iml4GkQPH" role="3UUxLy">
+      <property role="TrG5h" value="HazardLightIntent" />
+      <node concept="0q2Zy" id="42iml4GkQQb" role="3UVubv">
+        <ref role="0q2Zt" node="42iml4GkQPI" />
       </node>
-      <node concept="0q2Zy" id="42iml4GkQQj" role="3UVubv">
-        <ref role="0q2Zt" node="42iml4GkQPR" resolve="HazardLightDeactivatedFb" />
-      </node>
-    </node>
-    <node concept="0q2K8" id="42iml4GkQPQ" role="3UUxLy">
-      <property role="TrG5h" value="HazardLightActivatedFb" />
-    </node>
-    <node concept="0q2K8" id="42iml4GkQPR" role="3UUxLy">
-      <property role="TrG5h" value="HazardLightDeactivatedFb" />
-    </node>
-    <node concept="3UUxL_" id="42iml4GkQPS" role="3UUxLy" />
-    <node concept="3UVubE" id="42iml4GkQPT" role="3UUxLy">
-      <property role="TrG5h" value="TurnIndictor" />
-      <node concept="1P9$ME" id="42iml4GkQQk" role="2Ve3hN" />
-      <node concept="0q2Zy" id="42iml4GkQQl" role="3UVubv">
-        <ref role="0q2Zt" node="42iml4GkQPU" resolve="TurnIndLeftReq" />
-      </node>
-      <node concept="0q2Zy" id="42iml4GkQQm" role="3UVubv">
-        <ref role="0q2Zt" node="42iml4GkQPV" resolve="TurnIndRightReq" />
-      </node>
-      <node concept="0q2Zy" id="42iml4GkQQn" role="3UVubv">
-        <ref role="0q2Zt" node="42iml4GkQPW" resolve="TurnIndDeactivateReq" />
+      <node concept="1P9$ME" id="42iml4GkQQc" role="2Ve3hN" />
+      <node concept="0q2Zy" id="42iml4GkQQd" role="3UVubv">
+        <ref role="0q2Zt" node="42iml4GkQPJ" />
       </node>
     </node>
-    <node concept="0q2K8" id="42iml4GkQPU" role="3UUxLy">
-      <property role="TrG5h" value="TurnIndLeftReq" />
+    <node concept="0q2K8" id="42iml4GkQPI" role="3UUxLy">
+      <property role="TrG5h" value="HazardLightOnFlow" />
     </node>
-    <node concept="0q2K8" id="42iml4GkQPV" role="3UUxLy">
-      <property role="TrG5h" value="TurnIndRightReq" />
+    <node concept="0q2K8" id="42iml4GkQPJ" role="3UUxLy">
+      <property role="TrG5h" value="HazardLightOffFlow" />
     </node>
-    <node concept="0q2K8" id="42iml4GkQPW" role="3UUxLy">
-      <property role="TrG5h" value="TurnIndDeactivateReq" />
-    </node>
-    <node concept="3UUxL_" id="42iml4GkQPX" role="3UUxLy" />
-    <node concept="3UVubE" id="42iml4GkQPY" role="3UUxLy">
-      <property role="TrG5h" value="DrlRequest" />
-      <node concept="1P9$ME" id="42iml4GkQQo" role="2Ve3hN" />
-      <node concept="0q2Zy" id="42iml4GkQQp" role="3UVubv">
-        <ref role="0q2Zt" node="42iml4GkQQ0" resolve="DrlOnReq" />
+    <node concept="3UUxL_" id="3aJvklu1bRz" role="3UUxLy" />
+    <node concept="3UUxL_" id="3aJvklu1b_K" role="3UUxLy" />
+    <node concept="3UUxL_" id="3aJvklu1b_l" role="3UUxLy" />
+    <node concept="3UUxL_" id="3aJvklu1bqG" role="3UUxLy" />
+    <node concept="3UVs0c" id="3aJvklu1755" role="3UUxLy">
+      <property role="TrG5h" value="BodyComponent" />
+      <node concept="1P9$ME" id="3aJvklu1753" role="3EYflY" />
+      <node concept="3USqFc" id="3aJvklu1aSI" role="u_$oX">
+        <property role="TrG5h" value="HazardLightButtonRawInformationOut" />
+        <ref role="1OsDsW" node="3aJvklu1aOF" resolve="HazardLightButtonInformation" />
       </node>
-      <node concept="0q2Zy" id="42iml4GkQQq" role="3UVubv">
-        <ref role="0q2Zt" node="42iml4GkQQ1" resolve="DrlOffReq" />
+      <node concept="2MZxM8" id="3aJvklu1bF$" role="2TxlRo" />
+      <node concept="3USqFc" id="3aJvklu1bS8" role="u$ofW">
+        <ref role="1OsDsW" node="42iml4GkQPH" resolve="HazardLightIntent" />
       </node>
     </node>
-    <node concept="3UUxL_" id="42iml4GkQPZ" role="3UUxLy" />
-    <node concept="0q2K8" id="42iml4GkQQ0" role="3UUxLy">
-      <property role="TrG5h" value="DrlOnReq" />
-    </node>
-    <node concept="0q2K8" id="42iml4GkQQ1" role="3UUxLy">
-      <property role="TrG5h" value="DrlOffReq" />
-    </node>
-    <node concept="3UUxL_" id="42iml4GkQQ2" role="3UUxLy" />
+    <node concept="3UUxL_" id="3aJvklu172n" role="3UUxLy" />
     <node concept="3UVs0c" id="42iml4GkQQ3" role="3UUxLy">
-      <property role="TrG5h" value="ExteriorLightControl" />
+      <property role="TrG5h" value="ExteriorLightIntentControl" />
       <node concept="1P9$ME" id="42iml4GkQQr" role="3EYflY" />
-      <node concept="2MZxM8" id="42iml4GkQQs" role="2TxlRo" />
+      <node concept="2MZxM8" id="3aJvklu16Jg" role="2TxlRo" />
+      <node concept="3USqFc" id="3aJvklu1bmE" role="u$ofW">
+        <property role="TrG5h" value="HazardLightButtonRawInformationIn" />
+        <ref role="1OsDsW" node="3aJvklu1aOF" resolve="HazardLightButtonRawInformation" />
+      </node>
+      <node concept="3USqFc" id="3aJvklu1bmS" role="u_$oX">
+        <property role="TrG5h" value="HazardLightButtonStateOut" />
+        <ref role="1OsDsW" node="3aJvklu1bdA" resolve="HazardLightButtonState" />
+      </node>
     </node>
+    <node concept="3UVs0c" id="3aJvklu177X" role="3UUxLy">
+      <property role="TrG5h" value="ExteriorLightManager" />
+      <node concept="1P9$ME" id="3aJvklu177V" role="3EYflY" />
+      <node concept="3USqFc" id="3aJvklu1bA1" role="u$ofW">
+        <property role="TrG5h" value="HazardLightButtonStateIn" />
+        <ref role="1OsDsW" node="3aJvklu1bdA" resolve="HazardLightButtonState" />
+      </node>
+      <node concept="3USqFc" id="3aJvklu1bAj" role="u$ofW">
+        <property role="TrG5h" value="HazardLightFeedbackStateIn" />
+        <ref role="1OsDsW" node="3aJvklu1bt_" resolve="HazardLightFeedbackState" />
+      </node>
+      <node concept="3USqFc" id="3aJvklu1bAw" role="u_$oX">
+        <property role="TrG5h" value="HazardLightStateOut" />
+        <ref role="1OsDsW" node="3aJvklu1bp_" resolve="HazardLightState" />
+      </node>
+      <node concept="2MZxM8" id="3aJvklu1bEe" role="2TxlRo" />
+    </node>
+    <node concept="3UVs0c" id="3aJvklu1bDi" role="3UUxLy">
+      <property role="TrG5h" value="ExteriorLightControl" />
+      <node concept="1P9$ME" id="3aJvklu1bDg" role="3EYflY" />
+      <node concept="2MZxM8" id="3aJvklu1bGU" role="2TxlRo" />
+    </node>
+    <node concept="3UUxL_" id="3aJvklu1bB1" role="3UUxLy" />
+    <node concept="3UVs0c" id="3aJvklu17aN" role="3UUxLy">
+      <property role="TrG5h" value="DisplayControl" />
+      <node concept="1P9$ME" id="3aJvklu17aL" role="3EYflY" />
+      <node concept="2MZxM8" id="3aJvklu17dD" role="2TxlRo" />
+    </node>
+    <node concept="3UUxL_" id="3aJvklu178c" role="3UUxLy" />
     <node concept="3UUxL_" id="42iml4GkQQ4" role="3UUxLy" />
     <node concept="3UVs0c" id="42iml4GkQQ5" role="3UUxLy">
-      <property role="TrG5h" value="F_DriverOrStalkSwitch" />
+      <property role="TrG5h" value="F_Driver" />
       <node concept="6t2w3" id="42iml4GkQQt" role="3EYflY" />
       <node concept="3USqFc" id="42iml4GkQQu" role="u_$oX">
         <ref role="1OsDsW" node="42iml4GkQPH" resolve="HazardLightIntent" />
