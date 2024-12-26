@@ -3,6 +3,14 @@
   <persistence version="9" />
   <imports />
   <registry>
+    <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
+        <child id="5115872837156802411" name="expr" index="30czhm" />
+      </concept>
+      <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
+        <child id="9002563722476995147" name="target" index="1QScD9" />
+      </concept>
+    </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
         <child id="2557074442922392302" name="words" index="19SJt6" />
@@ -42,12 +50,17 @@
       </concept>
     </language>
     <language id="68b16187-1d03-4fff-975a-475207b3ad31" name="com.cso.enabler.arch.components">
+      <concept id="7097664987119465581" name="com.cso.enabler.arch.components.structure.EmptyComponentBodyContent" flags="ng" index="1x4Nu" />
       <concept id="1787216701874669181" name="com.cso.enabler.arch.components.structure.AbstractComponent" flags="ng" index="jbZTy">
         <child id="6134549382679482325" name="inPort" index="u$ofW" />
         <child id="6134549382679497236" name="outPort" index="u_$oX" />
         <child id="566142508885477956" name="attributes" index="2TxlRo" />
       </concept>
+      <concept id="1086109833692492069" name="com.cso.enabler.arch.components.structure.PortDotTarget" flags="ng" index="2Bnx86">
+        <reference id="1086109833692492072" name="port" index="2Bnx8b" />
+      </concept>
       <concept id="7323600774330499350" name="com.cso.enabler.arch.components.structure.IContainComponentBodyContent" flags="ngI" index="1376$c">
+        <child id="6653962634226481337" name="substructure" index="2_BitV" />
         <child id="8335226180467972466" name="realm" index="3EYflY" />
       </concept>
       <concept id="902044997928754893" name="com.cso.enabler.arch.components.structure.AbstractComponentPort" flags="ng" index="1OsEJC">
@@ -59,10 +72,20 @@
         <child id="2077607355813627051" name="realm" index="3QPU1a" />
         <child id="5578245729748776077" name="content" index="3UUxLy" />
       </concept>
+      <concept id="5578245729748811680" name="com.cso.enabler.arch.components.structure.Connection" flags="ng" index="3UVptf">
+        <child id="5578245729748811685" name="target" index="3UVpta" />
+        <child id="5578245729748811683" name="source" index="3UVptc" />
+      </concept>
+      <concept id="5578245729748811615" name="com.cso.enabler.arch.components.structure.ComponentInstance" flags="ng" index="3UVpuK">
+        <reference id="5578245729748811625" name="component" index="3UVpu6" />
+      </concept>
       <concept id="5578245729748789475" name="com.cso.enabler.arch.components.structure.Component" flags="ng" index="3UVs0c" />
       <concept id="5578245729748781573" name="com.cso.enabler.arch.components.structure.Interface" flags="ng" index="3UVubE">
         <child id="3561887574271617427" name="realm" index="2Ve3hN" />
         <child id="5578245729748781616" name="content" index="3UVubv" />
+      </concept>
+      <concept id="3191043868456074086" name="com.cso.enabler.arch.components.structure.CompInstanceRefExpr" flags="ng" index="3YiYor">
+        <reference id="3191043868456083713" name="instance" index="3YiVLW" />
       </concept>
     </language>
   </registry>
@@ -155,9 +178,16 @@
         <property role="TrG5h" value="HazardLightButtonRawInformationOut" />
         <ref role="1OsDsW" node="3aJvklu1aOF" resolve="HazardLightButtonInformation" />
       </node>
+      <node concept="3USqFc" id="3aJvklu1bV6" role="u_$oX">
+        <property role="TrG5h" value="HazardLightFeedbackRawInformationOut" />
+        <ref role="1OsDsW" node="3aJvklu1bvM" resolve="HazardLightFeedbackRawInformation" />
+      </node>
       <node concept="2MZxM8" id="3aJvklu1bF$" role="2TxlRo" />
       <node concept="3USqFc" id="3aJvklu1bS8" role="u$ofW">
         <ref role="1OsDsW" node="42iml4GkQPH" resolve="HazardLightIntent" />
+      </node>
+      <node concept="3USqFc" id="3aJvklu1bUW" role="u$ofW">
+        <ref role="1OsDsW" node="42iml4GkQPL" resolve="HazardLightCommand" />
       </node>
     </node>
     <node concept="3UUxL_" id="3aJvklu172n" role="3UUxLy" />
@@ -195,12 +225,32 @@
       <property role="TrG5h" value="ExteriorLightControl" />
       <node concept="1P9$ME" id="3aJvklu1bDg" role="3EYflY" />
       <node concept="2MZxM8" id="3aJvklu1bGU" role="2TxlRo" />
+      <node concept="3USqFc" id="3aJvklu1bTS" role="u$ofW">
+        <property role="TrG5h" value="HazardLightStateIn" />
+        <ref role="1OsDsW" node="3aJvklu1bp_" resolve="HazardLightState" />
+      </node>
+      <node concept="3USqFc" id="3aJvklu1bUa" role="u$ofW">
+        <property role="TrG5h" value="HazardLightFeedbackRawInformationIn" />
+        <ref role="1OsDsW" node="3aJvklu1bvM" resolve="HazardLightFeedbackRawInformation" />
+      </node>
+      <node concept="3USqFc" id="3aJvklu1bUp" role="u_$oX">
+        <property role="TrG5h" value="HazardLightFeedbackStateOut" />
+        <ref role="1OsDsW" node="3aJvklu1bt_" resolve="HazardLightFeedbackState" />
+      </node>
+      <node concept="3USqFc" id="3aJvklu1bUE" role="u_$oX">
+        <property role="TrG5h" value="HazardLightCommandOut" />
+        <ref role="1OsDsW" node="42iml4GkQPL" resolve="HazardLightCommand" />
+      </node>
     </node>
     <node concept="3UUxL_" id="3aJvklu1bB1" role="3UUxLy" />
     <node concept="3UVs0c" id="3aJvklu17aN" role="3UUxLy">
       <property role="TrG5h" value="DisplayControl" />
       <node concept="1P9$ME" id="3aJvklu17aL" role="3EYflY" />
       <node concept="2MZxM8" id="3aJvklu17dD" role="2TxlRo" />
+      <node concept="3USqFc" id="3aJvklu1bVl" role="u$ofW">
+        <property role="TrG5h" value="HazardLightFeedbackStateIn" />
+        <ref role="1OsDsW" node="3aJvklu1bt_" resolve="HazardLightFeedbackState" />
+      </node>
     </node>
     <node concept="3UUxL_" id="3aJvklu178c" role="3UUxLy" />
     <node concept="3UUxL_" id="42iml4GkQQ4" role="3UUxLy" />
@@ -211,7 +261,175 @@
         <ref role="1OsDsW" node="42iml4GkQPH" resolve="HazardLightIntent" />
       </node>
     </node>
-    <node concept="3UUxL_" id="42iml4GkQQ6" role="3UUxLy" />
+    <node concept="3UVs0c" id="3aJvklu1bZ5" role="3UUxLy">
+      <property role="TrG5h" value="Mobility_System" />
+      <node concept="1P9$ME" id="3aJvklu1bZ3" role="3EYflY" />
+      <node concept="3UVpuK" id="3aJvklu1bZK" role="2_BitV">
+        <ref role="3UVpu6" node="42iml4GkQQ5" resolve="F_Driver" />
+      </node>
+      <node concept="3UVpuK" id="3aJvklu1bZP" role="2_BitV">
+        <ref role="3UVpu6" node="3aJvklu1755" resolve="BodyComponent" />
+      </node>
+      <node concept="3UVpuK" id="3aJvklu1bZV" role="2_BitV">
+        <ref role="3UVpu6" node="42iml4GkQQ3" resolve="ExteriorLightIntentControl" />
+      </node>
+      <node concept="3UVpuK" id="3aJvklu1c01" role="2_BitV">
+        <ref role="3UVpu6" node="3aJvklu177X" resolve="ExteriorLightManager" />
+      </node>
+      <node concept="3UVpuK" id="3aJvklu1c07" role="2_BitV">
+        <ref role="3UVpu6" node="3aJvklu1bDi" resolve="ExteriorLightControl" />
+      </node>
+      <node concept="3UVpuK" id="3aJvklu1c0d" role="2_BitV">
+        <ref role="3UVpu6" node="3aJvklu17aN" resolve="DisplayControl" />
+      </node>
+      <node concept="1x4Nu" id="3aJvklu1c0h" role="2_BitV" />
+      <node concept="3UVptf" id="3aJvklu1eiy" role="2_BitV">
+        <node concept="1QScDb" id="3aJvklu1el_" role="3UVptc">
+          <node concept="2Bnx86" id="3aJvklu1em6" role="1QScD9">
+            <ref role="2Bnx8b" node="42iml4GkQQu" resolve="HazardLightIntent" />
+          </node>
+          <node concept="3YiYor" id="3aJvklu1ell" role="30czhm">
+            <ref role="3YiVLW" node="3aJvklu1bZK" resolve="F_Driver" />
+          </node>
+        </node>
+        <node concept="1QScDb" id="3aJvklu1emL" role="3UVpta">
+          <node concept="2Bnx86" id="3aJvklu1enq" role="1QScD9">
+            <ref role="2Bnx8b" node="3aJvklu1bS8" resolve="HazardLightIntent" />
+          </node>
+          <node concept="3YiYor" id="3aJvklu1eml" role="30czhm">
+            <ref role="3YiVLW" node="3aJvklu1bZP" resolve="BodyComponent" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UVptf" id="3aJvklu1c0k" role="2_BitV">
+        <node concept="1QScDb" id="3aJvklu1c0N" role="3UVptc">
+          <node concept="2Bnx86" id="3aJvklu1c1j" role="1QScD9">
+            <ref role="2Bnx8b" node="3aJvklu1aSI" resolve="HazardLightButtonRawInformationOut" />
+          </node>
+          <node concept="3YiYor" id="3aJvklu1c0v" role="30czhm">
+            <ref role="3YiVLW" node="3aJvklu1bZP" resolve="BodyComponent" />
+          </node>
+        </node>
+        <node concept="1QScDb" id="3aJvklu1c1Z" role="3UVpta">
+          <node concept="2Bnx86" id="3aJvklu1c2C" role="1QScD9">
+            <ref role="2Bnx8b" node="3aJvklu1bmE" resolve="HazardLightButtonRawInformationIn" />
+          </node>
+          <node concept="3YiYor" id="3aJvklu1c1y" role="30czhm">
+            <ref role="3YiVLW" node="3aJvklu1bZV" resolve="ExteriorLightIntentControl" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UVptf" id="3aJvklu1c3s" role="2_BitV">
+        <node concept="1QScDb" id="3aJvklu1c4e" role="3UVptc">
+          <node concept="2Bnx86" id="3aJvklu1c5z" role="1QScD9">
+            <ref role="2Bnx8b" node="3aJvklu1bmS" resolve="HazardLightButtonStateOut" />
+          </node>
+          <node concept="3YiYor" id="3aJvklu1c3Z" role="30czhm">
+            <ref role="3YiVLW" node="3aJvklu1bZV" resolve="ExteriorLightIntentControl" />
+          </node>
+        </node>
+        <node concept="1QScDb" id="3aJvklu1c6e" role="3UVpta">
+          <node concept="2Bnx86" id="3aJvklu1c6R" role="1QScD9">
+            <ref role="2Bnx8b" node="3aJvklu1bA1" resolve="HazardLightButtonStateIn" />
+          </node>
+          <node concept="3YiYor" id="3aJvklu1c5M" role="30czhm">
+            <ref role="3YiVLW" node="3aJvklu1c01" resolve="ExteriorLightManager" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UVptf" id="3aJvklu1cgG" role="2_BitV">
+        <node concept="1QScDb" id="3aJvklu1chR" role="3UVptc">
+          <node concept="2Bnx86" id="3aJvklu1cin" role="1QScD9">
+            <ref role="2Bnx8b" node="3aJvklu1bUp" resolve="HazardLightFeedbackStateOut" />
+          </node>
+          <node concept="3YiYor" id="3aJvklu1chB" role="30czhm">
+            <ref role="3YiVLW" node="3aJvklu1c07" resolve="ExteriorLightControl" />
+          </node>
+        </node>
+        <node concept="1QScDb" id="3aJvklu1cj2" role="3UVpta">
+          <node concept="2Bnx86" id="3aJvklu1cjF" role="1QScD9">
+            <ref role="2Bnx8b" node="3aJvklu1bAj" resolve="HazardLightFeedbackStateIn" />
+          </node>
+          <node concept="3YiYor" id="3aJvklu1ciA" role="30czhm">
+            <ref role="3YiVLW" node="3aJvklu1c01" resolve="ExteriorLightManager" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UVptf" id="3aJvklu1clf" role="2_BitV">
+        <node concept="1QScDb" id="3aJvklu1cmM" role="3UVptc">
+          <node concept="2Bnx86" id="3aJvklu1cni" role="1QScD9">
+            <ref role="2Bnx8b" node="3aJvklu1bAw" resolve="HazardLightStateOut" />
+          </node>
+          <node concept="3YiYor" id="3aJvklu1cmy" role="30czhm">
+            <ref role="3YiVLW" node="3aJvklu1c01" resolve="ExteriorLightManager" />
+          </node>
+        </node>
+        <node concept="1QScDb" id="3aJvklu1cnX" role="3UVpta">
+          <node concept="2Bnx86" id="3aJvklu1coA" role="1QScD9">
+            <ref role="2Bnx8b" node="3aJvklu1bTS" resolve="HazardLightStateIn" />
+          </node>
+          <node concept="3YiYor" id="3aJvklu1cnx" role="30czhm">
+            <ref role="3YiVLW" node="3aJvklu1c07" resolve="ExteriorLightControl" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UVptf" id="3aJvklu1cqy" role="2_BitV">
+        <node concept="1QScDb" id="3aJvklu1cst" role="3UVptc">
+          <node concept="2Bnx86" id="3aJvklu1csX" role="1QScD9">
+            <ref role="2Bnx8b" node="3aJvklu1bUp" resolve="HazardLightFeedbackStateOut" />
+          </node>
+          <node concept="3YiYor" id="3aJvklu1csd" role="30czhm">
+            <ref role="3YiVLW" node="3aJvklu1c07" resolve="ExteriorLightControl" />
+          </node>
+        </node>
+        <node concept="1QScDb" id="3aJvklu1ctC" role="3UVpta">
+          <node concept="2Bnx86" id="3aJvklu1cuh" role="1QScD9">
+            <ref role="2Bnx8b" node="3aJvklu1bVl" resolve="HazardLightFeedbackStateIn" />
+          </node>
+          <node concept="3YiYor" id="3aJvklu1ctc" role="30czhm">
+            <ref role="3YiVLW" node="3aJvklu1c0d" resolve="DisplayControl" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UVptf" id="3aJvklu1dQA" role="2_BitV">
+        <node concept="1QScDb" id="3aJvklu1dUV" role="3UVpta">
+          <node concept="2Bnx86" id="3aJvklu1dV$" role="1QScD9">
+            <ref role="2Bnx8b" node="3aJvklu1bUW" resolve="HazardLightCommand" />
+          </node>
+          <node concept="3YiYor" id="3aJvklu1dUv" role="30czhm">
+            <ref role="3YiVLW" node="3aJvklu1bZP" resolve="BodyComponent" />
+          </node>
+        </node>
+        <node concept="1QScDb" id="3aJvklu1dTK" role="3UVptc">
+          <node concept="2Bnx86" id="3aJvklu1dUg" role="1QScD9">
+            <ref role="2Bnx8b" node="3aJvklu1bUE" resolve="HazardLightCommandOut" />
+          </node>
+          <node concept="3YiYor" id="3aJvklu1dTw" role="30czhm">
+            <ref role="3YiVLW" node="3aJvklu1c07" resolve="ExteriorLightControl" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UVptf" id="3aJvklu1dYg" role="2_BitV">
+        <node concept="1QScDb" id="3aJvklu1e0V" role="3UVptc">
+          <node concept="2Bnx86" id="3aJvklu1e1s" role="1QScD9">
+            <ref role="2Bnx8b" node="3aJvklu1bV6" resolve="HazardLightFeedbackRawInformationOut" />
+          </node>
+          <node concept="3YiYor" id="3aJvklu1e0F" role="30czhm">
+            <ref role="3YiVLW" node="3aJvklu1bZP" resolve="BodyComponent" />
+          </node>
+        </node>
+        <node concept="1QScDb" id="3aJvklu1e26" role="3UVpta">
+          <node concept="2Bnx86" id="3aJvklu1e2J" role="1QScD9">
+            <ref role="2Bnx8b" node="3aJvklu1bUa" resolve="HazardLightFeedbackRawInformationIn" />
+          </node>
+          <node concept="3YiYor" id="3aJvklu1e1F" role="30czhm">
+            <ref role="3YiVLW" node="3aJvklu1c07" resolve="ExteriorLightControl" />
+          </node>
+        </node>
+      </node>
+      <node concept="1x4Nu" id="3aJvklu1e39" role="2_BitV" />
+    </node>
+    <node concept="3UUxL_" id="3aJvklu1bZu" role="3UUxLy" />
     <node concept="3UUxL_" id="42iml4GkQQ7" role="3UUxLy" />
     <node concept="3UUxL_" id="42iml4GkQQ8" role="3UUxLy" />
     <node concept="3UUxL_" id="42iml4GkQQ9" role="3UUxLy" />
