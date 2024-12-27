@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:00e1a04b-e834-4554-9609-05172aa1a658(com.applied.arche.lights._20_architecture_clone)" content="header">
+<model ref="r:00e1a04b-e834-4554-9609-05172aa1a658(com.applied.arche.lights._20_architecture)" content="header">
   <persistence version="9" />
   <languages>
     <use id="68b16187-1d03-4fff-975a-475207b3ad31" name="com.cso.enabler.arch.components" version="19" />
@@ -10,6 +10,7 @@
   </languages>
   <imports>
     <import index="jn56" ref="r:05f81e59-d602-407b-9b70-a768e07e2ca0(tech.cariad.arche.tutorial.features_examples._020_architecture)" />
+    <import index="a4c" ref="r:8f2e5694-e7a9-461c-a9f9-44128f833ca6(com.applied.arche.lights._10_requirements)" />
   </imports>
 </model>
 

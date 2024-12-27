@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:8f2e5694-e7a9-461c-a9f9-44128f833ca6(com.applied.arche.lights._10_requirements)" content="root">
+<model ref="r:00e1a04b-e834-4554-9609-05172aa1a658(com.applied.arche.lights._20_architecture)" content="root">
   <persistence version="9" />
-  <imports />
+  <imports>
+    <import index="a4c" ref="r:8f2e5694-e7a9-461c-a9f9-44128f833ca6(com.applied.arche.lights._10_requirements)" implicit="true" />
+  </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -31,15 +33,9 @@
       <concept id="4921516478876644407" name="com.cso.enabler.arch.activity.structure.Action" flags="ng" index="33Sc$u">
         <child id="3718094817263353215" name="comment" index="1bEEVQ" />
       </concept>
-      <concept id="4921516478876644428" name="com.cso.enabler.arch.activity.structure.Thread" flags="ng" index="33Sc__">
-        <child id="4921516478876644431" name="content" index="33Sc_A" />
-      </concept>
       <concept id="4921516478876644417" name="com.cso.enabler.arch.activity.structure.DecisionExt" flags="ng" index="33Sc_C">
         <child id="4834830180170688868" name="condition" index="2dsqOa" />
         <child id="4921516478876644420" name="thenBranch" index="33Sc_H" />
-      </concept>
-      <concept id="4921516478876644433" name="com.cso.enabler.arch.activity.structure.ForkExt" flags="ng" index="33Sc_S">
-        <child id="4921516478876644436" name="threads" index="33Sc_X" />
       </concept>
       <concept id="5456942074480057099" name="com.cso.enabler.arch.activity.structure.ActivityElement" flags="ng" index="3uZEzG">
         <property id="2168856987860592879" name="thenFlag" index="1$5bGv" />
@@ -47,7 +43,6 @@
       <concept id="1474569661733755562" name="com.cso.enabler.arch.activity.structure.ActionDef" flags="ng" index="1wgYfx">
         <child id="1786379762318078534" name="comment" index="3680MF" />
       </concept>
-      <concept id="2170980074018555019" name="com.cso.enabler.arch.activity.structure.ForkExtJoin" flags="ng" index="3wsLDk" />
       <concept id="8199478060884560887" name="com.cso.enabler.arch.activity.structure.EndPoint" flags="ng" index="3Vq6SH" />
       <concept id="8199478060884536343" name="com.cso.enabler.arch.activity.structure.StartPoint" flags="ng" index="3VqWBd" />
     </language>
@@ -222,16 +217,16 @@
       </node>
     </node>
     <node concept="1NfMbE" id="42iml4GkpAG" role="1NfMbc">
-      <ref role="1NfMbP" node="42iml4GkpAn" resolve="Driver" />
+      <ref role="1NfMbP" to="a4c:42iml4GkpAn" resolve="Driver" />
     </node>
     <node concept="1NfMbE" id="42iml4GkpAH" role="1NfMbc">
-      <ref role="1NfMbP" node="42iml4GkpAp" resolve="Passenger" />
+      <ref role="1NfMbP" to="a4c:42iml4GkpAp" resolve="Passenger" />
     </node>
     <node concept="1NfMbE" id="42iml4GkpAI" role="1NfMbc">
-      <ref role="1NfMbP" node="42iml4GkpAo" resolve="User" />
+      <ref role="1NfMbP" to="a4c:42iml4GkpAo" resolve="User" />
     </node>
     <node concept="1NfMbE" id="42iml4GkpAJ" role="1NfMbc">
-      <ref role="1NfMbP" node="42iml4GkpAq" resolve="System" />
+      <ref role="1NfMbP" to="a4c:42iml4GkpAq" resolve="System" />
     </node>
     <node concept="HeyiW" id="42iml4GkpAK" role="0T1l6">
       <property role="1ah6a4" value="true" />
@@ -488,26 +483,26 @@
         </node>
       </node>
       <node concept="1NfMbE" id="42iml4GkpAU" role="tonBY">
-        <ref role="1NfMbP" node="42iml4GkpAn" resolve="Driver" />
+        <ref role="1NfMbP" to="a4c:42iml4GkpAn" resolve="Driver" />
       </node>
       <node concept="1NfMbE" id="42iml4GkpAV" role="tonBY">
-        <ref role="1NfMbP" node="42iml4GkpAp" resolve="Passenger" />
+        <ref role="1NfMbP" to="a4c:42iml4GkpAp" resolve="Passenger" />
       </node>
       <node concept="1NfMbE" id="42iml4GkpAW" role="tonBY">
-        <ref role="1NfMbP" node="42iml4GkpAo" resolve="User" />
+        <ref role="1NfMbP" to="a4c:42iml4GkpAo" resolve="User" />
       </node>
       <node concept="1NdONl" id="42iml4GkpAX" role="OT3sa">
-        <ref role="1NdONk" node="42iml4Gkp_b" resolve="l0-mosaic-1340" />
+        <ref role="1NdONk" to="a4c:42iml4Gkp_b" resolve="l0-mosaic-1340" />
       </node>
       <node concept="1NdONl" id="42iml4GkpAY" role="OT3sa">
-        <ref role="1NdONk" node="42iml4Gkp_h" resolve="l1-mosaic-1859" />
+        <ref role="1NdONk" to="a4c:42iml4Gkp_h" resolve="l1-mosaic-1859" />
       </node>
       <node concept="7pYvW" id="42iml4GkpAZ" role="3WPm5f">
         <property role="TrG5h" value="hazard_lights" />
         <node concept="3VqWBd" id="42iml4GkpBk" role="7pYvX" />
         <node concept="33Sc$u" id="42iml4GkpBl" role="7pYvX">
           <property role="1$5bGv" value="true" />
-          <property role="TrG5h" value="captureStalkInput" />
+          <property role="TrG5h" value="SetHazardLightsButton" />
           <node concept="2UkUo_" id="42iml4GkpBJ" role="1bEEVQ">
             <node concept="19SGf9" id="42iml4GkpCh" role="OjmMu">
               <node concept="19SUe$" id="42iml4GkpCr" role="19SJt6">
@@ -515,6 +510,64 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="33Sc$u" id="3aJvklu1tcw" role="7pYvX">
+          <property role="1$5bGv" value="true" />
+          <property role="TrG5h" value="DetectHazardLightsButtonPress" />
+          <node concept="2UkUo_" id="3aJvklu1tcx" role="1bEEVQ">
+            <node concept="19SGf9" id="3aJvklu1tcy" role="OjmMu">
+              <node concept="19SUe$" id="3aJvklu1tcz" role="19SJt6">
+                <property role="19SUeA" value=" " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="33Sc$u" id="3aJvklu1tdy" role="7pYvX">
+          <property role="1$5bGv" value="true" />
+          <property role="TrG5h" value="ManageHazardLight" />
+          <node concept="2UkUo_" id="3aJvklu1tdz" role="1bEEVQ">
+            <node concept="19SGf9" id="3aJvklu1td$" role="OjmMu">
+              <node concept="19SUe$" id="3aJvklu1td_" role="19SJt6">
+                <property role="19SUeA" value=" " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="33Sc$u" id="3aJvklu1tdB" role="7pYvX">
+          <property role="1$5bGv" value="true" />
+          <property role="TrG5h" value="ControlExteriorLight" />
+          <node concept="2UkUo_" id="3aJvklu1tdC" role="1bEEVQ">
+            <node concept="19SGf9" id="3aJvklu1tdD" role="OjmMu">
+              <node concept="19SUe$" id="3aJvklu1tdE" role="19SJt6">
+                <property role="19SUeA" value=" " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="33Sc$u" id="3aJvklu1tdH" role="7pYvX">
+          <property role="1$5bGv" value="true" />
+          <property role="TrG5h" value="ActivateOrDeactivateLight" />
+          <node concept="2UkUo_" id="3aJvklu1tdI" role="1bEEVQ">
+            <node concept="19SGf9" id="3aJvklu1tdJ" role="OjmMu">
+              <node concept="19SUe$" id="3aJvklu1tdK" role="19SJt6">
+                <property role="19SUeA" value=" " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="33Sc$u" id="3aJvklu1tdS" role="7pYvX">
+          <property role="1$5bGv" value="true" />
+          <property role="TrG5h" value="LightInformationDisplay" />
+          <node concept="2UkUo_" id="3aJvklu1tdT" role="1bEEVQ">
+            <node concept="19SGf9" id="3aJvklu1tdU" role="OjmMu">
+              <node concept="19SUe$" id="3aJvklu1tdV" role="19SJt6">
+                <property role="19SUeA" value=" " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3Vq6SH" id="3aJvklu1tdY" role="7pYvX">
+          <property role="1$5bGv" value="true" />
         </node>
         <node concept="2dt5vI" id="42iml4GkpBm" role="7pYvX">
           <node concept="2UkUo_" id="42iml4GkpBK" role="2dt5vH">
@@ -524,53 +577,6 @@
               </node>
             </node>
           </node>
-        </node>
-        <node concept="f6aHV" id="3aJvklu16Ie" role="7pYvX">
-          <property role="1$5bGv" value="true" />
-          <property role="TrG5h" value="interpretStalkInput" />
-          <ref role="368igI" node="3aJvklu16Gh" resolve="interpre" />
-        </node>
-        <node concept="2dt5vI" id="42iml4GkpBp" role="7pYvX">
-          <node concept="2UkUo_" id="42iml4GkpBM" role="2dt5vH">
-            <node concept="19SGf9" id="42iml4GkpCk" role="OjmMu">
-              <node concept="19SUe$" id="42iml4GkpCu" role="19SJt6">
-                <property role="19SUeA" value="The system interprets that the hazard button is pressed " />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="33Sc_S" id="42iml4GkpBr" role="7pYvX">
-          <property role="1$5bGv" value="true" />
-          <node concept="3wsLDk" id="42iml4GkpBN" role="imkKX" />
-          <node concept="33Sc__" id="42iml4GkpBO" role="33Sc_X">
-            <property role="TrG5h" value="ControlLogic" />
-            <node concept="33Sc$u" id="42iml4GkpCl" role="33Sc_A">
-              <property role="1$5bGv" value="true" />
-              <property role="TrG5h" value="HazardLogic" />
-              <node concept="2UkUo_" id="42iml4GkpCv" role="1bEEVQ">
-                <node concept="19SGf9" id="42iml4GkpCx" role="OjmMu">
-                  <node concept="19SUe$" id="42iml4GkpCz" role="19SJt6">
-                    <property role="19SUeA" value=" " />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="33Sc__" id="42iml4GkpBP" role="33Sc_X">
-            <property role="TrG5h" value="BodyFeedback" />
-            <node concept="33Sc$u" id="42iml4GkpCm" role="33Sc_A">
-              <property role="1$5bGv" value="true" />
-              <property role="TrG5h" value="Wa" />
-              <node concept="2UkUo_" id="42iml4GkpCw" role="1bEEVQ">
-                <node concept="19SGf9" id="42iml4GkpCy" role="OjmMu">
-                  <node concept="19SUe$" id="42iml4GkpC$" role="19SJt6">
-                    <property role="19SUeA" value=" " />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="33Sc__" id="42iml4GkpBQ" role="33Sc_X" />
         </node>
         <node concept="37mRI7" id="3aJvklu16zM" role="lGtFl">
           <node concept="37mRIm" id="3aJvklu16zN" role="37mRID">
@@ -800,10 +806,10 @@
         </node>
       </node>
       <node concept="1NfMbE" id="1Z6M_7u4oMb" role="tonBY">
-        <ref role="1NfMbP" node="42iml4GkpAn" resolve="Driver" />
+        <ref role="1NfMbP" to="a4c:42iml4GkpAn" resolve="Driver" />
       </node>
       <node concept="1NfMbE" id="1Z6M_7u4oMj" role="tonBY">
-        <ref role="1NfMbP" node="42iml4GkpAp" resolve="Passenger" />
+        <ref role="1NfMbP" to="a4c:42iml4GkpAp" resolve="Passenger" />
       </node>
       <node concept="3cyu3c" id="1Z6M_7u4oLs" role="3cyu35">
         <node concept="2dsgfs" id="1ACTx$mAXd$" role="26Zfbu">
