@@ -11,6 +11,7 @@
         <reference id="3507886088461892545" name="scope" index="3BSbwe" />
       </concept>
       <concept id="661077682948807327" name="com.cariad.arche.requirements.tracing.structure.RequirementsTracingRoot" flags="ng" index="1$dCgT">
+        <reference id="4616080892441227668" name="selected" index="ooIM9" />
         <child id="1830947269315464643" name="requirementRoots" index="Jrt$k" />
         <child id="661077682948936041" name="traces" index="1$c8Zf" />
         <child id="661077682948807344" name="tracingScope" index="1$dCgm" />
@@ -36,6 +37,7 @@
   <node concept="1$dCgT" id="42iml4GkpC_">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="_021_requirements_tracing" />
+    <ref role="ooIM9" node="42iml4Gkp_h" resolve="l1-mosaic-1859" />
     <node concept="1$dWcz" id="42iml4GkpCA" role="1$c8Zf">
       <node concept="1$dHxl" id="42iml4GkpCD" role="1$0nHW">
         <ref role="1$vnBa" node="42iml4GkpAL" resolve="Hazard Lights" />

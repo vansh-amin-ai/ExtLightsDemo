@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:75e85213-a8f3-490b-a9c2-9fd81a541def(com.applied.arche.lights.LSG_L)" content="header">
+  <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
+  <languages>
+    <devkit ref="0eef1ab3-92ca-4383-a28c-c4bef22da5e9(ArchDevKit)" />
+    <devkit ref="9fed6e70-7da7-4afd-a179-3005ac19876f(CoreDevKit)" />
+  </languages>
+  <imports>
+    <import index="ot3b" ref="r:a008d86c-8388-43c3-a25e-3956913df3be(defaultmappingtargets)" implicit="true" />
+  </imports>
+</model>
+

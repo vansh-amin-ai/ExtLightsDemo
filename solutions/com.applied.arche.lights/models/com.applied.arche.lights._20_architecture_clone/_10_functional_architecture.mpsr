@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:00e1a04b-e834-4554-9609-05172aa1a658(com.applied.arche.lights._20_architecture)" content="root">
   <persistence version="9" />
-  <imports />
+  <imports>
+    <import index="a4c" ref="r:8f2e5694-e7a9-461c-a9f9-44128f833ca6(com.applied.arche.lights._10_requirements)" implicit="true" />
+  </imports>
   <registry>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
       <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
@@ -199,10 +201,10 @@
         <ref role="1OsDsW" node="3aJvklu1v86" resolve="HazardLightFeedbackInterface" />
       </node>
       <node concept="2MZxM8" id="3aJvklu1bF$" role="2TxlRo">
-        <ref role="2_fSJl" node="42iml4GkpBl" resolve="SetHazardLightsButton" />
+        <ref role="2_fSJl" to="a4c:42iml4GkpBl" resolve="SetHazardLightsButton" />
       </node>
       <node concept="2MZxM8" id="3aJvklu1vK1" role="2TxlRo">
-        <ref role="2_fSJl" node="3aJvklu1tdH" resolve="ActivateOrDeactivateLight" />
+        <ref role="2_fSJl" to="a4c:3aJvklu1tdH" resolve="ActivateOrDeactivateLight" />
       </node>
       <node concept="3USqFc" id="3aJvklu1bS8" role="u$ofW">
         <ref role="1OsDsW" node="42iml4GkQPH" resolve="HazardLightIntent" />
@@ -211,12 +213,14 @@
         <ref role="1OsDsW" node="3aJvklu1tCd" resolve="HazardLightControlInterface" />
       </node>
     </node>
+    <node concept="3UUxL_" id="4Lde1QTdAFC" role="3UUxLy" />
+    <node concept="3UUxL_" id="4Lde1QTdAFD" role="3UUxLy" />
     <node concept="3UUxL_" id="3aJvklu172n" role="3UUxLy" />
     <node concept="3UVs0c" id="42iml4GkQQ3" role="3UUxLy">
       <property role="TrG5h" value="F_ExteriorLightIntentControl" />
       <node concept="1P9$ME" id="42iml4GkQQr" role="3EYflY" />
       <node concept="2MZxM8" id="3aJvklu16Jg" role="2TxlRo">
-        <ref role="2_fSJl" node="3aJvklu1tcw" resolve="DetectHazardLightsButtonPress" />
+        <ref role="2_fSJl" to="a4c:3aJvklu1tcw" resolve="DetectHazardLightsButtonPress" />
       </node>
       <node concept="3USqFc" id="3aJvklu1bmE" role="u$ofW">
         <ref role="1OsDsW" node="3aJvklu1tsX" resolve="HazardLightButtonInterface" />
@@ -235,7 +239,7 @@
         <ref role="1OsDsW" node="3aJvklu1t_r" resolve="HazardLightManagementInterface" />
       </node>
       <node concept="2MZxM8" id="3aJvklu1bEe" role="2TxlRo">
-        <ref role="2_fSJl" node="3aJvklu1tdy" resolve="ManageHazardLight" />
+        <ref role="2_fSJl" to="a4c:3aJvklu1tdy" resolve="ManageHazardLight" />
       </node>
       <node concept="3USqFc" id="3aJvklu1uOi" role="u_$oX">
         <ref role="1OsDsW" node="3aJvklu1vl0" resolve="HazardLightState" />
@@ -245,7 +249,7 @@
       <property role="TrG5h" value="F_ExteriorLightControl" />
       <node concept="1P9$ME" id="3aJvklu1bDg" role="3EYflY" />
       <node concept="2MZxM8" id="3aJvklu1bGU" role="2TxlRo">
-        <ref role="2_fSJl" node="3aJvklu1tdB" resolve="ControlExteriorLight" />
+        <ref role="2_fSJl" to="a4c:3aJvklu1tdB" resolve="ControlExteriorLight" />
       </node>
       <node concept="3USqFc" id="3aJvklu1uYx" role="u_$oX">
         <ref role="1OsDsW" node="3aJvklu1tCd" resolve="HazardLightControlInterface" />
@@ -265,7 +269,7 @@
       <property role="TrG5h" value="F_DisplayControl" />
       <node concept="1P9$ME" id="3aJvklu17aL" role="3EYflY" />
       <node concept="2MZxM8" id="3aJvklu17dD" role="2TxlRo">
-        <ref role="2_fSJl" node="3aJvklu1tdS" resolve="LightInformationDisplay" />
+        <ref role="2_fSJl" to="a4c:3aJvklu1tdS" resolve="LightInformationDisplay" />
       </node>
       <node concept="3USqFc" id="3aJvklu1bVl" role="u$ofW">
         <ref role="1OsDsW" node="3aJvklu1t_r" resolve="HazardLightManagementInterface" />

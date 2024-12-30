@@ -11,6 +11,8 @@
   <imports>
     <import index="jn56" ref="r:05f81e59-d602-407b-9b70-a768e07e2ca0(tech.cariad.arche.tutorial.features_examples._020_architecture)" />
     <import index="a4c" ref="r:8f2e5694-e7a9-461c-a9f9-44128f833ca6(com.applied.arche.lights._10_requirements)" />
+    <import index="rhcz" ref="r:1c682b77-b39d-4fc2-a727-010ac657241c(tech.cariad.arche.tutorial.features_examples._030_software_architecture)" />
+    <import index="ck06" ref="r:252ba9e8-5d0e-4c7b-a6df-be18e98501cd(com.applied.arche.lights.LSG_R)" />
   </imports>
 </model>
 

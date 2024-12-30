@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:75e85213-a8f3-490b-a9c2-9fd81a541def(com.applied.arche.lights.LSG_L)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
+      <concept id="1330041117646892924" name="org.iets3.core.expr.simpleTypes.structure.NumberPrecSpec" flags="ng" index="2gteS_">
+        <property id="1330041117646892934" name="prec" index="2gteVv" />
+      </concept>
+      <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC">
+        <child id="1330041117646892920" name="range" index="2gteSx" />
+        <child id="1330041117646892937" name="prec" index="2gteVg" />
+      </concept>
+      <concept id="7425695345928349207" name="org.iets3.core.expr.simpleTypes.structure.BooleanType" flags="ng" index="2vmvy5" />
+      <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
+        <property id="5115872837157054173" name="value" index="30bXRw" />
+      </concept>
+    </language>
+    <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
+      <concept id="7740953487936183912" name="org.iets3.core.expr.toplevel.structure.Typedef" flags="ng" index="1WbbD7">
+        <child id="7740953487936183915" name="originalType" index="1WbbD4" />
+      </concept>
+    </language>
+    <language id="deb4d624-41e8-4a3c-96c6-a1223f64be20" name="com.cso.enabler.base">
+      <concept id="1971430145992371487" name="com.cso.enabler.base.structure.ArcheLibrary" flags="ng" index="3k1c1q">
+        <child id="543569365052711058" name="contents" index="_iOnB" />
+      </concept>
+    </language>
+    <language id="02e2265f-b569-4de7-beec-442cb61d1d38" name="tech.cariad.arche.expressions">
+      <concept id="1798480985359137396" name="tech.cariad.arche.expressions.structure.ArcheNumberRangeSpec" flags="ng" index="1Nlkqp">
+        <child id="1798480985359186979" name="minExpr" index="1Nlo3e" />
+        <child id="1798480985359187301" name="maxExpr" index="1Nlo68" />
+      </concept>
+      <concept id="1798480985359135454" name="tech.cariad.arche.expressions.structure.ArcheNumberType" flags="ng" index="1NlkSN" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="3k1c1q" id="4Lde1QSQLBb">
+    <property role="TrG5h" value="AUTOSAR_PlatformTypes_ImplementationDataTypes" />
+    <property role="3GE5qa" value="AUTOSAR_PlatformTypes" />
+    <node concept="1WbbD7" id="4Lde1QSQLBc" role="_iOnB">
+      <property role="TrG5h" value="uint8" />
+      <node concept="1NlkSN" id="4Lde1QSQLBd" role="1WbbD4">
+        <node concept="1Nlkqp" id="4Lde1QSQLBe" role="2gteSx">
+          <node concept="30bXRB" id="4Lde1QSQLBf" role="1Nlo3e">
+            <property role="30bXRw" value="0" />
+          </node>
+          <node concept="30bXRB" id="4Lde1QSQLBg" role="1Nlo68">
+            <property role="30bXRw" value="255" />
+          </node>
+        </node>
+        <node concept="2gteS_" id="4Lde1QSQLBh" role="2gteVg">
+          <property role="2gteVv" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1WbbD7" id="4Lde1QSQLBm" role="_iOnB">
+      <property role="TrG5h" value="boolean" />
+      <node concept="2vmvy5" id="4Lde1QSQLBn" role="1WbbD4" />
+    </node>
+    <node concept="1WbbD7" id="4Lde1QSQLBs" role="_iOnB">
+      <property role="TrG5h" value="uint16" />
+      <node concept="1NlkSN" id="4Lde1QSQLBt" role="1WbbD4">
+        <node concept="1Nlkqp" id="4Lde1QSQLBu" role="2gteSx">
+          <node concept="30bXRB" id="4Lde1QSQLBv" role="1Nlo3e">
+            <property role="30bXRw" value="0" />
+          </node>
+          <node concept="30bXRB" id="4Lde1QSQLBw" role="1Nlo68">
+            <property role="30bXRw" value="65535" />
+          </node>
+        </node>
+        <node concept="2gteS_" id="4Lde1QSQLBx" role="2gteVg">
+          <property role="2gteVv" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1WbbD7" id="4Lde1QSQN3h" role="_iOnB">
+      <property role="TrG5h" value="uint64" />
+      <node concept="1NlkSN" id="4Lde1QSQN3i" role="1WbbD4">
+        <node concept="1Nlkqp" id="4Lde1QSQN3j" role="2gteSx">
+          <node concept="30bXRB" id="4Lde1QSQN3k" role="1Nlo3e">
+            <property role="30bXRw" value="0" />
+          </node>
+          <node concept="30bXRB" id="4Lde1QSQN3l" role="1Nlo68">
+            <property role="30bXRw" value="18446744073709551615" />
+          </node>
+        </node>
+        <node concept="2gteS_" id="4Lde1QSQN3m" role="2gteVg">
+          <property role="2gteVv" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1WbbD7" id="4Lde1QSQN3q" role="_iOnB">
+      <property role="TrG5h" value="uint32" />
+      <node concept="1NlkSN" id="4Lde1QSQN3r" role="1WbbD4">
+        <node concept="1Nlkqp" id="4Lde1QSQN3s" role="2gteSx">
+          <node concept="30bXRB" id="4Lde1QSQN3t" role="1Nlo3e">
+            <property role="30bXRw" value="0" />
+          </node>
+          <node concept="30bXRB" id="4Lde1QSQN3u" role="1Nlo68">
+            <property role="30bXRw" value="4294967295" />
+          </node>
+        </node>
+        <node concept="2gteS_" id="4Lde1QSQN3v" role="2gteVg">
+          <property role="2gteVv" value="0" />
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:75e85213-a8f3-490b-a9c2-9fd81a541def(com.applied.arche.lights.E3_1_2_ECUs)" content="header">
+  <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
+  <languages>
+    <devkit ref="0eef1ab3-92ca-4383-a28c-c4bef22da5e9(ArchDevKit)" />
+  </languages>
+  <imports />
+</model>
+

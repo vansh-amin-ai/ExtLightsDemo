@@ -256,8 +256,27 @@
     <language slang="l:6a61e0f6-8cd8-4fef-9404-d8cc6f9cbf9d:tech.cariad.bridge2alliance" version="0" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
+    <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
+    <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
+    <module reference="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" version="0" />
+    <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
+    <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+    <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="5841b3b0-e306-4a21-8e9a-9c517b600b78(com.applied.arche.lights)" version="0" />
+    <module reference="66c3d131-f1d3-4d6e-814d-cc1bba469066(com.cso.enabler.arch.components.idefx.migration)" version="0" />
+    <module reference="9450a747-42c9-4803-8715-f5c0fe3f3ecc(com.cso.enabler.arch.components.software.autosar.documentation)" version="0" />
+    <module reference="bcf1d838-238a-43a7-8cbb-47866286c559(com.cso.enabler.arch.components.software.documentation)" version="0" />
+    <module reference="fa2158de-6511-4731-aabe-eb98aa6ceb1a(com.cso.enabler.base.units)" version="0" />
+    <module reference="bfbdd672-7ff5-403f-af4f-16da5226f34c(jetbrains.mps.findUsages.runtime)" version="0" />
+    <module reference="019b622b-0aef-4dd3-86d0-4eef01f3f6bb(jetbrains.mps.ide)" version="0" />
+    <module reference="25092e07-e655-497c-92fb-558a8e3080ed(jetbrains.mps.ide.ui)" version="0" />
+    <module reference="4daf68d7-b8d1-480f-ba66-16d874f2eac1(org.iets3.analysis.solversupport.runtime)" version="0" />
+    <module reference="77353052-ce68-44d8-b0dc-36f70a6ad880(org.iets3.contextfilter.plugin)" version="0" />
+    <module reference="9002631e-7e42-46da-88df-6577409bb437(org.iets3.core.expr.typetags.physunits.documentation)" version="0" />
+    <module reference="86255e62-4839-480a-a7d0-9ee30f97e2d8(org.iets3.core.expr.typetags.phyunits.si)" version="0" />
     <module reference="1c761cfd-81b1-4794-9999-148fa76881b8(org.iets3.core.expr.typetags.units.si)" version="0" />
+    <module reference="1a4f44d8-7795-11ed-a1eb-0242ac120002(org.iets3.variability.artifacts.baseline.ide)" version="0" />
     <module reference="70279fbc-af91-4065-a7ef-2bf38ce4e494(tech.cariad.arche.tutorial)" version="0" />
   </dependencyVersions>
 </solution>
