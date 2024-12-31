@@ -19,6 +19,7 @@
       <concept id="1490101150325910249" name="com.cso.enabler.arch.components.physical.structure.LINType" flags="ng" index="3$f$RK" />
       <concept id="1490101150325910245" name="com.cso.enabler.arch.components.physical.structure.EthernetType" flags="ng" index="3$f$RW" />
       <concept id="1490101150325910247" name="com.cso.enabler.arch.components.physical.structure.CANFDType" flags="ng" index="3$f$RY" />
+      <concept id="1490101150325910246" name="com.cso.enabler.arch.components.physical.structure.CANType" flags="ng" index="3$f$RZ" />
     </language>
     <language id="deb4d624-41e8-4a3c-96c6-a1223f64be20" name="com.cso.enabler.base">
       <concept id="5803911524650700080" name="com.cso.enabler.base.structure.IPositionAwarePort" flags="ngI" index="2I4AZR">
@@ -147,6 +148,24 @@
       </node>
       <node concept="cgfL2" id="4Lde1QTstNW" role="3$f$R_" />
       <node concept="cgfL2" id="4Lde1QTstNX" role="3$f$R_" />
+    </node>
+    <node concept="cgfL2" id="5Q2iukduyaB" role="3$f$VV" />
+    <node concept="3$f$Kf" id="5Q2iukduyaD" role="3$f$VV">
+      <property role="TrG5h" value="LSG_L" />
+      <node concept="3$f$Kn" id="5Q2iukduyaN" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="can_conn" />
+        <node concept="3$f$RZ" id="5Q2iukduyaL" role="2S2oia" />
+      </node>
+    </node>
+    <node concept="cgfL2" id="5Q2iukduyaR" role="3$f$VV" />
+    <node concept="3$f$Kf" id="5Q2iukduyaT" role="3$f$VV">
+      <property role="TrG5h" value="LSG_R" />
+      <node concept="3$f$Kn" id="5Q2iukduyaW" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="can_conn" />
+        <node concept="3$f$RZ" id="5Q2iukduyaV" role="2S2oia" />
+      </node>
     </node>
     <node concept="cgfL2" id="4Lde1QTstNA" role="3$f$VV" />
   </node>

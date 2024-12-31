@@ -122,7 +122,7 @@
       </node>
     </node>
     <node concept="28NA_B" id="4Lde1QTtEte" role="3UUxLy">
-      <property role="3QutVU" value="true" />
+      <property role="3QutVU" value="false" />
       <property role="TrG5h" value="FrontHazardsMaster" />
       <node concept="3USqFc" id="4Lde1QTmaBj" role="u_$oX">
         <ref role="1OsDsW" to="a8fj:4Lde1QSQRzu" resolve="IF_ALU_L_440_PWM" />
@@ -131,8 +131,9 @@
         <ref role="1OsDsW" to="ck06:4Lde1QT610D" resolve="IF_ALU_R_400_PWM" />
       </node>
       <node concept="1vKqid" id="4Lde1QTtEtf" role="3EYflY" />
-      <node concept="2WwbCY" id="4Lde1QTtG8O" role="2TxlRo" />
     </node>
+    <node concept="3UUxL_" id="5Q2iukducdJ" role="3UUxLy" />
+    <node concept="3UUxL_" id="5Q2iukducdK" role="3UUxLy" />
     <node concept="3UUxL_" id="4Lde1QTtCN2" role="3UUxLy" />
     <node concept="28NA_B" id="4Lde1QTs575" role="3UUxLy">
       <property role="3RPpit" value="true" />
