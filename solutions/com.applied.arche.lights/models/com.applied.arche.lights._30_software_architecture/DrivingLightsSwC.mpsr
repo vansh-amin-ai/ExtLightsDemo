@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:aaf17285-4da7-4b12-af91-fe40fbfd40e8(com.applied.arche.lights._30_software_architecture)" content="root">
+  <persistence version="9" />
+  <imports>
+    <import index="ot3b" ref="r:a008d86c-8388-43c3-a25e-3956913df3be(defaultmappingtargets)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="952013ed-5e6c-4f56-afbe-070aef09d3c7" name="com.cariad.arche.buildconfig">
+      <concept id="6460427838659621195" name="com.cariad.arche.buildconfig.structure.ArcheBuildConfig" flags="ng" index="2HWvQC">
+        <child id="6460427838659622760" name="items" index="2HWvIb" />
+      </concept>
+    </language>
+    <language id="532a99dc-31ef-40cc-a88d-c13eaea7472e" name="tech.cariad.arche.arxml.export">
+      <concept id="6316274758420301816" name="tech.cariad.arche.arxml.export.structure.ClassicArxmlBuildConfigEntry" flags="ng" index="CNQQl">
+        <reference id="6316274758420301819" name="genEntryPoint" index="CNQQm" />
+      </concept>
+      <concept id="6316274758421071549" name="tech.cariad.arche.arxml.export.structure.ClassicArxmlBuildConfigItem" flags="ng" index="COUNg">
+        <child id="6316274758421071552" name="content" index="COUMH" />
+        <child id="2888422663735839825" name="downstreamTechnology" index="3pf35a" />
+      </concept>
+      <concept id="2383617666201501657" name="tech.cariad.arche.arxml.export.structure.SWClassicComponentBuildConfigItem" flags="ng" index="1jnn1U">
+        <property id="5012140890581233533" name="targetComputeNode" index="3AKPNC" />
+        <reference id="2383617666201529849" name="datatypeMappingTarget" index="1jnu9q" />
+      </concept>
+      <concept id="5335577719425038953" name="tech.cariad.arche.arxml.export.structure.SWClassicArxmlBuildConfigEntry" flags="ng" index="3BQFR3" />
+      <concept id="8897859564534825382" name="tech.cariad.arche.arxml.export.structure.CodeCentricDevTechnology" flags="ng" index="3Q4CQ7" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2HWvQC" id="4Lde1QTrNah">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="DrivingLightsSwC" />
+    <node concept="1jnn1U" id="4Lde1QTrNai" role="2HWvIb">
+      <property role="3AKPNC" value="FrontExteriorZonal" />
+      <ref role="1jnu9q" to="ot3b:1s2YR1PnG7z" resolve="default" />
+      <node concept="3Q4CQ7" id="4Lde1QTrNaj" role="3pf35a">
+        <property role="TrG5h" value="Code Centric Dev" />
+      </node>
+      <node concept="3BQFR3" id="4Lde1QTrNak" role="COUMH">
+        <ref role="CNQQm" node="4Lde1QTiXyR" resolve="composition" />
+      </node>
+    </node>
+  </node>
+</model>
+

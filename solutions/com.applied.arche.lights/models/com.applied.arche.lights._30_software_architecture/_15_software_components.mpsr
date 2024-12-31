@@ -92,7 +92,7 @@
     <node concept="28NA_B" id="4Lde1QTeovy" role="3UUxLy">
       <property role="3QutVU" value="true" />
       <property role="3RPpit" value="true" />
-      <property role="TrG5h" value="DrivingLights_Root" />
+      <property role="TrG5h" value="FrontDrivingLights_Root" />
       <node concept="3USqFc" id="4Lde1QTmaBj" role="u_$oX">
         <ref role="1OsDsW" to="a8fj:4Lde1QSQRzu" resolve="IF_ALU_L_440_PWM" />
       </node>
@@ -101,7 +101,7 @@
       </node>
       <node concept="1vKqid" id="4Lde1QTeovz" role="3EYflY" />
       <node concept="2QBA4I" id="4Lde1QTeov$" role="2TxlRo">
-        <property role="TrG5h" value="ext_lights" />
+        <property role="TrG5h" value="front_ext_lights" />
       </node>
       <node concept="t3WKX" id="4Lde1QTeovA" role="2TxlRo">
         <node concept="2PiGKv" id="4Lde1QTeoxu" role="2PiGLR">
@@ -126,7 +126,22 @@
         </node>
       </node>
     </node>
-    <node concept="3UUxL_" id="4Lde1QTmf5u" role="3UUxLy" />
+    <node concept="28NA_B" id="4Lde1QTs575" role="3UUxLy">
+      <property role="3RPpit" value="true" />
+      <property role="TrG5h" value="RearDrivingLights_Root" />
+      <node concept="1vKqid" id="4Lde1QTs576" role="3EYflY" />
+      <node concept="2QBA4I" id="4Lde1QTs6MA" role="2TxlRo">
+        <property role="TrG5h" value="rear_ext_lights" />
+      </node>
+      <node concept="t3WKX" id="4Lde1QTs6Pc" role="2TxlRo">
+        <node concept="2PiGKv" id="4Lde1QTs6Pi" role="2PiGLR">
+          <property role="2PiGLT" value="33UgXn68T6i/Porsche" />
+        </node>
+      </node>
+      <node concept="2C2Vii" id="4Lde1QTs6PI" role="2TxlRo">
+        <property role="2C2Vjz" value="AyQv_Ni6L7/Undefined" />
+      </node>
+    </node>
     <node concept="3UUxL_" id="4Lde1QTm09k" role="3UUxLy" />
   </node>
 </model>

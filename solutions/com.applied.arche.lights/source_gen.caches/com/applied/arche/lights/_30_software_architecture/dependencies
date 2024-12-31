@@ -4,13 +4,7 @@
   <uses language="l:75561194-ce68-4187-bf79-3f370a7dff18:com.cso.enabler.arch.asil" />
   <uses language="l:68b16187-1d03-4fff-975a-475207b3ad31:com.cso.enabler.arch.components" />
   <uses language="l:f5711e11-ac2c-4cbd-b59c-4f8b7373ba6a:com.cso.enabler.arch.components.communication" />
-  <uses language="l:53cd74b1-7ad6-4624-9ef9-8b289da26fdd:com.cso.enabler.arch.components.functional" />
-  <uses language="l:25908ae0-998c-4036-a64d-135058f8b116:com.cso.enabler.arch.components.logical" />
   <uses language="l:cecacbca-321e-4b4a-96e0-5f862b1b1e21:com.cso.enabler.arch.components.software" />
-  <uses language="l:f29687f0-5096-419f-b8fe-c376f08d97d4:com.cso.enabler.arch.components.software.bom" />
-  <uses language="l:b798e6a9-430b-449a-9b79-e0685663ed65:com.cso.enabler.arch.components.tracing" />
-  <uses language="l:8eb146c5-bb19-45a7-82f0-ef5453fe903c:com.cso.enabler.arch.interfaces.types" />
-  <uses language="l:0e530434-6261-4ef4-98d8-ebfa2f94dde0:com.cso.enabler.arch.usecase2functional" />
   <uses language="l:48456dd6-d47d-4513-84d0-f6c614c94c3a:com.cso.enabler.components.software.targetPlatforms" />
   <uses language="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" />
   <uses language="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" />
@@ -18,7 +12,6 @@
   <uses language="l:479c7a8c-02f9-43b5-9139-d910cb22f298:jetbrains.mps.core.xml" />
   <uses language="l:0edf22a4-42bc-4e5d-954f-06aaaf51df00:jetbrains.mps.lang.makeup" />
   <uses language="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
-  <uses language="l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base" />
   <uses language="l:eeff6b9d-98a4-431f-ad65-f51a0cf097c9:tech.cariad.arche.arxml.classic" />
   <uses language="l:532a99dc-31ef-40cc-a88d-c13eaea7472e:tech.cariad.arche.arxml.export" />
   <uses module="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" kind="dp" />
