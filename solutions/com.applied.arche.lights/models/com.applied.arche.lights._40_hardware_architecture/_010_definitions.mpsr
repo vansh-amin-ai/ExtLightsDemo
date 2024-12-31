@@ -4,9 +4,18 @@
   <imports />
   <registry>
     <language id="6d748e6b-551b-4de0-9fe5-a49087de00ac" name="com.cso.enabler.arch.components.physical">
-      <concept id="8815374828296102156" name="com.cso.enabler.arch.components.physical.structure.BusTypeDefinition" flags="ng" index="CPe6Z" />
+      <concept id="835524074399112442" name="com.cso.enabler.arch.components.physical.structure.EmptyLine" flags="ng" index="cgfL2" />
+      <concept id="8815374828296102156" name="com.cso.enabler.arch.components.physical.structure.BusTypeDefinition" flags="ng" index="CPe6Z">
+        <child id="5044343550159476936" name="attributes" index="3uicdN" />
+      </concept>
       <concept id="4716557521533096391" name="com.cso.enabler.arch.components.physical.structure.PhysicalArchitectureContainer" flags="ng" index="3gQsnk">
         <child id="1490101150325909986" name="content" index="3$f$VV" />
+      </concept>
+      <concept id="5044343550159390776" name="com.cso.enabler.arch.components.physical.structure.BaudRate" flags="ng" index="3uipe3" />
+    </language>
+    <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
+      <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
+        <property id="5115872837157054173" name="value" index="30bXRw" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -17,12 +26,26 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="68b16187-1d03-4fff-975a-475207b3ad31" name="com.cso.enabler.arch.components">
+      <concept id="1891922653928462803" name="com.cso.enabler.arch.components.structure.IGenericAttributeWithExpr" flags="ngI" index="1rEILM">
+        <child id="1891922653928463039" name="value" index="1rEIWu" />
+      </concept>
+    </language>
   </registry>
   <node concept="3gQsnk" id="4Lde1QTskXA">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="_010_definitions" />
     <node concept="CPe6Z" id="4Lde1QTskXB" role="3$f$VV">
       <property role="TrG5h" value="gbit_ethernet" />
+    </node>
+    <node concept="cgfL2" id="3k3sWXiLHbY" role="3$f$VV" />
+    <node concept="CPe6Z" id="3k3sWXiLHc0" role="3$f$VV">
+      <property role="TrG5h" value="can_fd" />
+      <node concept="3uipe3" id="3k3sWXiLHc2" role="3uicdN">
+        <node concept="30bXRB" id="3k3sWXiLHcd" role="1rEIWu">
+          <property role="30bXRw" value="500000" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

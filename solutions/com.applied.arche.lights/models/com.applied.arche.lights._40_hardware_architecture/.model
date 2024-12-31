@@ -5,6 +5,8 @@
   <languages>
     <devkit ref="0eef1ab3-92ca-4383-a28c-c4bef22da5e9(ArchDevKit)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="xv0w" ref="r:00e1a04b-e834-4554-9609-05172aa1a658(com.applied.arche.lights._20_architecture)" />
+  </imports>
 </model>
 

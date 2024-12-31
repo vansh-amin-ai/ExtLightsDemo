@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:1af19ad6-ede5-4966-ac48-d7d66133e256(com.applied.arche.lights._40_hardware_architecture_attributes)" content="header">
+  <persistence version="9" />
+  <languages>
+    <devkit ref="9fed6e70-7da7-4afd-a179-3005ac19876f(CoreDevKit)" />
+  </languages>
+  <imports>
+    <import index="jhet" ref="r:8d060444-61b3-4980-a082-01a119c43480(com.applied.arche.lights._40_hardware_architecture)" />
+  </imports>
+</model>
+

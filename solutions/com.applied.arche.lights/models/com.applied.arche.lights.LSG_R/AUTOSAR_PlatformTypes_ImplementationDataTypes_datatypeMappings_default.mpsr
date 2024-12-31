@@ -41,7 +41,7 @@
     </language>
   </registry>
   <node concept="2OL2eP" id="4Lde1QT5VbX">
-    <property role="3GE5qa" value="AUTOSAR_PlatformTypes" />
+    <property role="3GE5qa" value="LSG_R.AUTOSAR_PlatformTypes" />
     <ref role="2a81w5" node="4Lde1QT5VbQ" resolve="AUTOSAR_PlatformTypes_ImplementationDataTypes" />
     <ref role="36fust" to="ot3b:1s2YR1PnG7z" resolve="default" />
     <node concept="1fRnm1" id="4Lde1QT5VbZ" role="2a9YZt">

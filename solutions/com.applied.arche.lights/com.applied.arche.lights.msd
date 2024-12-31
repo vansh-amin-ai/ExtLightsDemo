@@ -12,6 +12,7 @@
   </facets>
   <dependencies>
     <dependency reexport="false">70279fbc-af91-4065-a7ef-2bf38ce4e494(tech.cariad.arche.tutorial)</dependency>
+    <dependency reexport="false">caf4808d-282c-4c52-b621-8447740d3867(com.cso.enabler.arch.p.sandbox.communication)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:4080500a-b49d-42e8-a2c7-f34e510e1119:com.cariad.arche.arch.sums" version="0" />
@@ -267,6 +268,7 @@
     <module reference="66c3d131-f1d3-4d6e-814d-cc1bba469066(com.cso.enabler.arch.components.idefx.migration)" version="0" />
     <module reference="9450a747-42c9-4803-8715-f5c0fe3f3ecc(com.cso.enabler.arch.components.software.autosar.documentation)" version="0" />
     <module reference="bcf1d838-238a-43a7-8cbb-47866286c559(com.cso.enabler.arch.components.software.documentation)" version="0" />
+    <module reference="caf4808d-282c-4c52-b621-8447740d3867(com.cso.enabler.arch.p.sandbox.communication)" version="0" />
     <module reference="fa2158de-6511-4731-aabe-eb98aa6ceb1a(com.cso.enabler.base.units)" version="0" />
     <module reference="bfbdd672-7ff5-403f-af4f-16da5226f34c(jetbrains.mps.findUsages.runtime)" version="0" />
     <module reference="019b622b-0aef-4dd3-86d0-4eef01f3f6bb(jetbrains.mps.ide)" version="0" />

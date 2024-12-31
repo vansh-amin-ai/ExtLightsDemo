@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:1af19ad6-ede5-4966-ac48-d7d66133e256(com.applied.arche.lights._40_hardware_architecture_attributes)" content="root">
+  <persistence version="9" />
+  <imports>
+    <import index="jhet" ref="r:8d060444-61b3-4980-a082-01a119c43480(com.applied.arche.lights._40_hardware_architecture)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="db43f37c-62f3-48fe-bc20-b66d850662bd" name="com.cariad.arche.codeowners.solutions">
+      <concept id="3422214456786304313" name="com.cariad.arche.codeowners.solutions.structure.RootNodeOwnersList" flags="ng" index="2uyxzj" />
+      <concept id="4169101223994707676" name="com.cariad.arche.codeowners.solutions.structure.IArcheRootOwners" flags="ngI" index="190_6_">
+        <child id="4169101223996292274" name="rootNodeOwners" index="19aAfb" />
+      </concept>
+    </language>
+    <language id="a8e09340-2af4-4f0d-8c8d-80f85e9b0085" name="com.cso.enabler.arch.components.physical.config">
+      <concept id="1581098412318961926" name="com.cso.enabler.arch.components.physical.config.structure.ConnectorAttributeContainer" flags="ng" index="gLo6B">
+        <reference id="6276868737156049814" name="container" index="1$UK5a" />
+        <reference id="6276868737156054228" name="connector" index="1$ULo8" />
+        <reference id="6276868737156052193" name="diagnosableNode" index="1$ULSX" />
+        <child id="1581098412318969403" name="content" index="gLvUq" />
+      </concept>
+      <concept id="4278415938684543843" name="com.cso.enabler.arch.components.physical.config.structure.PhysicalConnectorAttributeGroup" flags="ng" index="3DXDZ3">
+        <property id="4278415938684543864" name="busTermination" index="3DXDZo" />
+      </concept>
+      <concept id="4278415938684543813" name="com.cso.enabler.arch.components.physical.config.structure.NetworkConnectorAttributeGroup" flags="ng" index="3DXDZ_">
+        <property id="4278415938684543834" name="nmProtocol" index="3DXDZU" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="gLo6B" id="3k3sWXiS5sR">
+    <property role="3GE5qa" value="" />
+    <ref role="1$UK5a" to="jhet:4Lde1QTskXC" resolve="_11_discrete_physical_components" />
+    <ref role="1$ULSX" to="jhet:3k3sWXiS5sO" />
+    <ref role="1$ULo8" to="jhet:3k3sWXiS5sQ" resolve="can0" />
+    <node concept="2uyxzj" id="3k3sWXiS5sS" role="19aAfb" />
+    <node concept="3DXDZ3" id="3k3sWXiS5sT" role="gLvUq">
+      <property role="3DXDZo" value="120" />
+      <node concept="2uyxzj" id="3k3sWXiS5sU" role="19aAfb" />
+    </node>
+    <node concept="3DXDZ_" id="3k3sWXiS5yB" role="gLvUq">
+      <property role="3DXDZU" value="3HvZa3iEmlV/FR_NM" />
+      <node concept="2uyxzj" id="3k3sWXiS5yC" role="19aAfb" />
+    </node>
+  </node>
+</model>
+
