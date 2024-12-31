@@ -50,6 +50,9 @@
         <child id="4052432714772608243" name="text" index="1w35rA" />
       </concept>
     </language>
+    <language id="4d36ee4b-673f-4057-9450-dda6ed9434e7" name="com.cso.enabler.arch.components.physical.hcp">
+      <concept id="5282130126446000051" name="com.cso.enabler.arch.components.physical.hcp.structure.Power" flags="ng" index="1XvxbI" />
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
@@ -344,6 +347,15 @@
         <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
         <property role="TrG5h" value="12V_supply" />
         <node concept="2g4tRY" id="3k3sWXiRLOT" role="2S2oia" />
+      </node>
+    </node>
+    <node concept="cgfL2" id="3k3sWXiS5Cw" role="3$f$VV" />
+    <node concept="1XvxbI" id="3k3sWXiS5Cy" role="3$f$VV">
+      <property role="TrG5h" value="power_source" />
+      <node concept="3$f$Kn" id="3k3sWXiS5C_" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="12V_out" />
+        <node concept="2g4tRY" id="3k3sWXiS5C$" role="2S2oia" />
       </node>
     </node>
     <node concept="cgfL2" id="3k3sWXiRLOK" role="3$f$VV" />

@@ -63,8 +63,9 @@
       <node concept="3$f$Kv" id="3k3sWXiRM2k" role="3$f$R_">
         <ref role="3$f$Ki" node="3k3sWXiRLOL" resolve="SHL_Li3" />
       </node>
-      <node concept="cgfL2" id="3k3sWXiL$rB" role="3$f$R_" />
-      <node concept="cgfL2" id="3k3sWXiL$rC" role="3$f$R_" />
+      <node concept="3$f$Kv" id="3k3sWXiS5DF" role="3$f$R_">
+        <ref role="3$f$Ki" node="3k3sWXiS5Cy" resolve="power_source" />
+      </node>
     </node>
     <node concept="cgfL2" id="3k3sWXiLFT9" role="3$f$VV" />
     <node concept="cgfL2" id="3k3sWXiLFTa" role="3$f$VV" />
