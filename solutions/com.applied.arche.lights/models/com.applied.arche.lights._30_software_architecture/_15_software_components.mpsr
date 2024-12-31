@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:aaf17285-4da7-4b12-af91-fe40fbfd40e8(com.applied.arche.lights._30_software_architecture)" content="root">
+  <persistence version="9" />
+  <imports>
+    <import index="a8fj" ref="r:75e85213-a8f3-490b-a9c2-9fd81a541def(com.applied.arche.lights.LSG_L)" implicit="true" />
+    <import index="ck06" ref="r:252ba9e8-5d0e-4c7b-a6df-be18e98501cd(com.applied.arche.lights.LSG_R)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="48456dd6-d47d-4513-84d0-f6c614c94c3a" name="com.cso.enabler.components.software.targetPlatforms">
+      <concept id="3477502398193244003" name="com.cso.enabler.components.software.targetPlatforms.structure.TargetPlatformsAspect" flags="ng" index="2tCwly" />
+      <concept id="3477502398193313219" name="com.cso.enabler.components.software.targetPlatforms.structure.ClassicAutosarTargetPlatform" flags="ng" index="2tCNv2" />
+      <concept id="3477502398193313221" name="com.cso.enabler.components.software.targetPlatforms.structure.TargetPlatform" flags="ng" index="2tCNv4">
+        <child id="3477502398193314007" name="artefactTypes" index="2tCNFm" />
+      </concept>
+      <concept id="3477502398193313225" name="com.cso.enabler.components.software.targetPlatforms.structure.ClassicComposition" flags="ng" index="2tCNv8" />
+    </language>
+    <language id="75561194-ce68-4187-bf79-3f370a7dff18" name="com.cso.enabler.arch.asil">
+      <concept id="1928346817465510308" name="com.cso.enabler.arch.asil.structure.ASILAttribute" flags="ng" index="2C2Vii">
+        <property id="1928346817465510357" name="asilLevel" index="2C2Vjz" />
+      </concept>
+    </language>
+    <language id="f5711e11-ac2c-4cbd-b59c-4f8b7373ba6a" name="com.cso.enabler.arch.components.communication">
+      <concept id="7589978942297786783" name="com.cso.enabler.arch.components.communication.structure.LeadResponsibleBrand" flags="ng" index="t3WKX">
+        <child id="979679354668861785" name="LeadResponsibleBrands" index="2PiGLR" />
+      </concept>
+      <concept id="979679354668861745" name="com.cso.enabler.arch.components.communication.structure.BrandEnumValue" flags="ng" index="2PiGKv">
+        <property id="979679354668861783" name="enumValue" index="2PiGLT" />
+      </concept>
+      <concept id="6558464822174431279" name="com.cso.enabler.arch.components.communication.structure.ShortName" flags="ng" index="2QBA4I" />
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
+      <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
+        <child id="4052432714772608243" name="text" index="1w35rA" />
+      </concept>
+    </language>
+    <language id="cecacbca-321e-4b4a-96e0-5f862b1b1e21" name="com.cso.enabler.arch.components.software">
+      <concept id="6924221213365088230" name="com.cso.enabler.arch.components.software.structure.SoftwareComponent" flags="ng" index="28NA_B">
+        <property id="7852759924168934769" name="isComposite" index="3QutVU" />
+        <property id="7852759924180193046" name="isDeployable" index="3RPpit" />
+      </concept>
+      <concept id="3991854623700045356" name="com.cso.enabler.arch.components.software.structure.SoftwareRealm" flags="ng" index="1vKqid" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="68b16187-1d03-4fff-975a-475207b3ad31" name="com.cso.enabler.arch.components">
+      <concept id="1787216701874669181" name="com.cso.enabler.arch.components.structure.AbstractComponent" flags="ng" index="jbZTy">
+        <child id="6134549382679497236" name="outPort" index="u_$oX" />
+        <child id="566142508885477956" name="attributes" index="2TxlRo" />
+      </concept>
+      <concept id="7323600774330499350" name="com.cso.enabler.arch.components.structure.IContainComponentBodyContent" flags="ngI" index="1376$c">
+        <child id="8335226180467972466" name="realm" index="3EYflY" />
+      </concept>
+      <concept id="8686369551040074640" name="com.cso.enabler.arch.components.structure.AbstractComponentAspect" flags="ng" index="3H3RM5">
+        <child id="8686369551040095746" name="content" index="3H3S$n" />
+      </concept>
+      <concept id="902044997928754893" name="com.cso.enabler.arch.components.structure.AbstractComponentPort" flags="ng" index="1OsEJC">
+        <reference id="902044997928755737" name="interface" index="1OsDsW" />
+      </concept>
+      <concept id="5578245729749058083" name="com.cso.enabler.arch.components.structure.ComponentPort" flags="ng" index="3USqFc" />
+      <concept id="5578245729748776074" name="com.cso.enabler.arch.components.structure.EmptyLine" flags="ng" index="3UUxL_" />
+      <concept id="5578245729748776069" name="com.cso.enabler.arch.components.structure.ComponentArchitectureContainer" flags="ng" index="3UUxLE">
+        <child id="2077607355813627051" name="realm" index="3QPU1a" />
+        <child id="5578245729748776077" name="content" index="3UUxLy" />
+      </concept>
+      <concept id="5578245729748789475" name="com.cso.enabler.arch.components.structure.Component" flags="ng" index="3UVs0c">
+        <child id="8686369551040866854" name="aspects" index="3H0OkN" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="3UUxLE" id="4Lde1QTemYn">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="_15_software_components" />
+    <node concept="1vKqid" id="4Lde1QTemYm" role="3QPU1a" />
+    <node concept="28NA_B" id="4Lde1QTeovy" role="3UUxLy">
+      <property role="3QutVU" value="true" />
+      <property role="3RPpit" value="true" />
+      <property role="TrG5h" value="DrivingLights_Root" />
+      <node concept="3USqFc" id="4Lde1QTmaBj" role="u_$oX">
+        <ref role="1OsDsW" to="a8fj:4Lde1QSQRzu" resolve="IF_ALU_L_440_PWM" />
+      </node>
+      <node concept="3USqFc" id="4Lde1QTmlbj" role="u_$oX">
+        <ref role="1OsDsW" to="ck06:4Lde1QT610D" resolve="IF_ALU_R_400_PWM" />
+      </node>
+      <node concept="1vKqid" id="4Lde1QTeovz" role="3EYflY" />
+      <node concept="2QBA4I" id="4Lde1QTeov$" role="2TxlRo">
+        <property role="TrG5h" value="ext_lights" />
+      </node>
+      <node concept="t3WKX" id="4Lde1QTeovA" role="2TxlRo">
+        <node concept="2PiGKv" id="4Lde1QTeoxu" role="2PiGLR">
+          <property role="2PiGLT" value="33UgXn68T6i/Porsche" />
+        </node>
+      </node>
+      <node concept="2C2Vii" id="4Lde1QTeovB" role="2TxlRo">
+        <property role="2C2Vjz" value="AyQv_Ni6L7/Undefined" />
+      </node>
+      <node concept="2tCwly" id="4Lde1QTiXyA" role="3H0OkN">
+        <node concept="2tCNv2" id="4Lde1QTiXyP" role="3H3S$n">
+          <node concept="2tCNv8" id="4Lde1QTiXyR" role="2tCNFm" />
+        </node>
+      </node>
+      <node concept="1z9TsT" id="4Lde1QTiXyW" role="lGtFl">
+        <node concept="OjmMv" id="4Lde1QTiXyX" role="1w35rA">
+          <node concept="19SGf9" id="4Lde1QTiXyY" role="OjmMu">
+            <node concept="19SUe$" id="4Lde1QTiXyZ" role="19SJt6">
+              <property role="19SUeA" value=" Composition for the Driving Lights Feature" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UUxL_" id="4Lde1QTmf5u" role="3UUxLy" />
+    <node concept="3UUxL_" id="4Lde1QTm09k" role="3UUxLy" />
+  </node>
+</model>
+
