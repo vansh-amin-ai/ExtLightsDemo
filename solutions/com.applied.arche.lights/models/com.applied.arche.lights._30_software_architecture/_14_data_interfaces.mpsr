@@ -3,9 +3,18 @@
   <persistence version="9" />
   <imports />
   <registry>
+    <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ngI" index="2_iKZX">
+        <child id="8811147530085329321" name="type" index="2S399n" />
+      </concept>
+    </language>
+    <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
+      <concept id="7425695345928349207" name="org.iets3.core.expr.simpleTypes.structure.BooleanType" flags="ng" index="2vmvy5" />
+    </language>
     <language id="cecacbca-321e-4b4a-96e0-5f862b1b1e21" name="com.cso.enabler.arch.components.software">
       <concept id="3991854623700045356" name="com.cso.enabler.arch.components.software.structure.SoftwareRealm" flags="ng" index="1vKqid" />
       <concept id="5026903796830687161" name="com.cso.enabler.arch.components.software.structure.DataInterface" flags="ng" index="3vTeBB" />
+      <concept id="835115128831355448" name="com.cso.enabler.arch.components.software.structure.DataInterfaceMember" flags="ng" index="3N6GrK" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -22,6 +31,7 @@
       </concept>
       <concept id="5578245729748781573" name="com.cso.enabler.arch.components.structure.Interface" flags="ng" index="3UVubE">
         <child id="3561887574271617427" name="realm" index="2Ve3hN" />
+        <child id="5578245729748781616" name="content" index="3UVubv" />
       </concept>
     </language>
   </registry>
@@ -30,8 +40,12 @@
     <property role="TrG5h" value="_14_data_interfaces" />
     <node concept="1vKqid" id="4Lde1QTqjTG" role="3QPU1a" />
     <node concept="3vTeBB" id="4Lde1QTqjTN" role="3UUxLy">
-      <property role="TrG5h" value="ADT_" />
+      <property role="TrG5h" value="ADT_StalkControl" />
       <node concept="1vKqid" id="4Lde1QTqjTO" role="2Ve3hN" />
+      <node concept="3N6GrK" id="4Lde1QTsxgX" role="3UVubv">
+        <property role="TrG5h" value="STALK" />
+        <node concept="2vmvy5" id="4Lde1QTsxgW" role="2S399n" />
+      </node>
     </node>
   </node>
 </model>

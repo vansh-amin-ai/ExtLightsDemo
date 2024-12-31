@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:2b54d2a7-7bf6-41b6-b4ff-92eec3079b09(com.applied.arche.lights.LightManager)" content="header">
+  <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
+  <languages>
+    <devkit ref="0eef1ab3-92ca-4383-a28c-c4bef22da5e9(ArchDevKit)" />
+    <devkit ref="9fed6e70-7da7-4afd-a179-3005ac19876f(CoreDevKit)" />
+  </languages>
+  <imports />
+</model>
+

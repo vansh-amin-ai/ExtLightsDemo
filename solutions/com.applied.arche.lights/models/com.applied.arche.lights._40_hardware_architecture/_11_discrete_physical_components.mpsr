@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:8d060444-61b3-4980-a082-01a119c43480(com.applied.arche.lights._40_hardware_architecture)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="6d748e6b-551b-4de0-9fe5-a49087de00ac" name="com.cso.enabler.arch.components.physical">
+      <concept id="835524074399112442" name="com.cso.enabler.arch.components.physical.structure.EmptyLine" flags="ng" index="cgfL2" />
+      <concept id="1955602790930870174" name="com.cso.enabler.arch.components.physical.structure.PowerSupplyType" flags="ng" index="2g4tRY" />
+      <concept id="4716557521533096391" name="com.cso.enabler.arch.components.physical.structure.PhysicalArchitectureContainer" flags="ng" index="3gQsnk">
+        <child id="1490101150325909986" name="content" index="3$f$VV" />
+      </concept>
+      <concept id="1490101150325910294" name="com.cso.enabler.arch.components.physical.structure.ECU" flags="ng" index="3$f$Kf" />
+      <concept id="1490101150325910286" name="com.cso.enabler.arch.components.physical.structure.PhysicalConnector" flags="ng" index="3$f$Kn">
+        <child id="4275679927222649015" name="connectionType" index="2S2oia" />
+      </concept>
+      <concept id="1490101150325910275" name="com.cso.enabler.arch.components.physical.structure.PhysicalComponent" flags="ng" index="3$f$Kq">
+        <child id="1490101150325910268" name="content" index="3$f$R_" />
+      </concept>
+      <concept id="1490101150325910249" name="com.cso.enabler.arch.components.physical.structure.LINType" flags="ng" index="3$f$RK" />
+      <concept id="1490101150325910245" name="com.cso.enabler.arch.components.physical.structure.EthernetType" flags="ng" index="3$f$RW" />
+      <concept id="1490101150325910247" name="com.cso.enabler.arch.components.physical.structure.CANFDType" flags="ng" index="3$f$RY" />
+    </language>
+    <language id="deb4d624-41e8-4a3c-96c6-a1223f64be20" name="com.cso.enabler.base">
+      <concept id="5803911524650700080" name="com.cso.enabler.base.structure.IPositionAwarePort" flags="ngI" index="2I4AZR">
+        <property id="5803911524650700119" name="pos" index="2I4AYg" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="3gQsnk" id="4Lde1QTskXC">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="_11_discrete_physical_components" />
+    <node concept="3$f$Kf" id="4Lde1QTskXD" role="3$f$VV">
+      <property role="TrG5h" value="FrontExteriorZonal" />
+      <node concept="3$f$Kn" id="4Lde1QTstI8" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="eth" />
+        <node concept="3$f$RW" id="4Lde1QTstI7" role="2S2oia" />
+      </node>
+      <node concept="3$f$Kn" id="4Lde1QTstIe" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="can0" />
+        <node concept="3$f$RY" id="4Lde1QTstIc" role="2S2oia" />
+      </node>
+      <node concept="3$f$Kn" id="4Lde1QTstIq" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="can1" />
+        <node concept="3$f$RY" id="4Lde1QTstIo" role="2S2oia" />
+      </node>
+      <node concept="3$f$Kn" id="4Lde1QTstIw" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="can2" />
+        <node concept="3$f$RY" id="4Lde1QTstIu" role="2S2oia" />
+      </node>
+      <node concept="3$f$Kn" id="4Lde1QTstIA" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="can3" />
+        <node concept="3$f$RY" id="4Lde1QTstI$" role="2S2oia" />
+      </node>
+      <node concept="3$f$Kn" id="4Lde1QTstIG" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="lin5" />
+        <node concept="3$f$RK" id="4Lde1QTstIE" role="2S2oia" />
+      </node>
+      <node concept="3$f$Kn" id="4Lde1QTstIN" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="lin6" />
+        <node concept="3$f$RK" id="4Lde1QTstIL" role="2S2oia" />
+      </node>
+      <node concept="3$f$Kn" id="4Lde1QTstIU" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="lin7" />
+        <node concept="3$f$RK" id="4Lde1QTstIS" role="2S2oia" />
+      </node>
+      <node concept="3$f$Kn" id="4Lde1QTstJ1" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="lin8" />
+        <node concept="3$f$RK" id="4Lde1QTstIZ" role="2S2oia" />
+      </node>
+      <node concept="3$f$Kn" id="4Lde1QTstJ8" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="12V_supply" />
+        <node concept="2g4tRY" id="4Lde1QTstJ6" role="2S2oia" />
+      </node>
+      <node concept="cgfL2" id="4Lde1QTstNz" role="3$f$R_" />
+      <node concept="cgfL2" id="4Lde1QTstN$" role="3$f$R_" />
+    </node>
+    <node concept="cgfL2" id="4Lde1QTstN_" role="3$f$VV" />
+    <node concept="3$f$Kf" id="4Lde1QTstNB" role="3$f$VV">
+      <property role="TrG5h" value="RearZonal" />
+      <node concept="3$f$Kn" id="4Lde1QTstNC" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="eth" />
+        <node concept="3$f$RW" id="4Lde1QTstND" role="2S2oia" />
+      </node>
+      <node concept="3$f$Kn" id="4Lde1QTstNE" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="can0" />
+        <node concept="3$f$RY" id="4Lde1QTstNF" role="2S2oia" />
+      </node>
+      <node concept="3$f$Kn" id="4Lde1QTstNG" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="can1" />
+        <node concept="3$f$RY" id="4Lde1QTstNH" role="2S2oia" />
+      </node>
+      <node concept="3$f$Kn" id="4Lde1QTstNI" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="can2" />
+        <node concept="3$f$RY" id="4Lde1QTstNJ" role="2S2oia" />
+      </node>
+      <node concept="3$f$Kn" id="4Lde1QTstNK" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="can3" />
+        <node concept="3$f$RY" id="4Lde1QTstNL" role="2S2oia" />
+      </node>
+      <node concept="3$f$Kn" id="4Lde1QTstNM" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="lin5" />
+        <node concept="3$f$RK" id="4Lde1QTstNN" role="2S2oia" />
+      </node>
+      <node concept="3$f$Kn" id="4Lde1QTstNO" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="lin6" />
+        <node concept="3$f$RK" id="4Lde1QTstNP" role="2S2oia" />
+      </node>
+      <node concept="3$f$Kn" id="4Lde1QTstNQ" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="lin7" />
+        <node concept="3$f$RK" id="4Lde1QTstNR" role="2S2oia" />
+      </node>
+      <node concept="3$f$Kn" id="4Lde1QTstNS" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="lin8" />
+        <node concept="3$f$RK" id="4Lde1QTstNT" role="2S2oia" />
+      </node>
+      <node concept="3$f$Kn" id="4Lde1QTstNU" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="12V_supply" />
+        <node concept="2g4tRY" id="4Lde1QTstNV" role="2S2oia" />
+      </node>
+      <node concept="cgfL2" id="4Lde1QTstNW" role="3$f$R_" />
+      <node concept="cgfL2" id="4Lde1QTstNX" role="3$f$R_" />
+    </node>
+    <node concept="cgfL2" id="4Lde1QTstNA" role="3$f$VV" />
+  </node>
+</model>
+
