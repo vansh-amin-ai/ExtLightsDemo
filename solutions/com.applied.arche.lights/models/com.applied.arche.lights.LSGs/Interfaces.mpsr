@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:75e85213-a8f3-490b-a9c2-9fd81a541def(com.applied.arche.lights.LSG_L)" content="root">
+<model ref="r:75e85213-a8f3-490b-a9c2-9fd81a541def(com.applied.arche.lights.LSGs)" content="root">
   <persistence version="9" />
   <imports />
   <registry>
@@ -11119,7 +11119,7 @@
       <node concept="3N6GrK" id="4Lde1QSQRS3" role="3UVubv">
         <property role="TrG5h" value="DE_SG_ALU_L_PWM_01" />
         <node concept="2Ss9cW" id="4Lde1QSQRS4" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSQN3z" resolve="AT_SG_ALU_L_PWM_01" />
+          <ref role="2Ss9cX" node="4Lde1QSQN3z" />
         </node>
       </node>
     </node>
@@ -11129,7 +11129,7 @@
       <node concept="3N6GrK" id="4Lde1QSQRS9" role="3UVubv">
         <property role="TrG5h" value="DE_SG_ALU_L_PWM_02" />
         <node concept="2Ss9cW" id="4Lde1QSQRSa" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSQNkc" resolve="AT_SG_ALU_L_PWM_02" />
+          <ref role="2Ss9cX" node="4Lde1QSQNkc" />
         </node>
       </node>
     </node>
@@ -11139,7 +11139,7 @@
       <node concept="3N6GrK" id="4Lde1QSQRSf" role="3UVubv">
         <property role="TrG5h" value="DE_SG_ALU_L_PWM_03" />
         <node concept="2Ss9cW" id="4Lde1QSQRSg" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSQN$P" resolve="AT_SG_ALU_L_PWM_03" />
+          <ref role="2Ss9cX" node="4Lde1QSQN$P" />
         </node>
       </node>
     </node>
@@ -11149,7 +11149,7 @@
       <node concept="3N6GrK" id="4Lde1QSQRSl" role="3UVubv">
         <property role="TrG5h" value="DE_SG_ALU_L_PWM_04" />
         <node concept="2Ss9cW" id="4Lde1QSQRSm" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSQNPu" resolve="AT_SG_ALU_L_PWM_04" />
+          <ref role="2Ss9cX" node="4Lde1QSQNPu" />
         </node>
       </node>
     </node>
@@ -11159,7 +11159,7 @@
       <node concept="3N6GrK" id="4Lde1QSQRSr" role="3UVubv">
         <property role="TrG5h" value="DE_SG_ALU_L_PWM_05" />
         <node concept="2Ss9cW" id="4Lde1QSQRSs" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSQO67" resolve="AT_SG_ALU_L_PWM_05" />
+          <ref role="2Ss9cX" node="4Lde1QSQO67" />
         </node>
       </node>
     </node>
@@ -11169,7 +11169,7 @@
       <node concept="3N6GrK" id="4Lde1QSQRSx" role="3UVubv">
         <property role="TrG5h" value="DE_SG_ALU_L_PWM_06" />
         <node concept="2Ss9cW" id="4Lde1QSQRSy" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSQOmK" resolve="AT_SG_ALU_L_PWM_06" />
+          <ref role="2Ss9cX" node="4Lde1QSQOmK" />
         </node>
       </node>
     </node>
@@ -11179,7 +11179,7 @@
       <node concept="3N6GrK" id="4Lde1QSQRSB" role="3UVubv">
         <property role="TrG5h" value="DE_SG_ALU_L_PWM_07" />
         <node concept="2Ss9cW" id="4Lde1QSQRSC" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSQOBp" resolve="AT_SG_ALU_L_PWM_07" />
+          <ref role="2Ss9cX" node="4Lde1QSQOBp" />
         </node>
       </node>
     </node>
@@ -11189,7 +11189,7 @@
       <node concept="3N6GrK" id="4Lde1QSQRSH" role="3UVubv">
         <property role="TrG5h" value="DE_SG_ALU_L_PWM_08" />
         <node concept="2Ss9cW" id="4Lde1QSQRSI" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSQOS2" resolve="AT_SG_ALU_L_PWM_08" />
+          <ref role="2Ss9cX" node="4Lde1QSQOS2" />
         </node>
       </node>
     </node>
@@ -11199,7 +11199,7 @@
       <node concept="3N6GrK" id="4Lde1QSQRSN" role="3UVubv">
         <property role="TrG5h" value="DE_SG_ALU_L_PWM_09" />
         <node concept="2Ss9cW" id="4Lde1QSQRSO" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSQP8F" resolve="AT_SG_ALU_L_PWM_09" />
+          <ref role="2Ss9cX" node="4Lde1QSQP8F" />
         </node>
       </node>
     </node>
@@ -11209,7 +11209,7 @@
       <node concept="3N6GrK" id="4Lde1QSQRST" role="3UVubv">
         <property role="TrG5h" value="DE_SG_ClampControl_01" />
         <node concept="2Ss9cW" id="4Lde1QSQRSU" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSQPky" resolve="AT_SG_ClampControl_01" />
+          <ref role="2Ss9cX" node="4Lde1QSQPky" />
         </node>
       </node>
     </node>
@@ -11219,7 +11219,7 @@
       <node concept="3N6GrK" id="4Lde1QSQRSZ" role="3UVubv">
         <property role="TrG5h" value="DE_SG_ORU_Control_A_01" />
         <node concept="2Ss9cW" id="4Lde1QSQRT0" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSQPlt" resolve="AT_SG_ORU_Control_A_01" />
+          <ref role="2Ss9cX" node="4Lde1QSQPlt" />
         </node>
       </node>
     </node>
@@ -11229,7 +11229,7 @@
       <node concept="3N6GrK" id="4Lde1QSQRT5" role="3UVubv">
         <property role="TrG5h" value="DE_SG_ORU_Control_D_01" />
         <node concept="2Ss9cW" id="4Lde1QSQRT6" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSQPmU" resolve="AT_SG_ORU_Control_D_01" />
+          <ref role="2Ss9cX" node="4Lde1QSQPmU" />
         </node>
       </node>
     </node>
@@ -11239,7 +11239,7 @@
       <node concept="3N6GrK" id="4Lde1QSQRTb" role="3UVubv">
         <property role="TrG5h" value="DE_SG_OTAMC_D_01" />
         <node concept="2Ss9cW" id="4Lde1QSQRTc" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSQPon" resolve="AT_SG_OTAMC_D_01" />
+          <ref role="2Ss9cX" node="4Lde1QSQPon" />
         </node>
       </node>
     </node>
@@ -11249,7 +11249,7 @@
       <node concept="3N6GrK" id="4Lde1QSQRTh" role="3UVubv">
         <property role="TrG5h" value="DE_SG_VDSO_05" />
         <node concept="2Ss9cW" id="4Lde1QSQRTi" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSQPpg" resolve="AT_SG_VDSO_05" />
+          <ref role="2Ss9cX" node="4Lde1QSQPpg" />
         </node>
       </node>
     </node>
@@ -22379,7 +22379,7 @@
       <node concept="3N6GrK" id="4Lde1QSUC1n" role="3UVubv">
         <property role="TrG5h" value="DE_SG_ALU_R_PWM_01" />
         <node concept="2Ss9cW" id="4Lde1QSUC1o" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSUzjl" resolve="AT_SG_ALU_R_PWM_01" />
+          <ref role="2Ss9cX" node="4Lde1QSUzjl" />
         </node>
       </node>
     </node>
@@ -22389,7 +22389,7 @@
       <node concept="3N6GrK" id="4Lde1QSUC1t" role="3UVubv">
         <property role="TrG5h" value="DE_SG_ALU_R_PWM_02" />
         <node concept="2Ss9cW" id="4Lde1QSUC1u" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSUzzY" resolve="AT_SG_ALU_R_PWM_02" />
+          <ref role="2Ss9cX" node="4Lde1QSUzzY" />
         </node>
       </node>
     </node>
@@ -22399,7 +22399,7 @@
       <node concept="3N6GrK" id="4Lde1QSUC1z" role="3UVubv">
         <property role="TrG5h" value="DE_SG_ALU_R_PWM_03" />
         <node concept="2Ss9cW" id="4Lde1QSUC1$" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSUzOB" resolve="AT_SG_ALU_R_PWM_03" />
+          <ref role="2Ss9cX" node="4Lde1QSUzOB" />
         </node>
       </node>
     </node>
@@ -22409,7 +22409,7 @@
       <node concept="3N6GrK" id="4Lde1QSUC1D" role="3UVubv">
         <property role="TrG5h" value="DE_SG_ALU_R_PWM_04" />
         <node concept="2Ss9cW" id="4Lde1QSUC1E" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSU$5g" resolve="AT_SG_ALU_R_PWM_04" />
+          <ref role="2Ss9cX" node="4Lde1QSU$5g" />
         </node>
       </node>
     </node>
@@ -22419,7 +22419,7 @@
       <node concept="3N6GrK" id="4Lde1QSUC1J" role="3UVubv">
         <property role="TrG5h" value="DE_SG_ALU_R_PWM_05" />
         <node concept="2Ss9cW" id="4Lde1QSUC1K" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSU$lT" resolve="AT_SG_ALU_R_PWM_05" />
+          <ref role="2Ss9cX" node="4Lde1QSU$lT" />
         </node>
       </node>
     </node>
@@ -22429,7 +22429,7 @@
       <node concept="3N6GrK" id="4Lde1QSUC1P" role="3UVubv">
         <property role="TrG5h" value="DE_SG_ALU_R_PWM_06" />
         <node concept="2Ss9cW" id="4Lde1QSUC1Q" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSU$Ay" resolve="AT_SG_ALU_R_PWM_06" />
+          <ref role="2Ss9cX" node="4Lde1QSU$Ay" />
         </node>
       </node>
     </node>
@@ -22439,7 +22439,7 @@
       <node concept="3N6GrK" id="4Lde1QSUC1V" role="3UVubv">
         <property role="TrG5h" value="DE_SG_ALU_R_PWM_07" />
         <node concept="2Ss9cW" id="4Lde1QSUC1W" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSU$Rb" resolve="AT_SG_ALU_R_PWM_07" />
+          <ref role="2Ss9cX" node="4Lde1QSU$Rb" />
         </node>
       </node>
     </node>
@@ -22449,7 +22449,7 @@
       <node concept="3N6GrK" id="4Lde1QSUC21" role="3UVubv">
         <property role="TrG5h" value="DE_SG_ALU_R_PWM_08" />
         <node concept="2Ss9cW" id="4Lde1QSUC22" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSU_7O" resolve="AT_SG_ALU_R_PWM_08" />
+          <ref role="2Ss9cX" node="4Lde1QSU_7O" />
         </node>
       </node>
     </node>
@@ -22459,11 +22459,11 @@
       <node concept="3N6GrK" id="4Lde1QSUC27" role="3UVubv">
         <property role="TrG5h" value="DE_SG_ALU_R_PWM_09" />
         <node concept="2Ss9cW" id="4Lde1QSUC28" role="2S399n">
-          <ref role="2Ss9cX" node="4Lde1QSU_ot" resolve="AT_SG_ALU_R_PWM_09" />
+          <ref role="2Ss9cX" node="4Lde1QSU_ot" />
         </node>
       </node>
     </node>
-    <node concept="1vKqid" id="3k3sWXiQ_r2" role="3QPU1a" />
+    <node concept="1vKqid" id="4Lde1QSXiFQ" role="3QPU1a" />
   </node>
 </model>
 

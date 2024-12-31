@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:06fa685c-93ad-4629-a0a3-403776b01e83(com.applied.arche.lights.busnet)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="deb4d624-41e8-4a3c-96c6-a1223f64be20" name="com.cso.enabler.base">
+      <concept id="8029273007114094721" name="com.cso.enabler.base.structure.IImportConfig" flags="ngI" index="YLFR3">
+        <property id="4854939051747438649" name="importFilePath" index="iWWlx" />
+        <child id="1459364347922522207" name="model" index="1ByxhV" />
+      </concept>
+    </language>
+    <language id="31d29fe7-376c-46a3-8eae-da6946f08d18" name="tech.cariad.arche.busnet">
+      <concept id="429209544926572960" name="tech.cariad.arche.busnet.structure.EcuExtractImportItem" flags="ng" index="2uuIDI">
+        <property id="429209544926573819" name="ecuName" index="2uuIWP" />
+      </concept>
+      <concept id="4190506941800020920" name="tech.cariad.arche.busnet.structure.BusnetImport" flags="ng" index="14UX1$">
+        <child id="429209544926575278" name="importEcuExtracts" index="2uuI5w" />
+        <child id="6867668306510217854" name="busnetImportLdf" index="1FzHAe" />
+        <child id="7901100833384509130" name="hardwareModel" index="3LMRui" />
+        <child id="7901100833384543188" name="sharedSWModel" index="3LMYEc" />
+        <child id="8871663077242210553" name="importSWModel" index="3QTJ9D" />
+      </concept>
+      <concept id="6867668306510137496" name="tech.cariad.arche.busnet.structure.BusneImportLdf" flags="ng" index="1FW1dC" />
+    </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="9032177546942789331" name="jetbrains.mps.lang.modelapi.structure.ModelIdentity" flags="ngI" index="2$$0Hc" />
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+      </concept>
+      <concept id="679099339649067977" name="jetbrains.mps.lang.modelapi.structure.ModuleIdentity" flags="ngI" index="1j$8U9" />
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1678062499342629858" name="jetbrains.mps.lang.smodel.structure.ModuleRefExpression" flags="ng" index="37shsh">
+        <child id="1678062499342629861" name="moduleId" index="37shsm" />
+      </concept>
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="14UX1$" id="3k3sWXiNIeF">
+    <property role="TrG5h" value="BusnetImport" />
+    <property role="3GE5qa" value="" />
+    <property role="iWWlx" value="/home/vansh/Downloads" />
+    <node concept="1FW1dC" id="3k3sWXiNIeG" role="1FzHAe" />
+    <node concept="1Xw6AR" id="3k3sWXiNIeH" role="3LMRui">
+      <node concept="2$$0Hc" id="3k3sWXiNIfc" role="1XwpL7" />
+    </node>
+    <node concept="37shsh" id="3k3sWXiNIeJ" role="3LMYEc">
+      <node concept="1j$8U9" id="3k3sWXiNIeK" role="37shsm" />
+    </node>
+    <node concept="37shsh" id="3k3sWXiNIeL" role="3QTJ9D">
+      <node concept="1j$8U9" id="3k3sWXiNIeM" role="37shsm" />
+    </node>
+    <node concept="2uuIDI" id="3k3sWXiNIeW" role="2uuI5w">
+      <property role="2uuIWP" value="LSG_L" />
+    </node>
+    <node concept="1Xw6AR" id="3k3sWXiNIf2" role="1ByxhV">
+      <node concept="1dCxOl" id="3k3sWXiNIf7" role="1XwpL7">
+        <property role="1XweGQ" value="r:06fa685c-93ad-4629-a0a3-403776b01e83" />
+        <node concept="1j_P7g" id="3k3sWXiNIf8" role="1j$8Uc">
+          <property role="1j_P7h" value="com.applied.arche.lights.busnet" />
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+

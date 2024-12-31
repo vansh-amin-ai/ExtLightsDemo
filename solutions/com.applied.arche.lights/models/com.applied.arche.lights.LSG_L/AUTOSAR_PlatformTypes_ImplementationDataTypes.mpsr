@@ -44,7 +44,7 @@
   </registry>
   <node concept="3k1c1q" id="4Lde1QSQLBb">
     <property role="TrG5h" value="AUTOSAR_PlatformTypes_ImplementationDataTypes" />
-    <property role="3GE5qa" value="AUTOSAR_PlatformTypes" />
+    <property role="3GE5qa" value="LSG_L.AUTOSAR_PlatformTypes" />
     <node concept="1WbbD7" id="4Lde1QSQLBc" role="_iOnB">
       <property role="TrG5h" value="uint8" />
       <node concept="1NlkSN" id="4Lde1QSQLBd" role="1WbbD4">

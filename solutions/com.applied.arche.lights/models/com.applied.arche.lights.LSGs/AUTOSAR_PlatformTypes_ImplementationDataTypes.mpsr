@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:252ba9e8-5d0e-4c7b-a6df-be18e98501cd(com.applied.arche.lights.LSG_R)" content="root">
+<model ref="r:75e85213-a8f3-490b-a9c2-9fd81a541def(com.applied.arche.lights.LSGs)" content="root">
   <persistence version="9" />
   <imports />
   <registry>
@@ -42,73 +42,73 @@
       </concept>
     </language>
   </registry>
-  <node concept="3k1c1q" id="4Lde1QT5VbQ">
+  <node concept="3k1c1q" id="4Lde1QSQLBb">
     <property role="TrG5h" value="AUTOSAR_PlatformTypes_ImplementationDataTypes" />
-    <property role="3GE5qa" value="LSG_R.AUTOSAR_PlatformTypes" />
-    <node concept="1WbbD7" id="4Lde1QT5VbR" role="_iOnB">
+    <property role="3GE5qa" value="LSG_L.AUTOSAR_PlatformTypes" />
+    <node concept="1WbbD7" id="4Lde1QSQLBc" role="_iOnB">
       <property role="TrG5h" value="uint8" />
-      <node concept="1NlkSN" id="4Lde1QT5VbS" role="1WbbD4">
-        <node concept="1Nlkqp" id="4Lde1QT5VbT" role="2gteSx">
-          <node concept="30bXRB" id="4Lde1QT5VbU" role="1Nlo3e">
+      <node concept="1NlkSN" id="4Lde1QSQLBd" role="1WbbD4">
+        <node concept="1Nlkqp" id="4Lde1QSQLBe" role="2gteSx">
+          <node concept="30bXRB" id="4Lde1QSQLBf" role="1Nlo3e">
             <property role="30bXRw" value="0" />
           </node>
-          <node concept="30bXRB" id="4Lde1QT5VbV" role="1Nlo68">
+          <node concept="30bXRB" id="4Lde1QSQLBg" role="1Nlo68">
             <property role="30bXRw" value="255" />
           </node>
         </node>
-        <node concept="2gteS_" id="4Lde1QT5VbW" role="2gteVg">
+        <node concept="2gteS_" id="4Lde1QSQLBh" role="2gteVg">
           <property role="2gteVv" value="0" />
         </node>
       </node>
     </node>
-    <node concept="1WbbD7" id="4Lde1QT5Vc1" role="_iOnB">
+    <node concept="1WbbD7" id="4Lde1QSQLBm" role="_iOnB">
       <property role="TrG5h" value="boolean" />
-      <node concept="2vmvy5" id="4Lde1QT5Vc2" role="1WbbD4" />
+      <node concept="2vmvy5" id="4Lde1QSQLBn" role="1WbbD4" />
     </node>
-    <node concept="1WbbD7" id="4Lde1QT5Vc7" role="_iOnB">
+    <node concept="1WbbD7" id="4Lde1QSQLBs" role="_iOnB">
       <property role="TrG5h" value="uint16" />
-      <node concept="1NlkSN" id="4Lde1QT5Vc8" role="1WbbD4">
-        <node concept="1Nlkqp" id="4Lde1QT5Vc9" role="2gteSx">
-          <node concept="30bXRB" id="4Lde1QT5Vca" role="1Nlo3e">
+      <node concept="1NlkSN" id="4Lde1QSQLBt" role="1WbbD4">
+        <node concept="1Nlkqp" id="4Lde1QSQLBu" role="2gteSx">
+          <node concept="30bXRB" id="4Lde1QSQLBv" role="1Nlo3e">
             <property role="30bXRw" value="0" />
           </node>
-          <node concept="30bXRB" id="4Lde1QT5Vcb" role="1Nlo68">
+          <node concept="30bXRB" id="4Lde1QSQLBw" role="1Nlo68">
             <property role="30bXRw" value="65535" />
           </node>
         </node>
-        <node concept="2gteS_" id="4Lde1QT5Vcc" role="2gteVg">
+        <node concept="2gteS_" id="4Lde1QSQLBx" role="2gteVg">
           <property role="2gteVv" value="0" />
         </node>
       </node>
     </node>
-    <node concept="1WbbD7" id="4Lde1QT5WBW" role="_iOnB">
+    <node concept="1WbbD7" id="4Lde1QSQN3h" role="_iOnB">
       <property role="TrG5h" value="uint64" />
-      <node concept="1NlkSN" id="4Lde1QT5WBX" role="1WbbD4">
-        <node concept="1Nlkqp" id="4Lde1QT5WBY" role="2gteSx">
-          <node concept="30bXRB" id="4Lde1QT5WBZ" role="1Nlo3e">
+      <node concept="1NlkSN" id="4Lde1QSQN3i" role="1WbbD4">
+        <node concept="1Nlkqp" id="4Lde1QSQN3j" role="2gteSx">
+          <node concept="30bXRB" id="4Lde1QSQN3k" role="1Nlo3e">
             <property role="30bXRw" value="0" />
           </node>
-          <node concept="30bXRB" id="4Lde1QT5WC0" role="1Nlo68">
+          <node concept="30bXRB" id="4Lde1QSQN3l" role="1Nlo68">
             <property role="30bXRw" value="18446744073709551615" />
           </node>
         </node>
-        <node concept="2gteS_" id="4Lde1QT5WC1" role="2gteVg">
+        <node concept="2gteS_" id="4Lde1QSQN3m" role="2gteVg">
           <property role="2gteVv" value="0" />
         </node>
       </node>
     </node>
-    <node concept="1WbbD7" id="4Lde1QT5WC5" role="_iOnB">
+    <node concept="1WbbD7" id="4Lde1QSQN3q" role="_iOnB">
       <property role="TrG5h" value="uint32" />
-      <node concept="1NlkSN" id="4Lde1QT5WC6" role="1WbbD4">
-        <node concept="1Nlkqp" id="4Lde1QT5WC7" role="2gteSx">
-          <node concept="30bXRB" id="4Lde1QT5WC8" role="1Nlo3e">
+      <node concept="1NlkSN" id="4Lde1QSQN3r" role="1WbbD4">
+        <node concept="1Nlkqp" id="4Lde1QSQN3s" role="2gteSx">
+          <node concept="30bXRB" id="4Lde1QSQN3t" role="1Nlo3e">
             <property role="30bXRw" value="0" />
           </node>
-          <node concept="30bXRB" id="4Lde1QT5WC9" role="1Nlo68">
+          <node concept="30bXRB" id="4Lde1QSQN3u" role="1Nlo68">
             <property role="30bXRw" value="4294967295" />
           </node>
         </node>
-        <node concept="2gteS_" id="4Lde1QT5WCa" role="2gteVg">
+        <node concept="2gteS_" id="4Lde1QSQN3v" role="2gteVg">
           <property role="2gteVv" value="0" />
         </node>
       </node>

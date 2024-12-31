@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:75e85213-a8f3-490b-a9c2-9fd81a541def(com.applied.arche.lights.LSG_L)" content="root">
+<model ref="r:75e85213-a8f3-490b-a9c2-9fd81a541def(com.applied.arche.lights.LSGs)" content="root">
   <persistence version="9" />
   <imports />
   <registry>

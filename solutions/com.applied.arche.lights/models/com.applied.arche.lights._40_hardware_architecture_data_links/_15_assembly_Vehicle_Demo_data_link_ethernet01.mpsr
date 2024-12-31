@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:ed9a14fb-771f-4944-8884-da924a0141f8(com.applied.arche.lights._40_hardware_architecture_data_links)" content="root">
+  <persistence version="9" />
+  <imports>
+    <import index="jhet" ref="r:8d060444-61b3-4980-a082-01a119c43480(com.applied.arche.lights._40_hardware_architecture)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
+        <child id="5115872837156802411" name="expr" index="30czhm" />
+      </concept>
+      <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
+        <child id="9002563722476995147" name="target" index="1QScD9" />
+      </concept>
+    </language>
+    <language id="6d748e6b-551b-4de0-9fe5-a49087de00ac" name="com.cso.enabler.arch.components.physical">
+      <concept id="8423810621216895932" name="com.cso.enabler.arch.components.physical.structure.AbstractPhysicalComponentTab" flags="ng" index="20bd2s">
+        <reference id="7420287905160522779" name="component" index="1CK$ii" />
+        <reference id="7420287905160522778" name="physicalContainer" index="1CK$ij" />
+      </concept>
+      <concept id="8891390754656208678" name="com.cso.enabler.arch.components.physical.structure.PhysicalDataLinkContainer" flags="ng" index="p7lvI" />
+      <concept id="8891390754654153465" name="com.cso.enabler.arch.components.physical.structure.PhysicalDataLinkDefinition" flags="ng" index="pfJCL" />
+      <concept id="4402179648178721585" name="com.cso.enabler.arch.components.physical.structure.ConnectorDotTarget" flags="ng" index="3aczKx">
+        <reference id="4402179648178721588" name="connector" index="3aczK$" />
+      </concept>
+      <concept id="3504127219139839470" name="com.cso.enabler.arch.components.physical.structure.PhysicalConnectionParticipant" flags="ng" index="3geENd">
+        <child id="3504127219139839471" name="pathExpr" index="3geENc" />
+      </concept>
+      <concept id="3504127219139839451" name="com.cso.enabler.arch.components.physical.structure.PhysicalConnectionDefinition" flags="ng" index="3geENS">
+        <reference id="3504127219139839459" name="typeDefinition" index="3geEN0" />
+        <child id="3504127219139839465" name="participants" index="3geENa" />
+        <child id="3504127219139839455" name="connType" index="3geENW" />
+      </concept>
+      <concept id="1490101150325910245" name="com.cso.enabler.arch.components.physical.structure.EthernetType" flags="ng" index="3$f$RW" />
+      <concept id="9136736984935378803" name="com.cso.enabler.arch.components.physical.structure.PhysicalComponentInstanceRefExpr" flags="ng" index="1BWLEi">
+        <reference id="9136736984935378804" name="component" index="1BWLEl" />
+      </concept>
+      <concept id="7420287905160522777" name="com.cso.enabler.arch.components.physical.structure.PhysicalConnectionContainer" flags="ng" index="1CK$ig">
+        <child id="7420287905160522790" name="connectionDefinition" index="1CK$iJ" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="p7lvI" id="3k3sWXiLFR6">
+    <ref role="1CK$ij" to="jhet:3k3sWXiKjl9" resolve="_15_assembly" />
+    <ref role="1CK$ii" to="jhet:3k3sWXiKjla" resolve="Vehicle_Demo" />
+    <node concept="pfJCL" id="3k3sWXiLFZQ" role="1CK$iJ">
+      <property role="TrG5h" value="ethernet01" />
+      <ref role="3geEN0" to="jhet:4Lde1QTskXB" resolve="gbit_ethernet" />
+      <node concept="3$f$RW" id="3k3sWXiLFZP" role="3geENW" />
+      <node concept="3geENd" id="3k3sWXiLG25" role="3geENa">
+        <node concept="1QScDb" id="3k3sWXiLG2$" role="3geENc">
+          <node concept="3aczKx" id="3k3sWXiLG37" role="1QScD9">
+            <ref role="3aczK$" to="jhet:4Lde1QTstI8" resolve="eth" />
+          </node>
+          <node concept="1BWLEi" id="3k3sWXiLG2c" role="30czhm">
+            <ref role="1BWLEl" to="jhet:3k3sWXiLzD9" resolve="FrontExteriorZonal" />
+          </node>
+        </node>
+      </node>
+      <node concept="3geENd" id="3k3sWXiLG3F" role="3geENa">
+        <node concept="1QScDb" id="3k3sWXiLG5c" role="3geENc">
+          <node concept="3aczKx" id="3k3sWXiLG6f" role="1QScD9">
+            <ref role="3aczK$" to="jhet:4Lde1QTstNC" resolve="eth" />
+          </node>
+          <node concept="1BWLEi" id="3k3sWXiLG4k" role="30czhm">
+            <ref role="1BWLEl" to="jhet:3k3sWXiLzD_" resolve="RearZonal" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+
