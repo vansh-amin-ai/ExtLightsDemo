@@ -202,8 +202,6 @@
         <property role="TrG5h" value="12V_supply" />
         <node concept="2g4tRY" id="4Lde1QTstNV" role="2S2oia" />
       </node>
-      <node concept="cgfL2" id="3k3sWXiLzFg" role="3$f$R_" />
-      <node concept="cgfL2" id="3k3sWXiLzFh" role="3$f$R_" />
       <node concept="1t5WMz" id="3k3sWXiS5xo" role="uRJon">
         <property role="TrG5h" value="RearZonal" />
         <node concept="1t5aIm" id="3k3sWXiS5xp" role="1rEfZd">
@@ -326,6 +324,7 @@
         <property role="TrG5h" value="12V_supply" />
         <node concept="2g4tRY" id="3k3sWXiRLOF" role="2S2oia" />
       </node>
+      <node concept="cgfL2" id="3k3sWXiS75M" role="3$f$R_" />
     </node>
     <node concept="3$f$Kf" id="3k3sWXiRLOL" role="3$f$VV">
       <property role="TrG5h" value="SHL_Li3" />

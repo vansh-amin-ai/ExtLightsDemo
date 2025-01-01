@@ -2,7 +2,7 @@
 <model ref="r:aaf17285-4da7-4b12-af91-fe40fbfd40e8(com.applied.arche.lights._30_software_architecture)" content="root">
   <persistence version="9" />
   <imports>
-    <import index="a8fj" ref="r:75e85213-a8f3-490b-a9c2-9fd81a541def(com.applied.arche.lights.LSG_L)" implicit="true" />
+    <import index="a8fj" ref="r:75e85213-a8f3-490b-a9c2-9fd81a541def(com.applied.arche.lights.LSGs)" implicit="true" />
     <import index="ck06" ref="r:252ba9e8-5d0e-4c7b-a6df-be18e98501cd(com.applied.arche.lights.LSG_R)" implicit="true" />
   </imports>
   <registry>
@@ -13,6 +13,7 @@
         <child id="3477502398193314007" name="artefactTypes" index="2tCNFm" />
       </concept>
       <concept id="3477502398193313225" name="com.cso.enabler.components.software.targetPlatforms.structure.ClassicComposition" flags="ng" index="2tCNv8" />
+      <concept id="3477502398193313224" name="com.cso.enabler.components.software.targetPlatforms.structure.ClassicSWC" flags="ng" index="2tCNv9" />
     </language>
     <language id="75561194-ce68-4187-bf79-3f370a7dff18" name="com.cso.enabler.arch.asil">
       <concept id="1928346817465510308" name="com.cso.enabler.arch.asil.structure.ASILAttribute" flags="ng" index="2C2Vii">
@@ -67,6 +68,7 @@
         <child id="566142508885477956" name="attributes" index="2TxlRo" />
       </concept>
       <concept id="7323600774330499350" name="com.cso.enabler.arch.components.structure.IContainComponentBodyContent" flags="ngI" index="1376$c">
+        <child id="6653962634226481337" name="substructure" index="2_BitV" />
         <child id="8335226180467972466" name="realm" index="3EYflY" />
       </concept>
       <concept id="8686369551040074640" name="com.cso.enabler.arch.components.structure.AbstractComponentAspect" flags="ng" index="3H3RM5">
@@ -80,6 +82,9 @@
       <concept id="5578245729748776069" name="com.cso.enabler.arch.components.structure.ComponentArchitectureContainer" flags="ng" index="3UUxLE">
         <child id="2077607355813627051" name="realm" index="3QPU1a" />
         <child id="5578245729748776077" name="content" index="3UUxLy" />
+      </concept>
+      <concept id="5578245729748811615" name="com.cso.enabler.arch.components.structure.ComponentInstance" flags="ng" index="3UVpuK">
+        <reference id="5578245729748811625" name="component" index="3UVpu6" />
       </concept>
       <concept id="5578245729748789475" name="com.cso.enabler.arch.components.structure.Component" flags="ng" index="3UVs0c">
         <child id="8686369551040866854" name="aspects" index="3H0OkN" />
@@ -120,6 +125,15 @@
           </node>
         </node>
       </node>
+      <node concept="3UVpuK" id="3k3sWXiStog" role="2_BitV">
+        <ref role="3UVpu6" node="4Lde1QTtEte" resolve="FrontHazardsMaster" />
+      </node>
+      <node concept="3USqFc" id="3k3sWXiSIPU" role="u_$oX">
+        <ref role="1OsDsW" to="a8fj:4Lde1QSQRzu" resolve="IF_ALU_L_440_PWM" />
+      </node>
+      <node concept="3USqFc" id="3k3sWXiSNOL" role="u_$oX">
+        <ref role="1OsDsW" to="a8fj:4Lde1QSUBHC" resolve="IF_ALU_R_440_PWM" />
+      </node>
     </node>
     <node concept="28NA_B" id="4Lde1QTtEte" role="3UUxLy">
       <property role="3QutVU" value="false" />
@@ -128,9 +142,14 @@
         <ref role="1OsDsW" to="a8fj:4Lde1QSQRzu" resolve="IF_ALU_L_440_PWM" />
       </node>
       <node concept="3USqFc" id="4Lde1QTmlbj" role="u_$oX">
-        <ref role="1OsDsW" to="ck06:4Lde1QT610D" resolve="IF_ALU_R_400_PWM" />
+        <ref role="1OsDsW" to="ck06:4Lde1QT6189" resolve="IF_ALU_R_440_PWM" />
       </node>
       <node concept="1vKqid" id="4Lde1QTtEtf" role="3EYflY" />
+      <node concept="2tCwly" id="3k3sWXiStot" role="3H0OkN">
+        <node concept="2tCNv2" id="3k3sWXiSv2J" role="3H3S$n">
+          <node concept="2tCNv9" id="3k3sWXiSv2L" role="2tCNFm" />
+        </node>
+      </node>
     </node>
     <node concept="3UUxL_" id="5Q2iukducdJ" role="3UUxLy" />
     <node concept="3UUxL_" id="5Q2iukducdK" role="3UUxLy" />

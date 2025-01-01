@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:06fa685c-93ad-4629-a0a3-403776b01e83(com.applied.arche.lights.busnet)" content="root">
+<model ref="r:06fa685c-93ad-4629-a0a3-403776b01e83(com.applied.arche.lights.network_integration_package)" content="root">
   <persistence version="9" />
   <imports />
   <registry>

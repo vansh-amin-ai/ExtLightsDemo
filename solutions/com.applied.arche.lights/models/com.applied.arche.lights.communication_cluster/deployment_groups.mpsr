@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:fd31ced4-cf2a-4479-a6c9-876337d7e668(com.applied.arche.lights.communication_cluster)" content="root">
+  <persistence version="9" />
+  <imports>
+    <import index="5h6n" ref="r:aaf17285-4da7-4b12-af91-fe40fbfd40e8(com.applied.arche.lights._30_software_architecture)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="c03dde3c-99a9-453a-8db3-11164a8c5b79" name="tech.cariad.arche.attributes">
+      <concept id="246061880149704933" name="tech.cariad.arche.attributes.structure.IComponentAttribute" flags="ngI" index="3GvaWs" />
+    </language>
+    <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="7425695345928347719" name="org.iets3.core.expr.base.structure.Expression" flags="ng" index="2vmvVl" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="68b16187-1d03-4fff-975a-475207b3ad31" name="com.cso.enabler.arch.components">
+      <concept id="1787216701874669181" name="com.cso.enabler.arch.components.structure.AbstractComponent" flags="ng" index="jbZTy">
+        <child id="566142508885477956" name="attributes" index="2TxlRo" />
+      </concept>
+      <concept id="7323600774330499350" name="com.cso.enabler.arch.components.structure.IContainComponentBodyContent" flags="ngI" index="1376$c">
+        <child id="6653962634226481337" name="substructure" index="2_BitV" />
+        <child id="8335226180467972466" name="realm" index="3EYflY" />
+      </concept>
+      <concept id="5578245729748811680" name="com.cso.enabler.arch.components.structure.Connection" flags="ng" index="3UVptf">
+        <child id="5578245729748811685" name="target" index="3UVpta" />
+        <child id="5578245729748811683" name="source" index="3UVptc" />
+      </concept>
+      <concept id="5578245729748811615" name="com.cso.enabler.arch.components.structure.ComponentInstance" flags="ng" index="3UVpuK">
+        <reference id="5578245729748811625" name="component" index="3UVpu6" />
+      </concept>
+    </language>
+    <language id="12b01245-fdd7-4e58-a30d-74873dc45626" name="tech.cariad.arche.tca">
+      <concept id="8308017947761904514" name="tech.cariad.arche.tca.structure.DeploymentGroup" flags="ng" index="KDKBc">
+        <reference id="5779497127648065332" name="deploymentGroupInstanceRef" index="1DVD4K" />
+        <child id="1408386981570514998" name="platformType" index="1Xg0x9" />
+      </concept>
+      <concept id="8308017947761650715" name="tech.cariad.arche.tca.structure.TechnicalCommunicationArchitectureContainer" flags="ng" index="KEMTl">
+        <child id="8308017947761663779" name="content" index="KEPPH" />
+      </concept>
+      <concept id="8308017947761665225" name="tech.cariad.arche.tca.structure.EmptyTcaLine" flags="ng" index="KEQq7" />
+      <concept id="610657038910105066" name="tech.cariad.arche.tca.structure.DeploymentGroupRealm" flags="ng" index="1zFlyX" />
+      <concept id="1408386981570514996" name="tech.cariad.arche.tca.structure.ClassicType" flags="ng" index="1Xg0xb" />
+    </language>
+  </registry>
+  <node concept="KEMTl" id="3k3sWXiS7lm">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="deployment_groups" />
+    <node concept="KDKBc" id="3k3sWXiS7ln" role="KEPPH">
+      <property role="TrG5h" value="FrontExteriorZonal_Deployment_Group" />
+      <ref role="1DVD4K" node="3k3sWXiT2ay" resolve="FrontExteriorZonal_Deployment_Group" />
+      <node concept="1zFlyX" id="3k3sWXiS7lp" role="3EYflY" />
+      <node concept="1Xg0xb" id="3k3sWXiS7lq" role="1Xg0x9" />
+      <node concept="3UVptf" id="3k3sWXiSwL9" role="2_BitV">
+        <node concept="2vmvVl" id="3k3sWXiSwLb" role="3UVptc" />
+        <node concept="2vmvVl" id="3k3sWXiSwLd" role="3UVpta" />
+      </node>
+      <node concept="3UVpuK" id="3k3sWXiSwLj" role="2_BitV">
+        <ref role="3UVpu6" to="5h6n:4Lde1QTeovy" resolve="FrontDrivingLights_Root" />
+      </node>
+      <node concept="3GvaWs" id="3k3sWXiSYwG" role="2TxlRo" />
+    </node>
+    <node concept="KEQq7" id="3k3sWXiT2tO" role="KEPPH" />
+    <node concept="KDKBc" id="3k3sWXiT2tU" role="KEPPH">
+      <property role="TrG5h" value="RearZonal_Deployment_Group" />
+      <ref role="1DVD4K" node="3k3sWXiT2tM" resolve="RearZonal_Deployment_Group" />
+      <node concept="1zFlyX" id="3k3sWXiT2tW" role="3EYflY" />
+      <node concept="1Xg0xb" id="3k3sWXiT2tX" role="1Xg0x9" />
+      <node concept="3UVpuK" id="3k3sWXiT2tZ" role="2_BitV">
+        <ref role="3UVpu6" to="5h6n:4Lde1QTs575" resolve="RearDrivingLights_Root" />
+      </node>
+    </node>
+    <node concept="KEQq7" id="3k3sWXiSnRJ" role="KEPPH" />
+    <node concept="KEQq7" id="3k3sWXiSnRK" role="KEPPH" />
+  </node>
+</model>
+
