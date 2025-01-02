@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:06fa685c-93ad-4629-a0a3-403776b01e83(com.applied.arche.lights.network_integration_package)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
+    <language id="038665e7-51fb-4d2b-a09f-24cd1f7759c1" name="com.cso.enabler.arch.components.partition">
+      <concept id="7685461797107370821" name="com.cso.enabler.arch.components.partition.structure.NetworkDiagnosticContainer" flags="ng" index="2lKVmd">
+        <child id="7685461797107370826" name="rootNode" index="2lKVm2" />
+        <child id="732165408319241244" name="diagTester" index="1dAP2j" />
+      </concept>
+      <concept id="7685461797107370823" name="com.cso.enabler.arch.components.partition.structure.RootDiagnosticNode" flags="ng" index="2lKVmf" />
+      <concept id="9161481306388616722" name="com.cso.enabler.arch.components.partition.structure.DiagnosticTester" flags="ng" index="sycyB" />
+    </language>
+  </registry>
+  <node concept="2lKVmd" id="1CVjKIyYFLQ">
+    <property role="3GE5qa" value="01_CAN.Domain_CAN" />
+    <node concept="2lKVmf" id="1CVjKIyYFLR" role="2lKVm2" />
+    <node concept="sycyB" id="1CVjKIyYFLS" role="1dAP2j" />
+  </node>
+</model>
+

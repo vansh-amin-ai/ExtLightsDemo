@@ -9,6 +9,8 @@
     <import index="5h6n" ref="r:aaf17285-4da7-4b12-af91-fe40fbfd40e8(com.applied.arche.lights._30_software_architecture)" />
     <import index="jhet" ref="r:8d060444-61b3-4980-a082-01a119c43480(com.applied.arche.lights._40_hardware_architecture)" />
     <import index="xv0w" ref="r:00e1a04b-e834-4554-9609-05172aa1a658(com.applied.arche.lights._20_architecture)" />
+    <import index="a8fj" ref="r:75e85213-a8f3-490b-a9c2-9fd81a541def(com.applied.arche.lights.LSG_L)" />
+    <import index="ck06" ref="r:252ba9e8-5d0e-4c7b-a6df-be18e98501cd(com.applied.arche.lights.LSG_R)" />
   </imports>
 </model>
 

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:06fa685c-93ad-4629-a0a3-403776b01e83(com.applied.arche.lights.network_integration_package)" content="root">
+  <persistence version="9" />
+  <imports>
+    <import index="8sga" ref="r:4e74bcdd-25ab-4834-93c1-4bdb9b97db38(X_Global_Communication_Cluster)" implicit="true" />
+    <import index="a2sm" ref="r:fd31ced4-cf2a-4479-a6c9-876337d7e668(com.applied.arche.lights.communication_cluster)" implicit="true" />
+    <import index="95sw" ref="r:db6f37fb-7f1a-4e41-abac-86c1fe6c69db(hardware.physical)" implicit="true" />
+    <import index="4fxc" ref="r:1ccf471d-c7d9-4564-bd15-392af79541f3(Network_Integration_Package)" implicit="true" />
+    <import index="jhet" ref="r:8d060444-61b3-4980-a082-01a119c43480(com.applied.arche.lights._40_hardware_architecture)" implicit="true" />
+    <import index="l1hb" ref="r:e35ec4a2-6185-4ef3-bd42-ba83bdf3836d(hardware.physical_data_links)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="9d0c9fbf-b98e-4c9a-97d0-3687efba3509" name="com.cso.enabler.arch.signals">
+      <concept id="953840414739102329" name="com.cso.enabler.arch.signals.structure.ICyclicSendType" flags="ngI" index="2TOWaO">
+        <property id="953840414739102824" name="cyclePeriod" index="2TOWi_" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="038665e7-51fb-4d2b-a09f-24cd1f7759c1" name="com.cso.enabler.arch.components.partition">
+      <concept id="8371108168464143645" name="com.cso.enabler.arch.components.partition.structure.XcpChannelsConfig" flags="ng" index="21wjer">
+        <child id="8371108168464445794" name="entries" index="21Bpv$" />
+      </concept>
+      <concept id="8371108168464436377" name="com.cso.enabler.arch.components.partition.structure.XcpParticipantConfig" flags="ng" index="21BqCv">
+        <reference id="568014744204482511" name="deployGroupInst" index="1SBYAD" />
+        <child id="8371108168466016367" name="slaveChannels" index="21ToVD" />
+        <child id="8371108168466009024" name="masterChannels" index="21TqP6" />
+      </concept>
+      <concept id="8371108168465949204" name="com.cso.enabler.arch.components.partition.structure.CANXcpChannel" flags="ng" index="21T8ii">
+        <child id="8371108168495950886" name="xcpFrame" index="23J$Ew" />
+      </concept>
+      <concept id="1657546356624392840" name="com.cso.enabler.arch.components.partition.structure.AbstractDeployedBusFrame" flags="ng" index="elWGD">
+        <reference id="1169582023047084630" name="frame" index="Fn4FL" />
+      </concept>
+      <concept id="7953910939014088890" name="com.cso.enabler.arch.components.partition.structure.DeploymentGroupEndpoints" flags="ng" index="hpFXx">
+        <reference id="6203294230886088984" name="deploymentGroup_old" index="3r98o$" />
+        <child id="7953910939014107641" name="content" index="hpAoy" />
+      </concept>
+      <concept id="7953910939014043362" name="com.cso.enabler.arch.components.partition.structure.SignalsDeploymentContainer" flags="ng" index="hpQ4T">
+        <reference id="1473283127598292325" name="globalCommCluster_old" index="3QobDn" />
+        <child id="7953910939014069202" name="content" index="hpKK9" />
+      </concept>
+      <concept id="4126762293917251376" name="com.cso.enabler.arch.components.partition.structure.EmptyCommunicationDeploymentContent" flags="ng" index="wbcd1" />
+      <concept id="1227426438580410980" name="com.cso.enabler.arch.components.partition.structure.AbstractEndpointConnector" flags="ng" index="2EyEIN">
+        <child id="1829584013540446307" name="hardware" index="1$F2Mk" />
+      </concept>
+      <concept id="1693421027159086514" name="com.cso.enabler.arch.components.partition.structure.AbstractBusEndpointConnector" flags="ng" index="2HvEz1">
+        <child id="7440252332486696937" name="content" index="3ypgBU" />
+      </concept>
+      <concept id="1693421027159086521" name="com.cso.enabler.arch.components.partition.structure.IBusEndpointContent" flags="ngI" index="2HvEza">
+        <reference id="4024404700834264641" name="deployedFrame" index="3AuJy1" />
+      </concept>
+      <concept id="7978634107606336725" name="com.cso.enabler.arch.components.partition.structure.EndpointSoftwareRef" flags="ng" index="2I2cAB">
+        <reference id="7978634107606337166" name="deployGroupPort" index="2I2cJW" />
+      </concept>
+      <concept id="7886488966248153353" name="com.cso.enabler.arch.components.partition.structure.IXCPChannelDeployment" flags="ngI" index="13c2VB">
+        <child id="82891459250767484" name="xcpChannelsConfig" index="3eE3GF" />
+      </concept>
+      <concept id="3253295384698540343" name="com.cso.enabler.arch.components.partition.structure.XcpFrame" flags="ng" index="17utvt">
+        <property id="3253295384698542970" name="ID" index="17utQg" />
+      </concept>
+      <concept id="1829584013540469487" name="com.cso.enabler.arch.components.partition.structure.NodeConnectorRef" flags="ng" index="1$GXoo">
+        <reference id="6792786573914667203" name="connector" index="1FviI_" />
+      </concept>
+      <concept id="3763766854326023124" name="com.cso.enabler.arch.components.partition.structure.CANEndpointConnector" flags="ng" index="1PhAnn" />
+      <concept id="3763766854326023146" name="com.cso.enabler.arch.components.partition.structure.DeployedCANFrameRef" flags="ng" index="1PhAnD" />
+      <concept id="1114034913559260937" name="com.cso.enabler.arch.components.partition.structure.SoftwareEndpoint" flags="ng" index="3Pofvg">
+        <child id="1114034913559281569" name="softwarePorts" index="3PoatS" />
+      </concept>
+      <concept id="1114034913559192793" name="com.cso.enabler.arch.components.partition.structure.IEndpoint" flags="ngI" index="3PovK0">
+        <reference id="1247227122212198213" name="fromEndpoint" index="2OZXOK" />
+        <child id="1114034913559211056" name="connector" index="3PorjD" />
+      </concept>
+      <concept id="3763766854323429809" name="com.cso.enabler.arch.components.partition.structure.DeployedCANFrame" flags="ng" index="1PrvuM" />
+      <concept id="3763766854323349241" name="com.cso.enabler.arch.components.partition.structure.ICANBusDeploymentContent" flags="ngI" index="1PrF3U" />
+      <concept id="3763766854323335755" name="com.cso.enabler.arch.components.partition.structure.CANBusDeployment" flags="ng" index="1PrQh8">
+        <reference id="443603172208092572" name="bus" index="q_dGw" />
+        <child id="3763766854323349242" name="content" index="1PrF3T" />
+      </concept>
+    </language>
+    <language id="12b01245-fdd7-4e58-a30d-74873dc45626" name="tech.cariad.arche.tca">
+      <concept id="2954250270666939113" name="tech.cariad.arche.tca.structure.AbstractDeploymentGroupAspectTab" flags="ng" index="wiW0h">
+        <reference id="2954250270666945885" name="deploymentGroup" index="wiYY_" />
+      </concept>
+      <concept id="3263453360317905561" name="tech.cariad.arche.tca.structure.AbstractGlobalCommClusterAspectTab" flags="ng" index="17xUsj">
+        <reference id="1473283127598292325" name="globalCommCluster" index="3QobDo" />
+      </concept>
+    </language>
+    <language id="b7013840-a693-4f9b-bf31-f9d959786e96" name="com.cso.enabler.arch.components.vlans">
+      <concept id="1829584013540843920" name="com.cso.enabler.arch.components.vlans.structure.INetworkConnectorRef" flags="ngI" index="1$HxPB" />
+    </language>
+  </registry>
+  <node concept="hpQ4T" id="1NlPKYvkFQG">
+    <property role="TrG5h" value="CAN0_SignalsDeployment" />
+    <property role="3GE5qa" value="01_CAN.Domain_CAN" />
+    <ref role="3QobDn" to="8sga:5nkghVrve5Z" resolve="Sandbox_Global_Communication_Cluster" />
+    <ref role="3QobDo" to="a2sm:3k3sWXiT29F" resolve="Communication_Cluster" />
+    <node concept="hpFXx" id="1NlPKYvkGL1" role="hpKK9">
+      <ref role="wiYY_" to="8sga:5nkghVrveoC" resolve="ECU2_Gateway_Deployment_Group" />
+      <node concept="3Pofvg" id="3A0beLmNndc" role="hpAoy">
+        <property role="TrG5h" value="Tx_0x0102_can0_NM" />
+        <node concept="1PhAnn" id="3A0beLmNndd" role="3PorjD">
+          <node concept="1$GXoo" id="3A0beLmNnde" role="1$F2Mk">
+            <ref role="1FviI_" to="95sw:ebcPciyr7_" resolve="My_CAN0" />
+          </node>
+          <node concept="1PhAnD" id="3A0beLmNndf" role="3ypgBU">
+            <ref role="3AuJy1" node="3A0beLmNnda" resolve="NM_0x0102" />
+          </node>
+          <node concept="1PhAnD" id="3A0beLmNndv" role="3ypgBU">
+            <ref role="3AuJy1" node="3A0beLmNndt" resolve="KN_0x0102" />
+          </node>
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNndg" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:3f_Uk52hFsb" resolve="NM_0x0102_FCAB" />
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNndj" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:3f_Uk52hFH7" resolve="NM_0x0102_State" />
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNndw" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:3f_Uk52hHC5" resolve="KN_0x0102_BusKnockOut" />
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNndz" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:3f_Uk52hIY_" resolve="KN_0x0102_Nachlauftyp" />
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNndA" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:3f_Uk52hJ73" resolve="KN_0x0102_ECUKnockOut" />
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNndD" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:27G_hr8j22$" resolve="NM_0x0102_FCIB" />
+        </node>
+      </node>
+      <node concept="3Pofvg" id="3A0beLmNndQ" role="hpAoy">
+        <property role="TrG5h" value="Rx_0x0209_can0_NM" />
+        <ref role="2OZXOK" to="4fxc:3A0beLmNncB" resolve="Tx_0x0209_can0_NM" />
+        <node concept="2I2cAB" id="3A0beLmNndR" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:27G_hr8LeFF" resolve="NM_0x0209_BusKnockOut" />
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNndS" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:27G_hr8LeOl" resolve="NM_0x0209_ECUKnockOut" />
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNndT" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:27G_hr8LeWZ" resolve="NM_0x0209_Nachlauftyp" />
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNndU" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:3A0beLmLqjo" resolve="NM_0x0209_FCAB" />
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNndV" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:3A0beLmLqw6" resolve="NM_0x0209_State" />
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNndW" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:3A0beLmMOXR" resolve="NM_0x0209_FCIB" />
+        </node>
+        <node concept="1PhAnn" id="3A0beLmNndX" role="3PorjD">
+          <node concept="1$GXoo" id="3A0beLmNndY" role="1$F2Mk">
+            <ref role="1FviI_" to="95sw:ebcPciyr7_" resolve="My_CAN0" />
+          </node>
+          <node concept="1PhAnD" id="3A0beLmNndZ" role="3ypgBU">
+            <ref role="3AuJy1" node="3A0beLmNnc$" resolve="KN_0x0209" />
+          </node>
+          <node concept="1PhAnD" id="3A0beLmNne0" role="3ypgBU">
+            <ref role="3AuJy1" node="3A0beLmNncW" resolve="NM_0x0209" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Pofvg" id="3A0beLmNne1" role="hpAoy">
+        <property role="TrG5h" value="Rx_0x0104_can0_NM" />
+        <ref role="2OZXOK" to="4fxc:3A0beLmNncd" resolve="Tx_0x0104_can0_NM" />
+        <node concept="2I2cAB" id="3A0beLmNne2" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:3f_Uk52jGnb" resolve="KN_0x0104_Nachlauftyp" />
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNne3" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:3A0beLmMOg6" resolve="KN_0x0104_BusKnockOut" />
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNne4" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:3A0beLmMO$9" resolve="KN_0x0104_ECUKnockOut" />
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNne5" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:3A0beLmMOL0" resolve="NM_0x0104_FCIB" />
+        </node>
+        <node concept="1PhAnn" id="3A0beLmNne6" role="3PorjD">
+          <node concept="1$GXoo" id="3A0beLmNne7" role="1$F2Mk">
+            <ref role="1FviI_" to="95sw:ebcPciyr7_" resolve="My_CAN0" />
+          </node>
+          <node concept="1PhAnD" id="3A0beLmNne8" role="3ypgBU">
+            <ref role="3AuJy1" node="3A0beLmNncb" resolve="KN_0x0104" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="wbcd1" id="1CVjKIyYFFa" role="hpKK9" />
+    <node concept="wbcd1" id="1CVjKIyYFFb" role="hpKK9" />
+    <node concept="wbcd1" id="1NlPKYvkIRV" role="hpKK9" />
+    <node concept="hpFXx" id="16iQBk8M3g9" role="hpKK9">
+      <ref role="3r98o$" to="8sga:5nkghVrvepM" resolve="ECU4_Can_Deployment_Group" />
+      <ref role="wiYY_" to="8sga:5nkghVrvepM" resolve="ECU4_Can_Deployment_Group" />
+      <node concept="3Pofvg" id="4XBqqr8SFDT" role="hpAoy">
+        <ref role="2OZXOK" to="4fxc:4$PaPp3WoSk" resolve="RTx_[ECU2_Gateway]_can0_Tx_[ECU1_Ethernet]_VLAN0_udp_dynamic_192.168.3.12_77" />
+        <node concept="1PhAnn" id="4XBqqr8SFDR" role="3PorjD">
+          <node concept="1$GXoo" id="4XBqqr8SFDX" role="1$F2Mk">
+            <ref role="1FviI_" to="95sw:ebcPciyr7T" resolve="My_CAN0" />
+          </node>
+          <node concept="1PhAnD" id="4$PaPp3ZORQ" role="3ypgBU">
+            <ref role="3AuJy1" node="4XBqqr8UK7P" resolve="ETH_to_CAN_or_LIN_Dtg" />
+          </node>
+        </node>
+        <node concept="2I2cAB" id="4XBqqr8SO00" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:4XBqqr8SH48" resolve="CAN_Required_Interface" />
+        </node>
+      </node>
+      <node concept="3Pofvg" id="27l8u0o726h" role="hpAoy">
+        <ref role="2OZXOK" to="4fxc:6oDVfZ2I_wm" resolve="RTx_[ECU2_Gateway]_can0_LIN_To_CAN_And_ResponseError_Provided_Interface" />
+        <node concept="1PhAnn" id="27l8u0o726e" role="3PorjD">
+          <node concept="1$GXoo" id="27l8u0o726o" role="1$F2Mk">
+            <ref role="1FviI_" to="95sw:ebcPciyr7T" resolve="My_CAN0" />
+          </node>
+          <node concept="1PhAnD" id="1Sx2hm8_mF4" role="3ypgBU">
+            <ref role="3AuJy1" node="1Sx2hm8_lW$" resolve="LIN_to_CAN_Dtg" />
+          </node>
+        </node>
+        <node concept="2I2cAB" id="27l8u0o726i" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:27l8u0o40tQ" resolve="LIN_to_CAN_Interface" />
+        </node>
+      </node>
+      <node concept="3Pofvg" id="3A0beLmNncd" role="hpAoy">
+        <property role="TrG5h" value="Tx_0x0104_can0_NM" />
+        <node concept="1PhAnn" id="3A0beLmNnce" role="3PorjD">
+          <node concept="1$GXoo" id="3A0beLmNncf" role="1$F2Mk">
+            <ref role="1FviI_" to="95sw:ebcPciyr7T" resolve="My_CAN0" />
+          </node>
+          <node concept="1PhAnD" id="3A0beLmNncg" role="3ypgBU">
+            <ref role="3AuJy1" node="3A0beLmNncb" resolve="KN_0x0104" />
+          </node>
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNnch" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:3f_Uk52hJIX" resolve="KN_0x0104_Nachlauftyp" />
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNnck" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:3A0beLmM4$h" resolve="KN_0x0104_BusKnockOut" />
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNncn" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:3A0beLmM4KZ" resolve="KN_0x0104_ECUKnockOut" />
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNncq" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:3A0beLmM4XH" resolve="NM_0x0104_FCIB" />
+        </node>
+      </node>
+    </node>
+    <node concept="wbcd1" id="1NlPKYvkVFA" role="hpKK9" />
+    <node concept="hpFXx" id="3A0beLmNncA" role="hpKK9">
+      <ref role="wiYY_" to="8sga:27G_hr8fa2m" resolve="ECU5_NM_Active_Deployment_Group" />
+      <node concept="3Pofvg" id="3A0beLmNncB" role="hpAoy">
+        <property role="TrG5h" value="Tx_0x0209_can0_NM" />
+        <node concept="1PhAnn" id="3A0beLmNncC" role="3PorjD">
+          <node concept="1$GXoo" id="3A0beLmNncD" role="1$F2Mk">
+            <ref role="1FviI_" to="95sw:ebcPciyr7U" resolve="My_CAN0" />
+          </node>
+          <node concept="1PhAnD" id="3A0beLmNncE" role="3ypgBU">
+            <ref role="3AuJy1" node="3A0beLmNnc$" resolve="KN_0x0209" />
+          </node>
+          <node concept="1PhAnD" id="3A0beLmNncY" role="3ypgBU">
+            <ref role="3AuJy1" node="3A0beLmNncW" resolve="NM_0x0209" />
+          </node>
+        </node>
+        <node concept="2I2cAB" id="1CVjKIyYMpF" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:3f_Uk52jH35" resolve="KN_0x0102_Nachlauftyp" />
+        </node>
+      </node>
+      <node concept="3Pofvg" id="3A0beLmNndF" role="hpAoy">
+        <property role="TrG5h" value="Rx_0x0102_can0_NM" />
+        <ref role="2OZXOK" to="4fxc:3A0beLmNndc" resolve="Tx_0x0102_can0_NM" />
+        <node concept="2I2cAB" id="3A0beLmNndG" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:27G_hr8fzQF" resolve="NM_0x0102_FCAB" />
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNndH" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:3f_Uk52jH33" resolve="NM_0x0102_State" />
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNndI" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:3f_Uk52jH34" resolve="KN_0x0102_BusKnockOut" />
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNndJ" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:3f_Uk52jH35" resolve="KN_0x0102_Nachlauftyp" />
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNndK" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:3f_Uk52jH36" resolve="KN_0x0102_ECUKnockOut" />
+        </node>
+        <node concept="2I2cAB" id="3A0beLmNndL" role="3PoatS">
+          <ref role="2I2cJW" to="8sga:27G_hr8jrVb" resolve="NM_0x0102_FCIB" />
+        </node>
+        <node concept="1PhAnn" id="3A0beLmNndM" role="3PorjD">
+          <node concept="1$GXoo" id="3A0beLmNndN" role="1$F2Mk">
+            <ref role="1FviI_" to="95sw:ebcPciyr7U" resolve="My_CAN0" />
+          </node>
+          <node concept="1PhAnD" id="3A0beLmNndO" role="3ypgBU">
+            <ref role="3AuJy1" node="3A0beLmNnda" resolve="NM_0x0102" />
+          </node>
+          <node concept="1PhAnD" id="3A0beLmNndP" role="3ypgBU">
+            <ref role="3AuJy1" node="3A0beLmNndt" resolve="KN_0x0102" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Pofvg" id="1CVjKIyYBWC" role="hpAoy">
+        <node concept="1PhAnn" id="1CVjKIyYBW_" role="3PorjD">
+          <node concept="1$HxPB" id="1CVjKIyYBWB" role="1$F2Mk" />
+        </node>
+      </node>
+    </node>
+    <node concept="wbcd1" id="1CVjKIyYBMe" role="hpKK9" />
+    <node concept="wbcd1" id="1CVjKIyYBMf" role="hpKK9" />
+    <node concept="wbcd1" id="1CVjKIyYzLJ" role="hpKK9" />
+    <node concept="hpFXx" id="1CVjKIyYBSQ" role="hpKK9">
+      <ref role="wiYY_" to="a2sm:1CVjKIz9MUK" resolve="FrontExteriorZonal_Deployment_Group" />
+      <node concept="3Pofvg" id="1CVjKIyYBT8" role="hpAoy">
+        <property role="TrG5h" value="TX_0x0BD_can3" />
+        <node concept="1PhAnn" id="1CVjKIyYBT6" role="3PorjD">
+          <node concept="1$HxPB" id="1CVjKIyYBT7" role="1$F2Mk" />
+        </node>
+      </node>
+      <node concept="3Pofvg" id="1CVjKIyZ7JO" role="hpAoy">
+        <node concept="1PhAnn" id="1CVjKIyZ7JL" role="3PorjD">
+          <node concept="1$GXoo" id="1CVjKIyZ7JP" role="1$F2Mk">
+            <ref role="1FviI_" to="jhet:3k3sWXiS5uC" resolve="can3" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="wbcd1" id="1NlPKYvkMqK" role="hpKK9" />
+    <node concept="1PrQh8" id="16iQBk8M3g_" role="hpKK9">
+      <ref role="q_dGw" to="l1hb:5nkghVrvsLD" resolve="can0" />
+      <node concept="1PrvuM" id="4XBqqr8UK7P" role="1PrF3T">
+        <property role="2TOWi_" value="1" />
+        <ref role="Fn4FL" to="4fxc:16iQBk8MkfZ" resolve="ETH_to_CAN_or_LIN_Dtg" />
+      </node>
+      <node concept="1PrvuM" id="1Sx2hm8_lW$" role="1PrF3T">
+        <property role="2TOWi_" value="10" />
+        <ref role="Fn4FL" to="4fxc:1Sx2hm8_lWd" resolve="LIN_to_CAN_Dtg" />
+      </node>
+      <node concept="21wjer" id="4XBqqr8UEAV" role="3eE3GF">
+        <node concept="21BqCv" id="4XBqqr8UEAW" role="21Bpv$">
+          <ref role="1SBYAD" to="8sga:5nkghVrvetr" resolve="ECU4_Can" />
+          <node concept="21T8ii" id="4XBqqr8UEAY" role="21TqP6">
+            <node concept="17utvt" id="4XBqqr8UEAX" role="23J$Ew">
+              <property role="TrG5h" value="XCP_0xffffffff_00_Master_1" />
+              <property role="17utQg" value="cf90000" />
+            </node>
+          </node>
+          <node concept="21T8ii" id="4XBqqr8UEB0" role="21ToVD">
+            <node concept="17utvt" id="4XBqqr8UEAZ" role="23J$Ew">
+              <property role="TrG5h" value="XCP_0xffffffff_00_Slave_1" />
+              <property role="17utQg" value="cf90001" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1PrvuM" id="3A0beLmNncb" role="1PrF3T">
+        <property role="2TOWi_" value="10" />
+        <ref role="Fn4FL" to="4fxc:3A0beLmNnca" resolve="KN_0x0104" />
+      </node>
+      <node concept="1PrvuM" id="3A0beLmNnc$" role="1PrF3T">
+        <property role="2TOWi_" value="10" />
+        <ref role="Fn4FL" to="4fxc:3A0beLmNncz" resolve="KN_0x0209" />
+      </node>
+      <node concept="1PrvuM" id="3A0beLmNncW" role="1PrF3T">
+        <property role="2TOWi_" value="10" />
+        <ref role="Fn4FL" to="4fxc:3A0beLmNncV" resolve="NM_0x0209" />
+      </node>
+      <node concept="1PrvuM" id="3A0beLmNnda" role="1PrF3T">
+        <property role="2TOWi_" value="10" />
+        <ref role="Fn4FL" to="4fxc:3A0beLmNnd9" resolve="NM_0x0102" />
+      </node>
+      <node concept="1PrvuM" id="3A0beLmNndt" role="1PrF3T">
+        <property role="2TOWi_" value="10" />
+        <ref role="Fn4FL" to="4fxc:3A0beLmNnds" resolve="KN_0x0102" />
+      </node>
+      <node concept="1PrF3U" id="1CVjKIyYBLZ" role="1PrF3T" />
+    </node>
+    <node concept="wbcd1" id="1NlPKYvkMxu" role="hpKK9" />
+    <node concept="wbcd1" id="1NlPKYvkJ4R" role="hpKK9" />
+  </node>
+</model>
+

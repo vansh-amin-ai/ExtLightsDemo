@@ -7,6 +7,7 @@
   <imports>
     <import index="a8fj" ref="r:75e85213-a8f3-490b-a9c2-9fd81a541def(com.applied.arche.lights.LSG_L)" />
     <import index="ck06" ref="r:252ba9e8-5d0e-4c7b-a6df-be18e98501cd(com.applied.arche.lights.LSG_R)" />
+    <import index="xv0w" ref="r:00e1a04b-e834-4554-9609-05172aa1a658(com.applied.arche.lights._20_architecture)" />
     <import index="ot3b" ref="r:a008d86c-8388-43c3-a25e-3956913df3be(defaultmappingtargets)" implicit="true" />
   </imports>
 </model>

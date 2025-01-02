@@ -2,7 +2,8 @@
 <model ref="r:aaf17285-4da7-4b12-af91-fe40fbfd40e8(com.applied.arche.lights._30_software_architecture)" content="root">
   <persistence version="9" />
   <imports>
-    <import index="a8fj" ref="r:75e85213-a8f3-490b-a9c2-9fd81a541def(com.applied.arche.lights.LSGs)" implicit="true" />
+    <import index="xv0w" ref="r:00e1a04b-e834-4554-9609-05172aa1a658(com.applied.arche.lights._20_architecture)" implicit="true" />
+    <import index="a8fj" ref="r:75e85213-a8f3-490b-a9c2-9fd81a541def(com.applied.arche.lights.LSG_L)" implicit="true" />
     <import index="ck06" ref="r:252ba9e8-5d0e-4c7b-a6df-be18e98501cd(com.applied.arche.lights.LSG_R)" implicit="true" />
   </imports>
   <registry>
@@ -28,6 +29,14 @@
         <property id="979679354668861783" name="enumValue" index="2PiGLT" />
       </concept>
       <concept id="6558464822174431279" name="com.cso.enabler.arch.components.communication.structure.ShortName" flags="ng" index="2QBA4I" />
+    </language>
+    <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="5115872837156802409" name="org.iets3.core.expr.base.structure.UnaryExpression" flags="ng" index="30czhk">
+        <child id="5115872837156802411" name="expr" index="30czhm" />
+      </concept>
+      <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
+        <child id="9002563722476995147" name="target" index="1QScD9" />
+      </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -63,9 +72,17 @@
       </concept>
     </language>
     <language id="68b16187-1d03-4fff-975a-475207b3ad31" name="com.cso.enabler.arch.components">
+      <concept id="7097664987119465581" name="com.cso.enabler.arch.components.structure.EmptyComponentBodyContent" flags="ng" index="1x4Nu" />
+      <concept id="6618451414653823611" name="com.cso.enabler.arch.components.structure.PortRefExpr" flags="ng" index="26hxK5">
+        <reference id="6618451414653823612" name="port" index="26hxK2" />
+      </concept>
       <concept id="1787216701874669181" name="com.cso.enabler.arch.components.structure.AbstractComponent" flags="ng" index="jbZTy">
+        <child id="6134549382679482325" name="inPort" index="u$ofW" />
         <child id="6134549382679497236" name="outPort" index="u_$oX" />
         <child id="566142508885477956" name="attributes" index="2TxlRo" />
+      </concept>
+      <concept id="1086109833692492069" name="com.cso.enabler.arch.components.structure.PortDotTarget" flags="ng" index="2Bnx86">
+        <reference id="1086109833692492072" name="port" index="2Bnx8b" />
       </concept>
       <concept id="7323600774330499350" name="com.cso.enabler.arch.components.structure.IContainComponentBodyContent" flags="ngI" index="1376$c">
         <child id="6653962634226481337" name="substructure" index="2_BitV" />
@@ -73,6 +90,9 @@
       </concept>
       <concept id="8686369551040074640" name="com.cso.enabler.arch.components.structure.AbstractComponentAspect" flags="ng" index="3H3RM5">
         <child id="8686369551040095746" name="content" index="3H3S$n" />
+      </concept>
+      <concept id="7590737386882647183" name="com.cso.enabler.arch.components.structure.IRealizesComponent" flags="ngI" index="3Lfnfw">
+        <reference id="6819568523994678097" name="component" index="2WwbCx" />
       </concept>
       <concept id="902044997928754893" name="com.cso.enabler.arch.components.structure.AbstractComponentPort" flags="ng" index="1OsEJC">
         <reference id="902044997928755737" name="interface" index="1OsDsW" />
@@ -83,11 +103,18 @@
         <child id="2077607355813627051" name="realm" index="3QPU1a" />
         <child id="5578245729748776077" name="content" index="3UUxLy" />
       </concept>
+      <concept id="5578245729748811680" name="com.cso.enabler.arch.components.structure.Connection" flags="ng" index="3UVptf">
+        <child id="5578245729748811685" name="target" index="3UVpta" />
+        <child id="5578245729748811683" name="source" index="3UVptc" />
+      </concept>
       <concept id="5578245729748811615" name="com.cso.enabler.arch.components.structure.ComponentInstance" flags="ng" index="3UVpuK">
         <reference id="5578245729748811625" name="component" index="3UVpu6" />
       </concept>
       <concept id="5578245729748789475" name="com.cso.enabler.arch.components.structure.Component" flags="ng" index="3UVs0c">
         <child id="8686369551040866854" name="aspects" index="3H0OkN" />
+      </concept>
+      <concept id="3191043868456074086" name="com.cso.enabler.arch.components.structure.CompInstanceRefExpr" flags="ng" index="3YiYor">
+        <reference id="3191043868456083713" name="instance" index="3YiVLW" />
       </concept>
     </language>
   </registry>
@@ -99,6 +126,15 @@
       <property role="3QutVU" value="true" />
       <property role="3RPpit" value="true" />
       <property role="TrG5h" value="FrontDrivingLights_Root" />
+      <node concept="3UVpuK" id="1CVjKIz2Q6L" role="2_BitV">
+        <property role="TrG5h" value="" />
+        <ref role="3UVpu6" node="4Lde1QTtEte" resolve="FrontHazardsMaster" />
+      </node>
+      <node concept="3UVpuK" id="1CVjKIz3KuM" role="2_BitV">
+        <property role="TrG5h" value="" />
+        <ref role="3UVpu6" node="1CVjKIz3n$h" resolve="FrontLightControlMaster" />
+      </node>
+      <node concept="1x4Nu" id="1CVjKIz2TrX" role="2_BitV" />
       <node concept="1vKqid" id="4Lde1QTeovz" role="3EYflY" />
       <node concept="2QBA4I" id="4Lde1QTeov$" role="2TxlRo">
         <property role="TrG5h" value="front_ext_lights" />
@@ -110,6 +146,9 @@
       </node>
       <node concept="2C2Vii" id="4Lde1QTeovB" role="2TxlRo">
         <property role="2C2Vjz" value="AyQv_Ni6L7/Undefined" />
+      </node>
+      <node concept="2WwbCY" id="1CVjKIz7Cqj" role="2TxlRo">
+        <ref role="2WwbCx" to="xv0w:4Lde1QTr44Y" resolve="ExteriorLightControl" />
       </node>
       <node concept="2tCwly" id="4Lde1QTiXyA" role="3H0OkN">
         <node concept="2tCNv2" id="4Lde1QTiXyP" role="3H3S$n">
@@ -125,33 +164,122 @@
           </node>
         </node>
       </node>
-      <node concept="3UVpuK" id="3k3sWXiStog" role="2_BitV">
-        <ref role="3UVpu6" node="4Lde1QTtEte" resolve="FrontHazardsMaster" />
-      </node>
       <node concept="3USqFc" id="3k3sWXiSIPU" role="u_$oX">
         <ref role="1OsDsW" to="a8fj:4Lde1QSQRzu" resolve="IF_ALU_L_440_PWM" />
       </node>
-      <node concept="3USqFc" id="3k3sWXiSNOL" role="u_$oX">
-        <ref role="1OsDsW" to="a8fj:4Lde1QSUBHC" resolve="IF_ALU_R_440_PWM" />
+      <node concept="3USqFc" id="1CVjKIz6ENF" role="u_$oX">
+        <ref role="1OsDsW" to="ck06:4Lde1QT6189" resolve="IF_ALU_R_440_PWM" />
       </node>
+      <node concept="3USqFc" id="1CVjKIz1OuZ" role="u$ofW">
+        <property role="TrG5h" value="HazardStalkVal" />
+        <ref role="1OsDsW" node="4Lde1QTqjTN" resolve="ADT_StalkControl" />
+      </node>
+      <node concept="3UVptf" id="1CVjKIz29gb" role="2_BitV">
+        <node concept="26hxK5" id="1CVjKIz2aUC" role="3UVptc">
+          <ref role="26hxK2" node="1CVjKIz1OuZ" resolve="HazardStalkVal" />
+        </node>
+        <node concept="1QScDb" id="1CVjKIz3aev" role="3UVpta">
+          <node concept="2Bnx86" id="1CVjKIz3af0" role="1QScD9">
+            <ref role="2Bnx8b" node="1CVjKIz2Bal" resolve="ADT_StalkControl" />
+          </node>
+          <node concept="3YiYor" id="1CVjKIz3aeb" role="30czhm">
+            <ref role="3YiVLW" node="1CVjKIz2Q6L" resolve="FrontHazardsMaster" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UVptf" id="1CVjKIz3d$A" role="2_BitV">
+        <node concept="1QScDb" id="1CVjKIz3ff_" role="3UVptc">
+          <node concept="2Bnx86" id="1CVjKIz3fg5" role="1QScD9">
+            <ref role="2Bnx8b" node="1CVjKIz38zJ" resolve="ADT_HazardActivate" />
+          </node>
+          <node concept="3YiYor" id="1CVjKIz3ffl" role="30czhm">
+            <ref role="3YiVLW" node="1CVjKIz2Q6L" resolve="FrontHazardsMaster" />
+          </node>
+        </node>
+        <node concept="1QScDb" id="1CVjKIz3Ma3" role="3UVpta">
+          <node concept="2Bnx86" id="1CVjKIz3MaG" role="1QScD9">
+            <ref role="2Bnx8b" node="1CVjKIz3vRu" resolve="ADT_HazardActivate" />
+          </node>
+          <node concept="3YiYor" id="1CVjKIz3M9B" role="30czhm">
+            <ref role="3YiVLW" node="1CVjKIz3KuM" resolve="FrontLightControlMaster" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UVptf" id="1CVjKIz3NQ0" role="2_BitV">
+        <node concept="1QScDb" id="1CVjKIz3Pxl" role="3UVptc">
+          <node concept="2Bnx86" id="1CVjKIz3Py5" role="1QScD9">
+            <ref role="2Bnx8b" node="1CVjKIz3zc1" resolve="IF_ALU_L_440_PWM" />
+          </node>
+          <node concept="3YiYor" id="1CVjKIz3Px5" role="30czhm">
+            <ref role="3YiVLW" node="1CVjKIz3KuM" resolve="FrontLightControlMaster" />
+          </node>
+        </node>
+        <node concept="26hxK5" id="1CVjKIz3Pyk" role="3UVpta">
+          <ref role="26hxK2" node="3k3sWXiSIPU" resolve="IF_ALU_L_440_PWM" />
+        </node>
+      </node>
+      <node concept="3UVptf" id="1CVjKIz3RdM" role="2_BitV">
+        <node concept="1QScDb" id="1CVjKIz3STn" role="3UVptc">
+          <node concept="2Bnx86" id="1CVjKIz3STR" role="1QScD9">
+            <ref role="2Bnx8b" node="1CVjKIz6I9p" resolve="IF_ALU_R_440_PWM" />
+          </node>
+          <node concept="3YiYor" id="1CVjKIz3ST7" role="30czhm">
+            <ref role="3YiVLW" node="1CVjKIz3KuM" resolve="FrontLightControlMaster" />
+          </node>
+        </node>
+        <node concept="26hxK5" id="1CVjKIz3SU6" role="3UVpta">
+          <ref role="26hxK2" node="1CVjKIz6ENF" resolve="IF_ALU_R_440_PWM" />
+        </node>
+      </node>
+      <node concept="1x4Nu" id="1CVjKIz3fgB" role="2_BitV" />
     </node>
     <node concept="28NA_B" id="4Lde1QTtEte" role="3UUxLy">
       <property role="3QutVU" value="false" />
       <property role="TrG5h" value="FrontHazardsMaster" />
-      <node concept="3USqFc" id="4Lde1QTmaBj" role="u_$oX">
-        <ref role="1OsDsW" to="a8fj:4Lde1QSQRzu" resolve="IF_ALU_L_440_PWM" />
-      </node>
-      <node concept="3USqFc" id="4Lde1QTmlbj" role="u_$oX">
-        <ref role="1OsDsW" to="ck06:4Lde1QT6189" resolve="IF_ALU_R_440_PWM" />
-      </node>
       <node concept="1vKqid" id="4Lde1QTtEtf" role="3EYflY" />
       <node concept="2tCwly" id="3k3sWXiStot" role="3H0OkN">
         <node concept="2tCNv2" id="3k3sWXiSv2J" role="3H3S$n">
           <node concept="2tCNv9" id="3k3sWXiSv2L" role="2tCNFm" />
         </node>
       </node>
+      <node concept="3USqFc" id="1CVjKIz2Bal" role="u$ofW">
+        <ref role="1OsDsW" node="4Lde1QTqjTN" resolve="ADT_StalkControl" />
+      </node>
+      <node concept="3USqFc" id="1CVjKIz38zJ" role="u_$oX">
+        <ref role="1OsDsW" node="1CVjKIz2YqZ" resolve="ADT_HazardActivate" />
+      </node>
     </node>
-    <node concept="3UUxL_" id="5Q2iukducdJ" role="3UUxLy" />
+    <node concept="3UUxL_" id="1CVjKIz3gVt" role="3UUxLy" />
+    <node concept="28NA_B" id="1CVjKIz3n$h" role="3UUxLy">
+      <property role="TrG5h" value="FrontLightControlMaster" />
+      <node concept="1vKqid" id="1CVjKIz3n$i" role="3EYflY" />
+      <node concept="2tCwly" id="1CVjKIz3qSL" role="3H0OkN">
+        <node concept="2tCNv2" id="1CVjKIz3udg" role="3H3S$n">
+          <node concept="2tCNv9" id="1CVjKIz3udi" role="2tCNFm" />
+        </node>
+      </node>
+      <node concept="3USqFc" id="1CVjKIz3vRu" role="u$ofW">
+        <ref role="1OsDsW" node="1CVjKIz2YqZ" resolve="ADT_HazardActivate" />
+      </node>
+      <node concept="3USqFc" id="1CVjKIz3zc1" role="u_$oX">
+        <ref role="1OsDsW" to="a8fj:4Lde1QSQRzu" resolve="IF_ALU_L_440_PWM" />
+      </node>
+      <node concept="3USqFc" id="1CVjKIz6I9p" role="u_$oX">
+        <ref role="1OsDsW" to="ck06:4Lde1QT6189" resolve="IF_ALU_R_440_PWM" />
+      </node>
+    </node>
+    <node concept="28NA_B" id="1CVjKIz8id1" role="3UUxLy">
+      <property role="TrG5h" value="FrontHazardIntent" />
+      <node concept="1vKqid" id="1CVjKIz8id2" role="3EYflY" />
+      <node concept="3USqFc" id="1CVjKIz8oQ7" role="u_$oX">
+        <ref role="1OsDsW" node="4Lde1QTqjTN" resolve="ADT_StalkControl" />
+      </node>
+      <node concept="2tCwly" id="1CVjKIz8tOU" role="3H0OkN">
+        <node concept="2tCNv2" id="1CVjKIz8$tJ" role="3H3S$n">
+          <node concept="2tCNv9" id="1CVjKIz8$tL" role="2tCNFm" />
+        </node>
+      </node>
+    </node>
     <node concept="3UUxL_" id="5Q2iukducdK" role="3UUxLy" />
     <node concept="3UUxL_" id="4Lde1QTtCN2" role="3UUxLy" />
     <node concept="28NA_B" id="4Lde1QTs575" role="3UUxLy">

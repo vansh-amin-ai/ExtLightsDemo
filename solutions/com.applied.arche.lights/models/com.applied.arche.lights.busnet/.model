@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:06fa685c-93ad-4629-a0a3-403776b01e83(com.applied.arche.lights.network_integration_package)" content="header">
+  <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
+  <languages>
+    <devkit ref="0eef1ab3-92ca-4383-a28c-c4bef22da5e9(ArchDevKit)" />
+    <devkit ref="9fed6e70-7da7-4afd-a179-3005ac19876f(CoreDevKit)" />
+  </languages>
+  <imports>
+    <import index="8sga" ref="r:4e74bcdd-25ab-4834-93c1-4bdb9b97db38(X_Global_Communication_Cluster)" />
+    <import index="95sw" ref="r:db6f37fb-7f1a-4e41-abac-86c1fe6c69db(hardware.physical)" />
+    <import index="l1hb" ref="r:e35ec4a2-6185-4ef3-bd42-ba83bdf3836d(hardware.physical_data_links)" />
+    <import index="4fxc" ref="r:1ccf471d-c7d9-4564-bd15-392af79541f3(Network_Integration_Package)" />
+    <import index="a2sm" ref="r:fd31ced4-cf2a-4479-a6c9-876337d7e668(com.applied.arche.lights.communication_cluster)" />
+    <import index="jhet" ref="r:8d060444-61b3-4980-a082-01a119c43480(com.applied.arche.lights._40_hardware_architecture)" />
+  </imports>
+</model>
+

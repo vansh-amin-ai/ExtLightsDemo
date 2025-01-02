@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:06fa685c-93ad-4629-a0a3-403776b01e83(com.applied.arche.lights.network_integration_package)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="9d0c9fbf-b98e-4c9a-97d0-3687efba3509" name="com.cso.enabler.arch.signals">
+      <concept id="7628419713015202108" name="com.cso.enabler.arch.signals.structure.SignalContainer" flags="ng" index="2Y1_pN" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2Y1_pN" id="3k3sWXiT2HV">
+    <property role="3GE5qa" value="" />
+  </node>
+</model>
+
