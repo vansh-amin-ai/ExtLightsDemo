@@ -69,16 +69,17 @@
   <node concept="KEMTl" id="3k3sWXiS7lm">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="deployment_groups" />
+    <node concept="KEQq7" id="1CVjKIz9MUJ" role="KEPPH" />
     <node concept="KDKBc" id="1CVjKIz9MUK" role="KEPPH">
       <property role="TrG5h" value="FrontExteriorZonal_Deployment_Group" />
-      <node concept="1zFlyX" id="1CVjKIz9MUM" role="3EYflY" />
+      <ref role="1DVD4K" node="1CVjKIzd9p7" resolve="FrontExteriorZonal_Deployment_Group" />
       <node concept="1Xg0xb" id="1CVjKIz9MUN" role="1Xg0x9" />
       <node concept="3UVpuK" id="1CVjKIz9MUP" role="2_BitV">
         <ref role="3UVpu6" to="5h6n:4Lde1QTeovy" resolve="FrontDrivingLights_Root" />
       </node>
       <node concept="3UVptf" id="1CVjKIz9NPg" role="2_BitV">
         <node concept="26hxK5" id="1CVjKIzaUKH" role="3UVptc">
-          <ref role="26hxK2" node="1CVjKIzaTVt" resolve="ADT_StalkControl" />
+          <ref role="26hxK2" node="1CVjKIzaTVt" resolve="StalkControl" />
         </node>
         <node concept="1QScDb" id="1CVjKIzaUL8" role="3UVpta">
           <node concept="2Bnx86" id="1CVjKIzaULD" role="1QScD9">
@@ -99,7 +100,7 @@
           </node>
         </node>
         <node concept="26hxK5" id="1CVjKIzbnUe" role="3UVpta">
-          <ref role="26hxK2" node="1CVjKIzb3TU" resolve="LeftHazardSignal" />
+          <ref role="26hxK2" node="1CVjKIzb3TU" resolve="LeftHazardOutSignal" />
         </node>
       </node>
       <node concept="3UVptf" id="1CVjKIzbqqA" role="2_BitV">
@@ -116,6 +117,7 @@
         </node>
       </node>
       <node concept="3USqFc" id="1CVjKIzaTVt" role="u$ofW">
+        <property role="TrG5h" value="StalkControl" />
         <ref role="1OsDsW" to="5h6n:4Lde1QTqjTN" resolve="ADT_StalkControl" />
       </node>
       <node concept="3USqFc" id="1CVjKIzb3TU" role="u_$oX">
@@ -126,19 +128,19 @@
         <property role="TrG5h" value="RightHazardOutSignal" />
         <ref role="1OsDsW" to="ck06:4Lde1QT6189" resolve="IF_ALU_R_440_PWM" />
       </node>
+      <node concept="1zFlyX" id="1CVjKIzd4nA" role="3EYflY" />
     </node>
-    <node concept="KEQq7" id="1CVjKIz9MUJ" role="KEPPH" />
+    <node concept="KEQq7" id="1CVjKIzdbU7" role="KEPPH" />
     <node concept="KDKBc" id="3k3sWXiT2tU" role="KEPPH">
       <property role="TrG5h" value="RearZonal_Deployment_Group" />
-      <ref role="1DVD4K" node="3k3sWXiT2tM" resolve="RearZonal_Deployment_Group" />
-      <node concept="1zFlyX" id="3k3sWXiT2tW" role="3EYflY" />
+      <ref role="1DVD4K" node="3k3sWXiT2tM" resolve="RearZonal" />
       <node concept="1Xg0xb" id="3k3sWXiT2tX" role="1Xg0x9" />
       <node concept="3UVpuK" id="3k3sWXiT2tZ" role="2_BitV">
         <ref role="3UVpu6" to="5h6n:4Lde1QTs575" resolve="RearDrivingLights_Root" />
       </node>
+      <node concept="1zFlyX" id="1CVjKIzdcJe" role="3EYflY" />
     </node>
-    <node concept="KEQq7" id="3k3sWXiSnRJ" role="KEPPH" />
-    <node concept="KEQq7" id="3k3sWXiSnRK" role="KEPPH" />
+    <node concept="KEQq7" id="1CVjKIzdbU8" role="KEPPH" />
   </node>
 </model>
 

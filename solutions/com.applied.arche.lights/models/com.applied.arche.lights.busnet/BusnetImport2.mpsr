@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:06fa685c-93ad-4629-a0a3-403776b01e83(com.applied.arche.lights.network_integration_package)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="31d29fe7-376c-46a3-8eae-da6946f08d18" name="tech.cariad.arche.busnet">
+      <concept id="4190506941800020920" name="tech.cariad.arche.busnet.structure.BusnetImport" flags="ng" index="14UX1$">
+        <child id="6867668306510217854" name="busnetImportLdf" index="1FzHAe" />
+        <child id="7901100833384509130" name="hardwareModel" index="3LMRui" />
+        <child id="7901100833384543188" name="sharedSWModel" index="3LMYEc" />
+        <child id="8871663077242210553" name="importSWModel" index="3QTJ9D" />
+      </concept>
+      <concept id="6867668306510137496" name="tech.cariad.arche.busnet.structure.BusneImportLdf" flags="ng" index="1FW1dC" />
+    </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="9032177546942789331" name="jetbrains.mps.lang.modelapi.structure.ModelIdentity" flags="ngI" index="2$$0Hc" />
+      <concept id="679099339649067977" name="jetbrains.mps.lang.modelapi.structure.ModuleIdentity" flags="ngI" index="1j$8U9" />
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1678062499342629858" name="jetbrains.mps.lang.smodel.structure.ModuleRefExpression" flags="ng" index="37shsh">
+        <child id="1678062499342629861" name="moduleId" index="37shsm" />
+      </concept>
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="14UX1$" id="1CVjKIzeRQG">
+    <property role="TrG5h" value="BusnetImport" />
+    <property role="3GE5qa" value="01_CAN" />
+    <node concept="1FW1dC" id="1CVjKIzeRQH" role="1FzHAe" />
+    <node concept="1Xw6AR" id="1CVjKIzeRQI" role="3LMRui">
+      <node concept="2$$0Hc" id="1CVjKIzeRQJ" role="1XwpL7" />
+    </node>
+    <node concept="37shsh" id="1CVjKIzeRQK" role="3LMYEc">
+      <node concept="1j$8U9" id="1CVjKIzeRQL" role="37shsm" />
+    </node>
+    <node concept="37shsh" id="1CVjKIzeRQM" role="3QTJ9D">
+      <node concept="1j$8U9" id="1CVjKIzeRQN" role="37shsm" />
+    </node>
+  </node>
+</model>
+

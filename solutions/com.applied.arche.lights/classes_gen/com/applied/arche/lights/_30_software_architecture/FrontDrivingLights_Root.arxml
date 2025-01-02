@@ -18,7 +18,7 @@
         <SD GID="DownstreamTechnology">Code Centric Dev</SD>
         <SD GID="TargetComputeNode">FrontExteriorZonal</SD>
         <SD GID="Kind">Components</SD>
-        <SD GID="Contents">DrivingLights_Root</SD>
+        <SD GID="Contents">FrontDrivingLights_Root</SD>
       </SDG>
     </SDGS>
   </ADMIN-DATA>
@@ -490,6 +490,36 @@
                       <SHORT-NAME>ConstantSpecifications</SHORT-NAME>
                       <ELEMENTS>
                         <CONSTANT-SPECIFICATION>
+                          <SHORT-NAME>C_INIT_ADT_HazardActivate_hazard_activation</SHORT-NAME>
+                          <VALUE-SPEC>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>hazard_activation</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <UNIT-REF DEST="UNIT">/VW/Global/Units/Unit_nounit</UNIT-REF>
+                                <SW-VALUES-PHYS>
+                                  <VT>ADT_Hazard_Activation_ON</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </VALUE-SPEC>
+                        </CONSTANT-SPECIFICATION>
+                        <CONSTANT-SPECIFICATION>
+                          <SHORT-NAME>C_INIT_ADT_StalkControl_hazard_triggered</SHORT-NAME>
+                          <VALUE-SPEC>
+                            <APPLICATION-VALUE-SPECIFICATION>
+                              <SHORT-LABEL>hazard_triggered</SHORT-LABEL>
+                              <CATEGORY>VALUE</CATEGORY>
+                              <SW-VALUE-CONT>
+                                <UNIT-REF DEST="UNIT">/VW/Global/Units/Unit_nounit</UNIT-REF>
+                                <SW-VALUES-PHYS>
+                                  <VT>ADT_Hazard_Stalk_ON</VT>
+                                </SW-VALUES-PHYS>
+                              </SW-VALUE-CONT>
+                            </APPLICATION-VALUE-SPECIFICATION>
+                          </VALUE-SPEC>
+                        </CONSTANT-SPECIFICATION>
+                        <CONSTANT-SPECIFICATION>
                           <SHORT-NAME>C_INIT_IF_ALU_L_440_PWM_DE_ALU_L_440_PWM</SHORT-NAME>
                           <VALUE-SPEC>
                             <APPLICATION-VALUE-SPECIFICATION>
@@ -505,10 +535,10 @@
                           </VALUE-SPEC>
                         </CONSTANT-SPECIFICATION>
                         <CONSTANT-SPECIFICATION>
-                          <SHORT-NAME>C_INIT_IF_ALU_R_400_PWM_DE_ALU_R_400_PWM</SHORT-NAME>
+                          <SHORT-NAME>C_INIT_IF_ALU_R_440_PWM_DE_ALU_R_440_PWM</SHORT-NAME>
                           <VALUE-SPEC>
                             <APPLICATION-VALUE-SPECIFICATION>
-                              <SHORT-LABEL>DE_ALU_R_400_PWM</SHORT-LABEL>
+                              <SHORT-LABEL>DE_ALU_R_440_PWM</SHORT-LABEL>
                               <CATEGORY>VALUE</CATEGORY>
                               <SW-VALUE-CONT>
                                 <UNIT-REF DEST="UNIT">/VW/Global/Units/Unit_nounit</UNIT-REF>
@@ -522,8 +552,55 @@
                       </ELEMENTS>
                     </AR-PACKAGE>
                     <AR-PACKAGE>
+                      <SHORT-NAME>DataTypeMappingSets</SHORT-NAME>
+                      <ELEMENTS>
+                        <DATA-TYPE-MAPPING-SET>
+                          <SHORT-NAME>DTMS_FrontHazardsMaster</SHORT-NAME>
+                          <DATA-TYPE-MAPS></DATA-TYPE-MAPS>
+                        </DATA-TYPE-MAPPING-SET>
+                        <DATA-TYPE-MAPPING-SET>
+                          <SHORT-NAME>DTMS_FrontLightControlMaster</SHORT-NAME>
+                          <DATA-TYPE-MAPS></DATA-TYPE-MAPS>
+                        </DATA-TYPE-MAPPING-SET>
+                      </ELEMENTS>
+                    </AR-PACKAGE>
+                    <AR-PACKAGE>
                       <SHORT-NAME>PortInterfaces</SHORT-NAME>
                       <ELEMENTS>
+                        <SENDER-RECEIVER-INTERFACE>
+                          <SHORT-NAME>ADT_HazardActivate</SHORT-NAME>
+                          <IS-SERVICE>false</IS-SERVICE>
+                          <DATA-ELEMENTS>
+                            <VARIABLE-DATA-PROTOTYPE>
+                              <SHORT-NAME>hazard_activation</SHORT-NAME>
+                              <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                              </SW-DATA-DEF-PROPS>
+                            </VARIABLE-DATA-PROTOTYPE>
+                          </DATA-ELEMENTS>
+                          <INVALIDATION-POLICYS></INVALIDATION-POLICYS>
+                        </SENDER-RECEIVER-INTERFACE>
+                        <SENDER-RECEIVER-INTERFACE>
+                          <SHORT-NAME>ADT_StalkControl</SHORT-NAME>
+                          <IS-SERVICE>false</IS-SERVICE>
+                          <DATA-ELEMENTS>
+                            <VARIABLE-DATA-PROTOTYPE>
+                              <SHORT-NAME>hazard_triggered</SHORT-NAME>
+                              <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                    <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                              </SW-DATA-DEF-PROPS>
+                            </VARIABLE-DATA-PROTOTYPE>
+                          </DATA-ELEMENTS>
+                          <INVALIDATION-POLICYS></INVALIDATION-POLICYS>
+                        </SENDER-RECEIVER-INTERFACE>
                         <SENDER-RECEIVER-INTERFACE>
                           <SHORT-NAME>IF_ALU_L_440_PWM</SHORT-NAME>
                           <IS-SERVICE>false</IS-SERVICE>
@@ -542,11 +619,11 @@
                           <INVALIDATION-POLICYS></INVALIDATION-POLICYS>
                         </SENDER-RECEIVER-INTERFACE>
                         <SENDER-RECEIVER-INTERFACE>
-                          <SHORT-NAME>IF_ALU_R_400_PWM</SHORT-NAME>
+                          <SHORT-NAME>IF_ALU_R_440_PWM</SHORT-NAME>
                           <IS-SERVICE>false</IS-SERVICE>
                           <DATA-ELEMENTS>
                             <VARIABLE-DATA-PROTOTYPE>
-                              <SHORT-NAME>DE_ALU_R_400_PWM</SHORT-NAME>
+                              <SHORT-NAME>DE_ALU_R_440_PWM</SHORT-NAME>
                               <SW-DATA-DEF-PROPS>
                                 <SW-DATA-DEF-PROPS-VARIANTS>
                                   <SW-DATA-DEF-PROPS-CONDITIONAL>
@@ -564,7 +641,7 @@
                       <SHORT-NAME>SwComponentTypes</SHORT-NAME>
                       <ELEMENTS>
                         <COMPOSITION-SW-COMPONENT-TYPE>
-                          <SHORT-NAME>DrivingLights_Root</SHORT-NAME>
+                          <SHORT-NAME>FrontDrivingLights_Root</SHORT-NAME>
                           <ADMIN-DATA>
                             <SDGS>
                               <SDG GID="BaselineInfo">
@@ -597,23 +674,232 @@
                               <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/com/applied/arche/lights/PortInterfaces/IF_ALU_L_440_PWM</PROVIDED-INTERFACE-TREF>
                             </P-PORT-PROTOTYPE>
                             <P-PORT-PROTOTYPE>
-                              <SHORT-NAME>PP_IF_ALU_R_400_PWM</SHORT-NAME>
+                              <SHORT-NAME>PP_IF_ALU_R_440_PWM</SHORT-NAME>
                               <PROVIDED-COM-SPECS>
                                 <NONQUEUED-SENDER-COM-SPEC>
-                                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/com/applied/arche/lights/PortInterfaces/IF_ALU_R_400_PWM/DE_ALU_R_400_PWM</DATA-ELEMENT-REF>
+                                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/com/applied/arche/lights/PortInterfaces/IF_ALU_R_440_PWM/DE_ALU_R_440_PWM</DATA-ELEMENT-REF>
                                   <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
                                   <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
                                   <INIT-VALUE>
                                     <CONSTANT-REFERENCE>
-                                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/com/applied/arche/lights/ConstantSpecifications/C_INIT_IF_ALU_R_400_PWM_DE_ALU_R_400_PWM</CONSTANT-REF>
+                                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/com/applied/arche/lights/ConstantSpecifications/C_INIT_IF_ALU_R_440_PWM_DE_ALU_R_440_PWM</CONSTANT-REF>
                                     </CONSTANT-REFERENCE>
                                   </INIT-VALUE>
                                 </NONQUEUED-SENDER-COM-SPEC>
                               </PROVIDED-COM-SPECS>
-                              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/com/applied/arche/lights/PortInterfaces/IF_ALU_R_400_PWM</PROVIDED-INTERFACE-TREF>
+                              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/com/applied/arche/lights/PortInterfaces/IF_ALU_R_440_PWM</PROVIDED-INTERFACE-TREF>
                             </P-PORT-PROTOTYPE>
+                            <R-PORT-PROTOTYPE>
+                              <SHORT-NAME>RP_HazardStalkVal</SHORT-NAME>
+                              <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/com/applied/arche/lights/PortInterfaces/ADT_StalkControl/hazard_triggered</DATA-ELEMENT-REF>
+                                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                  <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                  <INIT-VALUE>
+                                    <CONSTANT-REFERENCE>
+                                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/com/applied/arche/lights/ConstantSpecifications/C_INIT_ADT_StalkControl_hazard_triggered</CONSTANT-REF>
+                                    </CONSTANT-REFERENCE>
+                                  </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                              </REQUIRED-COM-SPECS>
+                              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/com/applied/arche/lights/PortInterfaces/ADT_StalkControl</REQUIRED-INTERFACE-TREF>
+                            </R-PORT-PROTOTYPE>
                           </PORTS>
+                          <COMPONENTS>
+                            <SW-COMPONENT-PROTOTYPE>
+                              <SHORT-NAME>I_FrontHazardsMaster</SHORT-NAME>
+                              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/com/applied/arche/lights/SwComponentTypes/FrontHazardsMaster</TYPE-TREF>
+                            </SW-COMPONENT-PROTOTYPE>
+                            <SW-COMPONENT-PROTOTYPE>
+                              <SHORT-NAME>I_FrontLightControlMaster</SHORT-NAME>
+                              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/com/applied/arche/lights/SwComponentTypes/FrontLightControlMaster</TYPE-TREF>
+                            </SW-COMPONENT-PROTOTYPE>
+                          </COMPONENTS>
+                          <CONNECTORS>
+                            <DELEGATION-SW-CONNECTOR>
+                              <SHORT-NAME>DCon_RP_HazardStalkVal_I_FrontHazardsMaster_RP_ADT_StalkControl</SHORT-NAME>
+                              <INNER-PORT-IREF>
+                                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/com/applied/arche/lights/SwComponentTypes/FrontDrivingLights_Root/I_FrontHazardsMaster</CONTEXT-COMPONENT-REF>
+                                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/com/applied/arche/lights/SwComponentTypes/FrontHazardsMaster/RP_ADT_StalkControl</TARGET-R-PORT-REF>
+                                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                              </INNER-PORT-IREF>
+                              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/com/applied/arche/lights/SwComponentTypes/FrontDrivingLights_Root/RP_HazardStalkVal</OUTER-PORT-REF>
+                            </DELEGATION-SW-CONNECTOR>
+                            <ASSEMBLY-SW-CONNECTOR>
+                              <SHORT-NAME>ACon_I_FrontHazardsMaster_PP_ADT_HazardActivate_I_FrontLightControlMaster_RP_ADT_HazardActivate</SHORT-NAME>
+                              <PROVIDER-IREF>
+                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/com/applied/arche/lights/SwComponentTypes/FrontDrivingLights_Root/I_FrontHazardsMaster</CONTEXT-COMPONENT-REF>
+                                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/com/applied/arche/lights/SwComponentTypes/FrontHazardsMaster/PP_ADT_HazardActivate</TARGET-P-PORT-REF>
+                              </PROVIDER-IREF>
+                              <REQUESTER-IREF>
+                                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/com/applied/arche/lights/SwComponentTypes/FrontDrivingLights_Root/I_FrontLightControlMaster</CONTEXT-COMPONENT-REF>
+                                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/com/applied/arche/lights/SwComponentTypes/FrontLightControlMaster/RP_ADT_HazardActivate</TARGET-R-PORT-REF>
+                              </REQUESTER-IREF>
+                            </ASSEMBLY-SW-CONNECTOR>
+                            <DELEGATION-SW-CONNECTOR>
+                              <SHORT-NAME>DCon_PP_IF_ALU_L_440_PWM_I_FrontLightControlMaster_PP_IF_ALU_L_440_PWM</SHORT-NAME>
+                              <INNER-PORT-IREF>
+                                <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/com/applied/arche/lights/SwComponentTypes/FrontDrivingLights_Root/I_FrontLightControlMaster</CONTEXT-COMPONENT-REF>
+                                  <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/com/applied/arche/lights/SwComponentTypes/FrontLightControlMaster/PP_IF_ALU_L_440_PWM</TARGET-P-PORT-REF>
+                                </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                              </INNER-PORT-IREF>
+                              <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/com/applied/arche/lights/SwComponentTypes/FrontDrivingLights_Root/PP_IF_ALU_L_440_PWM</OUTER-PORT-REF>
+                            </DELEGATION-SW-CONNECTOR>
+                            <DELEGATION-SW-CONNECTOR>
+                              <SHORT-NAME>DCon_PP_IF_ALU_R_440_PWM_I_FrontLightControlMaster_PP_IF_ALU_R_440_PWM</SHORT-NAME>
+                              <INNER-PORT-IREF>
+                                <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/com/applied/arche/lights/SwComponentTypes/FrontDrivingLights_Root/I_FrontLightControlMaster</CONTEXT-COMPONENT-REF>
+                                  <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/com/applied/arche/lights/SwComponentTypes/FrontLightControlMaster/PP_IF_ALU_R_440_PWM</TARGET-P-PORT-REF>
+                                </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                              </INNER-PORT-IREF>
+                              <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/com/applied/arche/lights/SwComponentTypes/FrontDrivingLights_Root/PP_IF_ALU_R_440_PWM</OUTER-PORT-REF>
+                            </DELEGATION-SW-CONNECTOR>
+                          </CONNECTORS>
                         </COMPOSITION-SW-COMPONENT-TYPE>
+                        <APPLICATION-SW-COMPONENT-TYPE>
+                          <SHORT-NAME>FrontHazardsMaster</SHORT-NAME>
+                          <ADMIN-DATA>
+                            <SDGS>
+                              <SDG GID="BaselineInfo">
+                                <SD GID="ArchEVersion">0.54.0.162.8e2ca25</SD>
+                                <SD GID="SWCVersion">-</SD>
+                                <SD GID="Repository">ARCHE_LOCAL</SD>
+                                <SD GID="Branch">ARCHE_LOCAL</SD>
+                                <SD GID="BuildEnvironment">ARCHE</SD>
+                              </SDG>
+                              <SDG GID="ExportInfo">
+                                <SD GID="SoftwareComponentItem">http://127.0.0.1:63320/node?ref=r%3Aaaf17285-4da7-4b12-af91-fe40fbfd40e8%28com.applied.arche.lights._30_software_architecture%29%2F5498112420406011726</SD>
+                              </SDG>
+                            </SDGS>
+                          </ADMIN-DATA>
+                          <PORTS>
+                            <P-PORT-PROTOTYPE>
+                              <SHORT-NAME>PP_ADT_HazardActivate</SHORT-NAME>
+                              <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/com/applied/arche/lights/PortInterfaces/ADT_HazardActivate/hazard_activation</DATA-ELEMENT-REF>
+                                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                  <INIT-VALUE>
+                                    <CONSTANT-REFERENCE>
+                                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/com/applied/arche/lights/ConstantSpecifications/C_INIT_ADT_HazardActivate_hazard_activation</CONSTANT-REF>
+                                    </CONSTANT-REFERENCE>
+                                  </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                              </PROVIDED-COM-SPECS>
+                              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/com/applied/arche/lights/PortInterfaces/ADT_HazardActivate</PROVIDED-INTERFACE-TREF>
+                            </P-PORT-PROTOTYPE>
+                            <R-PORT-PROTOTYPE>
+                              <SHORT-NAME>RP_ADT_StalkControl</SHORT-NAME>
+                              <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/com/applied/arche/lights/PortInterfaces/ADT_StalkControl/hazard_triggered</DATA-ELEMENT-REF>
+                                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                  <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                  <INIT-VALUE>
+                                    <CONSTANT-REFERENCE>
+                                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/com/applied/arche/lights/ConstantSpecifications/C_INIT_ADT_StalkControl_hazard_triggered</CONSTANT-REF>
+                                    </CONSTANT-REFERENCE>
+                                  </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                              </REQUIRED-COM-SPECS>
+                              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/com/applied/arche/lights/PortInterfaces/ADT_StalkControl</REQUIRED-INTERFACE-TREF>
+                            </R-PORT-PROTOTYPE>
+                          </PORTS>
+                          <INTERNAL-BEHAVIORS></INTERNAL-BEHAVIORS>
+                          <SYMBOL-PROPS>
+                            <SHORT-NAME>FrontHazardsMaster_symbol</SHORT-NAME>
+                            <SYMBOL>FrontHazardsMaster</SYMBOL>
+                          </SYMBOL-PROPS>
+                        </APPLICATION-SW-COMPONENT-TYPE>
+                        <APPLICATION-SW-COMPONENT-TYPE>
+                          <SHORT-NAME>FrontLightControlMaster</SHORT-NAME>
+                          <ADMIN-DATA>
+                            <SDGS>
+                              <SDG GID="BaselineInfo">
+                                <SD GID="ArchEVersion">0.54.0.162.8e2ca25</SD>
+                                <SD GID="SWCVersion">-</SD>
+                                <SD GID="Repository">ARCHE_LOCAL</SD>
+                                <SD GID="Branch">ARCHE_LOCAL</SD>
+                                <SD GID="BuildEnvironment">ARCHE</SD>
+                              </SDG>
+                              <SDG GID="ExportInfo">
+                                <SD GID="SoftwareComponentItem">http://127.0.0.1:63320/node?ref=r%3Aaaf17285-4da7-4b12-af91-fe40fbfd40e8%28com.applied.arche.lights._30_software_architecture%29%2F1890191380010858769</SD>
+                              </SDG>
+                            </SDGS>
+                          </ADMIN-DATA>
+                          <PORTS>
+                            <P-PORT-PROTOTYPE>
+                              <SHORT-NAME>PP_IF_ALU_L_440_PWM</SHORT-NAME>
+                              <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/com/applied/arche/lights/PortInterfaces/IF_ALU_L_440_PWM/DE_ALU_L_440_PWM</DATA-ELEMENT-REF>
+                                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                  <INIT-VALUE>
+                                    <CONSTANT-REFERENCE>
+                                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/com/applied/arche/lights/ConstantSpecifications/C_INIT_IF_ALU_L_440_PWM_DE_ALU_L_440_PWM</CONSTANT-REF>
+                                    </CONSTANT-REFERENCE>
+                                  </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                              </PROVIDED-COM-SPECS>
+                              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/com/applied/arche/lights/PortInterfaces/IF_ALU_L_440_PWM</PROVIDED-INTERFACE-TREF>
+                            </P-PORT-PROTOTYPE>
+                            <P-PORT-PROTOTYPE>
+                              <SHORT-NAME>PP_IF_ALU_R_440_PWM</SHORT-NAME>
+                              <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/com/applied/arche/lights/PortInterfaces/IF_ALU_R_440_PWM/DE_ALU_R_440_PWM</DATA-ELEMENT-REF>
+                                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                  <INIT-VALUE>
+                                    <CONSTANT-REFERENCE>
+                                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/com/applied/arche/lights/ConstantSpecifications/C_INIT_IF_ALU_R_440_PWM_DE_ALU_R_440_PWM</CONSTANT-REF>
+                                    </CONSTANT-REFERENCE>
+                                  </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                              </PROVIDED-COM-SPECS>
+                              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/com/applied/arche/lights/PortInterfaces/IF_ALU_R_440_PWM</PROVIDED-INTERFACE-TREF>
+                            </P-PORT-PROTOTYPE>
+                            <R-PORT-PROTOTYPE>
+                              <SHORT-NAME>RP_ADT_HazardActivate</SHORT-NAME>
+                              <REQUIRED-COM-SPECS>
+                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/com/applied/arche/lights/PortInterfaces/ADT_HazardActivate/hazard_activation</DATA-ELEMENT-REF>
+                                  <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                  <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                  <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                  <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                  <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                  <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                  <INIT-VALUE>
+                                    <CONSTANT-REFERENCE>
+                                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/com/applied/arche/lights/ConstantSpecifications/C_INIT_ADT_HazardActivate_hazard_activation</CONSTANT-REF>
+                                    </CONSTANT-REFERENCE>
+                                  </INIT-VALUE>
+                                </NONQUEUED-RECEIVER-COM-SPEC>
+                              </REQUIRED-COM-SPECS>
+                              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/com/applied/arche/lights/PortInterfaces/ADT_HazardActivate</REQUIRED-INTERFACE-TREF>
+                            </R-PORT-PROTOTYPE>
+                          </PORTS>
+                          <INTERNAL-BEHAVIORS></INTERNAL-BEHAVIORS>
+                          <SYMBOL-PROPS>
+                            <SHORT-NAME>FrontLightControlMaster_symbol</SHORT-NAME>
+                            <SYMBOL>FrontLightControlMaster</SYMBOL>
+                          </SYMBOL-PROPS>
+                        </APPLICATION-SW-COMPONENT-TYPE>
                       </ELEMENTS>
                     </AR-PACKAGE>
                   </AR-PACKAGES>

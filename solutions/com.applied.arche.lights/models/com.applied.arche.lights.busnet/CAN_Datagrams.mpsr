@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:06fa685c-93ad-4629-a0a3-403776b01e83(com.applied.arche.lights.network_integration_package)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="9d0c9fbf-b98e-4c9a-97d0-3687efba3509" name="com.cso.enabler.arch.signals">
+      <concept id="5456396328771228305" name="com.cso.enabler.arch.signals.structure.ReservedBits" flags="ng" index="9BD4s">
+        <property id="5456396328771228306" name="reservedBits" index="9BD4v" />
+      </concept>
+      <concept id="1587480819563755754" name="com.cso.enabler.arch.signals.structure.SystemSignalReference" flags="ng" index="nO2mf">
+        <reference id="1634934566718109552" name="systemSignal" index="2mzgcz" />
+      </concept>
+      <concept id="1587480819563715445" name="com.cso.enabler.arch.signals.structure.DatagramSize64Byte" flags="ng" index="nO8og" />
+      <concept id="1587480819563715446" name="com.cso.enabler.arch.signals.structure.Datagram" flags="ng" index="nO8oj">
+        <child id="1587480819563755792" name="members" index="nO2hP" />
+        <child id="1587480819563715447" name="size" index="nO8oi" />
+      </concept>
+      <concept id="1587480819563715414" name="com.cso.enabler.arch.signals.structure.DatagramSize8Byte" flags="ng" index="nO8oN" />
+      <concept id="7628419713015202108" name="com.cso.enabler.arch.signals.structure.SignalContainer" flags="ng" index="2Y1_pN">
+        <child id="7628419713015202386" name="content" index="2Y1_kt" />
+      </concept>
+      <concept id="7628419713015620907" name="com.cso.enabler.arch.signals.structure.EmptySignalContainerLine" flags="ng" index="2YfV9$" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2Y1_pN" id="1CVjKIzdDH5">
+    <property role="3GE5qa" value="01_CAN.Domain_CAN" />
+    <property role="TrG5h" value="CAN_Datagrams" />
+    <node concept="nO8oj" id="1CVjKIzdDH6" role="2Y1_kt">
+      <property role="TrG5h" value="HazardLightsReq" />
+      <node concept="nO8oN" id="1CVjKIzdDH7" role="nO8oi" />
+    </node>
+    <node concept="2YfV9$" id="1CVjKIzvK_n" role="2Y1_kt" />
+    <node concept="nO8oj" id="1CVjKIzvK_p" role="2Y1_kt">
+      <property role="TrG5h" value="LeftHazardOut" />
+      <node concept="nO8og" id="1CVjKIzvK_t" role="nO8oi" />
+      <node concept="9BD4s" id="1CVjKIzvK_r" role="nO2hP">
+        <property role="9BD4v" value="336" />
+      </node>
+      <node concept="nO2mf" id="1CVjKIzvK_w" role="nO2hP">
+        <ref role="2mzgcz" node="1CVjKIzdDFi" resolve="LeftHazardOutSignal_X_DE_ALU_L_440_PWM" />
+      </node>
+    </node>
+    <node concept="2YfV9$" id="1CVjKIzxtv$" role="2Y1_kt" />
+    <node concept="nO8oj" id="1CVjKIzxtvA" role="2Y1_kt">
+      <property role="TrG5h" value="RightHazardOut" />
+      <node concept="9BD4s" id="1CVjKIzxtvC" role="nO2hP">
+        <property role="9BD4v" value="336" />
+      </node>
+      <node concept="nO2mf" id="1CVjKIzxtwW" role="nO2hP">
+        <ref role="2mzgcz" node="1CVjKIzsJXk" resolve="RightHazardOutSignal_X_DE_ALU_R_440_PWM" />
+      </node>
+      <node concept="nO8og" id="1CVjKIzxtvF" role="nO8oi" />
+    </node>
+    <node concept="2YfV9$" id="1CVjKIzsKk5" role="2Y1_kt" />
+    <node concept="2YfV9$" id="1CVjKIzsKk6" role="2Y1_kt" />
+    <node concept="2YfV9$" id="1CVjKIzdZdV" role="2Y1_kt" />
+  </node>
+</model>
+

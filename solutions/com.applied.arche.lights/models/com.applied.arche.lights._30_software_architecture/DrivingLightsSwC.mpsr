@@ -6,6 +6,7 @@
   </imports>
   <registry>
     <language id="952013ed-5e6c-4f56-afbe-070aef09d3c7" name="com.cariad.arche.buildconfig">
+      <concept id="6630455212197708165" name="com.cariad.arche.buildconfig.structure.EmptyBuildConfigLine" flags="ng" index="2qaDDB" />
       <concept id="6460427838659621195" name="com.cariad.arche.buildconfig.structure.ArcheBuildConfig" flags="ng" index="2HWvQC">
         <child id="6460427838659622760" name="items" index="2HWvIb" />
       </concept>
@@ -47,6 +48,8 @@
         <ref role="CNQQm" node="4Lde1QTiXyR" resolve="composition" />
       </node>
     </node>
+    <node concept="2qaDDB" id="1CVjKIzdX12" role="2HWvIb" />
+    <node concept="2qaDDB" id="1CVjKIzdX13" role="2HWvIb" />
   </node>
 </model>
 

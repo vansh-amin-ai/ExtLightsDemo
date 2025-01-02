@@ -5,14 +5,10 @@
     <use id="68b16187-1d03-4fff-975a-475207b3ad31" name="com.cso.enabler.arch.components" version="19" />
     <use id="25908ae0-998c-4036-a64d-135058f8b116" name="com.cso.enabler.arch.components.logical" version="2" />
     <use id="a465a963-99d7-41be-90bb-84a30cb3b472" name="tech.cariad.arche.cameo" version="2" />
-    <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
     <devkit ref="0eef1ab3-92ca-4383-a28c-c4bef22da5e9(ArchDevKit)" />
   </languages>
   <imports>
-    <import index="jn56" ref="r:05f81e59-d602-407b-9b70-a768e07e2ca0(tech.cariad.arche.tutorial.features_examples._020_architecture)" />
     <import index="a4c" ref="r:8f2e5694-e7a9-461c-a9f9-44128f833ca6(com.applied.arche.lights._10_requirements)" />
-    <import index="rhcz" ref="r:1c682b77-b39d-4fc2-a727-010ac657241c(tech.cariad.arche.tutorial.features_examples._030_software_architecture)" />
-    <import index="ck06" ref="r:252ba9e8-5d0e-4c7b-a6df-be18e98501cd(com.applied.arche.lights.LSG_R)" />
   </imports>
 </model>
 

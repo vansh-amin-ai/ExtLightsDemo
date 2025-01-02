@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:00e1a04b-e834-4554-9609-05172aa1a658(com.applied.arche.lights._20_architecture)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="a465a963-99d7-41be-90bb-84a30cb3b472" name="tech.cariad.arche.cameo">
+      <concept id="7901003727435145777" name="tech.cariad.arche.cameo.structure.CameoXmlImport" flags="ng" index="NqicQ">
+        <property id="6574807741961431195" name="selectedImporter" index="H9K1l" />
+        <child id="8416205978350558480" name="dependencies" index="1$PGeJ" />
+      </concept>
+      <concept id="8416205978350545139" name="tech.cariad.arche.cameo.structure.DependencyFile" flags="ng" index="1$Pzpc" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="NqicQ" id="1CVjKIze9s9">
+    <property role="3GE5qa" value="" />
+    <property role="H9K1l" value="5GYqcTQoEv5/LogicalArchitecture" />
+    <node concept="1$Pzpc" id="1CVjKIze9sa" role="1$PGeJ" />
+  </node>
+</model>
+

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:06fa685c-93ad-4629-a0a3-403776b01e83(com.applied.arche.lights.network_integration_package)" content="root">
+  <persistence version="9" />
+  <imports>
+    <import index="a8fj" ref="r:75e85213-a8f3-490b-a9c2-9fd81a541def(com.applied.arche.lights.LSG_L)" implicit="true" />
+    <import index="ck06" ref="r:252ba9e8-5d0e-4c7b-a6df-be18e98501cd(com.applied.arche.lights.LSG_R)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="9d0c9fbf-b98e-4c9a-97d0-3687efba3509" name="com.cso.enabler.arch.signals">
+      <concept id="5456396328770235238" name="com.cso.enabler.arch.signals.structure.AtomicSignalPrototype" flags="ng" index="9CmzF">
+        <property id="4723745117002846662" name="bitLength" index="1dZGNI" />
+        <child id="7561606883636813217" name="error" index="2ICyj4" />
+        <child id="7561606883636813213" name="init" index="2ICyjS" />
+      </concept>
+      <concept id="1587480819563135199" name="com.cso.enabler.arch.signals.structure.AbstractSignalPrototype" flags="ng" index="nMlQU">
+        <reference id="4390352956170411564" name="memberMapping" index="2rWzjG" />
+        <child id="4390352956139921828" name="transferProperty" index="2pCWH$" />
+      </concept>
+      <concept id="1587480819563111108" name="com.cso.enabler.arch.signals.structure.DataInterfaceSignalPrototypes" flags="ng" index="nMvYx">
+        <reference id="1587480819563111109" name="interface" index="nMvYw" />
+        <reference id="1587480819563111110" name="datatypeMapping" index="nMvYz" />
+        <child id="1587480819563143079" name="entries" index="nMkb2" />
+      </concept>
+      <concept id="7561606883636813212" name="com.cso.enabler.arch.signals.structure.InitValueSpec" flags="ng" index="2ICyjT" />
+      <concept id="7561606883636810407" name="com.cso.enabler.arch.signals.structure.ErrorValueSpec" flags="ng" index="2ICyJ2" />
+      <concept id="7561606883636810408" name="com.cso.enabler.arch.signals.structure.SpecialSignalValueSpec" flags="ng" index="2ICyJd">
+        <property id="7561606883636810411" name="value" index="2ICyJe" />
+      </concept>
+      <concept id="7628419713015202108" name="com.cso.enabler.arch.signals.structure.SignalContainer" flags="ng" index="2Y1_pN">
+        <child id="7628419713015202386" name="content" index="2Y1_kt" />
+      </concept>
+      <concept id="7628419713015620907" name="com.cso.enabler.arch.signals.structure.EmptySignalContainerLine" flags="ng" index="2YfV9$" />
+      <concept id="4996862527397812549" name="com.cso.enabler.arch.signals.structure.Pending" flags="ng" index="34mraV" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2Y1_pN" id="1CVjKIzf8WX">
+    <property role="3GE5qa" value="01_CAN.Domain_CAN" />
+    <property role="TrG5h" value="CAN_Signal_Prototypes" />
+    <node concept="nMvYx" id="1CVjKIzf8WY" role="2Y1_kt">
+      <ref role="nMvYw" to="a8fj:4Lde1QSQRzu" resolve="IF_ALU_L_440_PWM" />
+      <ref role="nMvYz" to="a8fj:1CVjKIzit52" resolve="IF_ALU_L_440_PWM_default" />
+      <node concept="9CmzF" id="1CVjKIzvKE6" role="nMkb2">
+        <property role="1dZGNI" value="8" />
+        <ref role="2rWzjG" to="a8fj:1CVjKIzit53" resolve="DE_ALU_L_440_PWM" />
+        <node concept="2ICyjT" id="1CVjKIzvKEb" role="2ICyjS">
+          <property role="2ICyJe" value="0" />
+        </node>
+        <node concept="2ICyJ2" id="1CVjKIzvKEc" role="2ICyj4">
+          <property role="2ICyJe" value="1" />
+        </node>
+        <node concept="34mraV" id="1CVjKIzvKEd" role="2pCWH$" />
+      </node>
+    </node>
+    <node concept="2YfV9$" id="1CVjKIzqTBb" role="2Y1_kt" />
+    <node concept="nMvYx" id="1CVjKIzqTBd" role="2Y1_kt">
+      <ref role="nMvYw" to="ck06:4Lde1QT6189" resolve="IF_ALU_R_440_PWM" />
+      <ref role="nMvYz" to="ck06:1CVjKIzpAmg" resolve="IF_ALU_R_440_PWM_default" />
+      <node concept="9CmzF" id="1CVjKIzsJWn" role="nMkb2">
+        <property role="1dZGNI" value="8" />
+        <ref role="2rWzjG" to="ck06:1CVjKIzpAQ9" resolve="DE_ALU_R_440_PWM" />
+        <node concept="2ICyjT" id="1CVjKIzsJWs" role="2ICyjS">
+          <property role="2ICyJe" value="0" />
+        </node>
+        <node concept="2ICyJ2" id="1CVjKIzsJWt" role="2ICyj4">
+          <property role="2ICyJe" value="1" />
+        </node>
+        <node concept="34mraV" id="1CVjKIzsJWu" role="2pCWH$" />
+      </node>
+    </node>
+  </node>
+</model>
+

@@ -49,6 +49,7 @@
       <concept id="8308017947761650715" name="tech.cariad.arche.tca.structure.TechnicalCommunicationArchitectureContainer" flags="ng" index="KEMTl">
         <child id="8308017947761663779" name="content" index="KEPPH" />
       </concept>
+      <concept id="8308017947761665225" name="tech.cariad.arche.tca.structure.EmptyTcaLine" flags="ng" index="KEQq7" />
       <concept id="2913683246074028019" name="tech.cariad.arche.tca.structure.DiagnosableNodeInstanceReference" flags="ng" index="2Ykaia">
         <child id="3251915517150992827" name="diagnosableNodeExpr" index="3qv8pl" />
       </concept>
@@ -61,20 +62,20 @@
     <node concept="KDKBd" id="3k3sWXiT29F" role="KEPPH">
       <property role="TrG5h" value="Communication_Cluster" />
       <ref role="3kvE_m" to="jhet:3k3sWXiKjla" resolve="Vehicle_Demo" />
-      <node concept="1zFlyW" id="3k3sWXiT29H" role="3EYflY" />
-      <node concept="KCQR3" id="3k3sWXiT2ay" role="2_BitV">
+      <node concept="KCQR3" id="1CVjKIzd9p7" role="2_BitV">
         <ref role="3UVpu6" node="1CVjKIz9MUK" resolve="FrontExteriorZonal_Deployment_Group" />
-        <node concept="2Ykaia" id="3k3sWXiT2sE" role="2GbwS8">
-          <node concept="1QScDb" id="3k3sWXiT2t1" role="3qv8pl">
-            <node concept="1ztHcM" id="3k3sWXiT2tw" role="1QScD9">
+        <node concept="2Ykaia" id="1CVjKIzd9p9" role="2GbwS8">
+          <node concept="1QScDb" id="1CVjKIzd9pt" role="3qv8pl">
+            <node concept="1ztHcM" id="1CVjKIzd9pS" role="1QScD9">
               <ref role="1ztEIp" to="jhet:3k3sWXiS5sO" resolve="FrontExteriorZonal" />
             </node>
-            <node concept="1BWLEi" id="3k3sWXiT2sJ" role="30czhm">
+            <node concept="1BWLEi" id="1CVjKIzd9pe" role="30czhm">
               <ref role="1BWLEl" to="jhet:3k3sWXiLzD9" resolve="FrontExteriorZonal" />
             </node>
           </node>
         </node>
       </node>
+      <node concept="1zFlyW" id="3k3sWXiT29H" role="3EYflY" />
       <node concept="KCQR3" id="3k3sWXiT2tM" role="2_BitV">
         <ref role="3UVpu6" node="3k3sWXiT2tU" resolve="RearZonal_Deployment_Group" />
         <node concept="2Ykaia" id="3k3sWXiT2vE" role="2GbwS8">
@@ -89,6 +90,8 @@
         </node>
       </node>
     </node>
+    <node concept="KEQq7" id="1CVjKIzcJrP" role="KEPPH" />
+    <node concept="KEQq7" id="1CVjKIzcJrQ" role="KEPPH" />
   </node>
 </model>
 
