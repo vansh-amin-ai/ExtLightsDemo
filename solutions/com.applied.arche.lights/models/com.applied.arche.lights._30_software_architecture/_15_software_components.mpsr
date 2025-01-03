@@ -270,20 +270,7 @@
         <ref role="1OsDsW" to="ck06:4Lde1QT6189" resolve="IF_ALU_R_440_PWM" />
       </node>
     </node>
-    <node concept="28NA_B" id="1CVjKIz8id1" role="3UUxLy">
-      <property role="TrG5h" value="FrontHazardIntent" />
-      <node concept="1vKqid" id="1CVjKIz8id2" role="3EYflY" />
-      <node concept="3USqFc" id="1CVjKIz8oQ7" role="u_$oX">
-        <ref role="1OsDsW" node="4Lde1QTqjTN" resolve="ADT_StalkControl" />
-      </node>
-      <node concept="2tCwly" id="1CVjKIz8tOU" role="3H0OkN">
-        <node concept="2tCNv2" id="1CVjKIz8$tJ" role="3H3S$n">
-          <node concept="2tCNv9" id="1CVjKIz8$tL" role="2tCNFm" />
-        </node>
-      </node>
-    </node>
-    <node concept="3UUxL_" id="5Q2iukducdK" role="3UUxLy" />
-    <node concept="3UUxL_" id="4Lde1QTtCN2" role="3UUxLy" />
+    <node concept="3UUxL_" id="4bqy6JeCNIY" role="3UUxLy" />
     <node concept="28NA_B" id="4Lde1QTs575" role="3UUxLy">
       <property role="3RPpit" value="true" />
       <property role="TrG5h" value="RearDrivingLights_Root" />
@@ -305,7 +292,6 @@
       <property role="3QutVU" value="true" />
       <property role="TrG5h" value="RearHazardsMaster" />
       <node concept="1vKqid" id="4Lde1QTu2UW" role="3EYflY" />
-      <node concept="2WwbCY" id="4Lde1QTu4A6" role="2TxlRo" />
     </node>
     <node concept="3UUxL_" id="4Lde1QTm09k" role="3UUxLy" />
   </node>

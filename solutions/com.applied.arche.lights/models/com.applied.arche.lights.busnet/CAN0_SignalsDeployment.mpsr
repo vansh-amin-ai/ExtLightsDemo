@@ -71,79 +71,94 @@
     <property role="TrG5h" value="CAN0_SignalsDeployment" />
     <property role="3GE5qa" value="01_CAN.Domain_CAN" />
     <ref role="3QobDn" to="8sga:5nkghVrve5Z" resolve="Sandbox_Global_Communication_Cluster" />
-    <ref role="3QobDo" to="a2sm:3k3sWXiT29F" resolve="Communication_Cluster" />
-    <node concept="wbcd1" id="1CVjKIzG1_x" role="hpKK9" />
-    <node concept="wbcd1" id="1CVjKIyYzLJ" role="hpKK9" />
-    <node concept="hpFXx" id="1CVjKIzG63R" role="hpKK9">
-      <ref role="wiYY_" to="a2sm:1CVjKIzHyl6" resolve="SMLWS_Deployment_Group" />
-      <node concept="3Pofvg" id="1CVjKIzG63V" role="hpAoy">
-        <node concept="2I2cAB" id="1CVjKIzG9on" role="3PoatS">
-          <ref role="2I2cJW" to="a2sm:1CVjKIzH$Pj" resolve="StalkControl" />
+    <ref role="3QobDo" to="a2sm:qCHa_AHor4" resolve="VehicleCommunicationCluster" />
+    <node concept="hpFXx" id="qCHa_AJGKx" role="hpKK9">
+      <ref role="wiYY_" to="a2sm:1CVjKIzKsEq" resolve="LSG_R_Deployment_Group" />
+      <node concept="3Pofvg" id="qCHa_AJGKF" role="hpAoy">
+        <ref role="2OZXOK" node="qCHa_AgLQg" resolve="Tx_[FrontExteriorZonal]_can3_front_exterior" />
+        <node concept="1PhAnn" id="qCHa_AJGKD" role="3PorjD">
+          <node concept="1$GXoo" id="qCHa_AJGKG" role="1$F2Mk">
+            <ref role="1FviI_" to="jhet:1CVjKIzHLUq" resolve="can_connector" />
+          </node>
+          <node concept="1PhAnD" id="qCHa_AJGKQ" role="3ypgBU">
+            <ref role="3AuJy1" node="qCHa_AgLQI" resolve="RightHazardOut" />
+          </node>
         </node>
-        <node concept="1PhAnn" id="1CVjKIzHFvT" role="3PorjD">
-          <node concept="1$GXoo" id="1CVjKIzHFvV" role="1$F2Mk">
-            <ref role="1FviI_" to="jhet:1CVjKIzGb5S" resolve="can_connector" />
-          </node>
-          <node concept="1PhAnD" id="1CVjKIzHFvX" role="3ypgBU">
-            <ref role="3AuJy1" node="1CVjKIzHFvI" resolve="HazardLightsReq" />
-          </node>
+        <node concept="2I2cAB" id="qCHa_AJGKI" role="3PoatS">
+          <ref role="2I2cJW" to="a2sm:1CVjKIzKyv1" resolve="IF_ALU_R_440_PWM" />
         </node>
       </node>
     </node>
-    <node concept="hpFXx" id="1CVjKIyYBSQ" role="hpKK9">
-      <ref role="wiYY_" to="a2sm:1CVjKIz9MUK" resolve="FrontExteriorZonal_Deployment_Group" />
-      <node concept="3Pofvg" id="1CVjKIyZ7JO" role="hpAoy">
-        <node concept="1PhAnn" id="1CVjKIyZ7JL" role="3PorjD">
-          <node concept="1$GXoo" id="1CVjKIyZ7JP" role="1$F2Mk">
-            <ref role="1FviI_" to="jhet:3k3sWXiS5uC" resolve="can3" />
+    <node concept="hpFXx" id="qCHa_ARS3s" role="hpKK9">
+      <ref role="wiYY_" to="a2sm:qCHa_ARq4I" resolve="SLMWS_Deployment_Group" />
+      <node concept="3Pofvg" id="qCHa_ARS3A" role="hpAoy">
+        <node concept="1PhAnn" id="qCHa_ARS3$" role="3PorjD">
+          <node concept="1$GXoo" id="qCHa_ARS3B" role="1$F2Mk">
+            <ref role="1FviI_" to="jhet:1CVjKIzGb5S" resolve="can_connector" />
           </node>
-          <node concept="1PhAnD" id="1CVjKIzxtB8" role="3ypgBU">
-            <ref role="3AuJy1" node="1CVjKIzxt_H" resolve="LeftHazardOut" />
-          </node>
-          <node concept="1PhAnD" id="1CVjKIzxtBc" role="3ypgBU">
-            <ref role="3AuJy1" node="1CVjKIzxt_R" resolve="RightHazardOut" />
+          <node concept="1PhAnD" id="qCHa_ARS3J" role="3ypgBU">
+            <ref role="3AuJy1" node="qCHa_AgLRV" resolve="HazardLightsReq" />
           </node>
         </node>
-        <node concept="2I2cAB" id="1CVjKIzdfh7" role="3PoatS">
+        <node concept="2I2cAB" id="qCHa_ARS3D" role="3PoatS">
+          <ref role="2I2cJW" to="a2sm:qCHa_ARvT2" resolve="StalkControl" />
+        </node>
+      </node>
+    </node>
+    <node concept="wbcd1" id="qCHa_AQk7v" role="hpKK9" />
+    <node concept="hpFXx" id="qCHa_AgLQc" role="hpKK9">
+      <ref role="wiYY_" to="a2sm:1CVjKIz9MUK" resolve="FrontExteriorZonal_Deployment_Group" />
+      <node concept="3Pofvg" id="qCHa_AgLQg" role="hpAoy">
+        <node concept="1PhAnn" id="qCHa_AgLQe" role="3PorjD">
+          <node concept="1$GXoo" id="qCHa_AgLQh" role="1$F2Mk">
+            <ref role="1FviI_" to="jhet:3k3sWXiS5wX" resolve="can3" />
+          </node>
+          <node concept="1PhAnD" id="qCHa_AgLQS" role="3ypgBU">
+            <ref role="3AuJy1" node="qCHa_AgLQ$" resolve="LeftHazardOut" />
+          </node>
+          <node concept="1PhAnD" id="qCHa_AgLQW" role="3ypgBU">
+            <ref role="3AuJy1" node="qCHa_AgLQI" resolve="RightHazardOut" />
+          </node>
+        </node>
+        <node concept="2I2cAB" id="qCHa_AgLQj" role="3PoatS">
           <ref role="2I2cJW" to="a2sm:1CVjKIzb3TU" resolve="LeftHazardOutSignal" />
         </node>
-        <node concept="2I2cAB" id="1CVjKIzdE_m" role="3PoatS">
+        <node concept="2I2cAB" id="qCHa_AgLQp" role="3PoatS">
           <ref role="2I2cJW" to="a2sm:1CVjKIzb6pM" resolve="RightHazardOutSignal" />
         </node>
       </node>
-      <node concept="3Pofvg" id="1CVjKIzEZ0o" role="hpAoy">
-        <ref role="2OZXOK" node="1CVjKIzG63V" resolve="Tx_[SMLWS]_can1_front_exterior" />
-        <node concept="1PhAnn" id="1CVjKIzEZ0l" role="3PorjD">
-          <node concept="1$GXoo" id="1CVjKIzEZ0p" role="1$F2Mk">
+      <node concept="3Pofvg" id="qCHa_ARS3P" role="hpAoy">
+        <ref role="2OZXOK" node="qCHa_ARS3A" resolve="Tx_[SMLWS]_can1_front_exterior" />
+        <node concept="1PhAnn" id="qCHa_ARS3M" role="3PorjD">
+          <node concept="1$GXoo" id="qCHa_ARS3Q" role="1$F2Mk">
             <ref role="1FviI_" to="jhet:3k3sWXiS5uA" resolve="can1" />
           </node>
-          <node concept="1PhAnD" id="1CVjKIzHFwd" role="3ypgBU">
-            <ref role="3AuJy1" node="1CVjKIzHFvI" resolve="HazardLightsReq" />
+          <node concept="1PhAnD" id="qCHa_ARS40" role="3ypgBU">
+            <ref role="3AuJy1" node="qCHa_AgLRV" resolve="HazardLightsReq" />
           </node>
         </node>
-        <node concept="2I2cAB" id="1CVjKIzEZ0r" role="3PoatS">
-          <ref role="2I2cJW" to="a2sm:1CVjKIzaTVt" resolve="StalkControl" />
+        <node concept="2I2cAB" id="qCHa_ARS3S" role="3PoatS">
+          <ref role="2I2cJW" to="a2sm:qCHa_AREIJ" resolve="StalkValue" />
         </node>
       </node>
     </node>
-    <node concept="wbcd1" id="1NlPKYvkMqK" role="hpKK9" />
-    <node concept="wbcd1" id="1NlPKYvkMxu" role="hpKK9" />
-    <node concept="1PrQh8" id="1CVjKIzxt_p" role="hpKK9">
-      <ref role="q_dGw" to="1cyd:3k3sWXiM0tZ" resolve="can3" />
-      <node concept="1PrvuM" id="1CVjKIzxt_H" role="1PrF3T">
+    <node concept="wbcd1" id="qCHa_AgLQw" role="hpKK9" />
+    <node concept="1PrQh8" id="qCHa_AgLQy" role="hpKK9">
+      <ref role="q_dGw" to="1cyd:3k3sWXiM0tZ" resolve="can3_front_exterior" />
+      <node concept="1PrvuM" id="qCHa_AgLQ$" role="1PrF3T">
         <ref role="Fn4FL" node="1CVjKIzxtxl" resolve="LeftHazardOut" />
       </node>
-      <node concept="1PrvuM" id="1CVjKIzxt_R" role="1PrF3T">
+      <node concept="1PrvuM" id="qCHa_AgLQI" role="1PrF3T">
         <ref role="Fn4FL" node="1CVjKIzxtxH" resolve="RightHazardOut" />
       </node>
     </node>
-    <node concept="1PrQh8" id="1CVjKIzGdjC" role="hpKK9">
+    <node concept="wbcd1" id="qCHa_AgLRJ" role="hpKK9" />
+    <node concept="1PrQh8" id="qCHa_AgLRP" role="hpKK9">
       <ref role="q_dGw" to="1cyd:1CVjKIzGbp_" resolve="can1_front_exterior" />
-      <node concept="1PrvuM" id="1CVjKIzHFvI" role="1PrF3T">
+      <node concept="1PrvuM" id="qCHa_AgLRV" role="1PrF3T">
         <ref role="Fn4FL" node="1CVjKIzHFv3" resolve="HazardLightsReq" />
       </node>
     </node>
-    <node concept="wbcd1" id="1NlPKYvkJ4R" role="hpKK9" />
   </node>
 </model>
 

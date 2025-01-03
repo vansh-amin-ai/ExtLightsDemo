@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root nodeRef="r:b57f2573-d022-42c7-b357-681330acda7a(com.applied.arche.lights.BuildConfigs)/479831999973105315">
+    <file name="FrontExteriorZonal.arxml">
+      <unit id="479831999981710541" at="1,0,1839,10" name="com.applied.arche.lights.BuildConfigs.FrontExteriorZonal" />
+    </file>
+    <file name="LSG_L.arxml">
+      <unit id="479831999979834901" at="1,0,529,10" name="com.applied.arche.lights.BuildConfigs.LSG_L" />
+    </file>
+    <file name="LSG_R.arxml">
+      <unit id="479831999979946749" at="1,0,826,10" name="com.applied.arche.lights.BuildConfigs.LSG_R" />
+    </file>
+  </root>
+</debug-info>
+

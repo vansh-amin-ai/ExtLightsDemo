@@ -120,32 +120,11 @@
       </node>
       <node concept="1t5WMz" id="3k3sWXiS5sO" role="uRJon">
         <property role="TrG5h" value="FrontExteriorZonal" />
-        <node concept="1t5aIm" id="3k3sWXiS5wW" role="1rEfZd">
-          <ref role="1t5aIn" node="4Lde1QTstI8" resolve="eth" />
-        </node>
-        <node concept="1t5aIm" id="3k3sWXiS5sQ" role="1rEfZd">
-          <ref role="1t5aIn" node="4Lde1QTstIe" resolve="can0" />
-        </node>
         <node concept="1t5aIm" id="3k3sWXiS5uA" role="1rEfZd">
           <ref role="1t5aIn" node="4Lde1QTstIq" resolve="can1" />
         </node>
-        <node concept="1t5aIm" id="3k3sWXiS5uB" role="1rEfZd">
-          <ref role="1t5aIn" node="4Lde1QTstIw" resolve="can2" />
-        </node>
-        <node concept="1t5aIm" id="3k3sWXiS5uC" role="1rEfZd">
-          <ref role="1t5aIn" node="4Lde1QTstIA" resolve="can3" />
-        </node>
-        <node concept="1t5aIm" id="3k3sWXiS5uD" role="1rEfZd">
-          <ref role="1t5aIn" node="4Lde1QTstIG" resolve="lin5" />
-        </node>
-        <node concept="1t5aIm" id="3k3sWXiS5uE" role="1rEfZd">
-          <ref role="1t5aIn" node="4Lde1QTstIN" resolve="lin6" />
-        </node>
-        <node concept="1t5aIm" id="3k3sWXiS5uF" role="1rEfZd">
-          <ref role="1t5aIn" node="4Lde1QTstIU" resolve="lin7" />
-        </node>
         <node concept="1t5aIm" id="3k3sWXiS5wX" role="1rEfZd">
-          <ref role="1t5aIn" node="4Lde1QTstJ1" resolve="lin8" />
+          <ref role="1t5aIn" node="4Lde1QTstIA" resolve="can3" />
         </node>
       </node>
     </node>

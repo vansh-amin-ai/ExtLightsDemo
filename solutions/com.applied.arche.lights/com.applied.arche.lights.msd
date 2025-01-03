@@ -223,6 +223,7 @@
     <language slang="l:a769de0e-7792-4479-9678-9ede627b09fb:tech.cariad.arche.alm.function.model.gen" version="0" />
     <language slang="l:5a78d0f6-57e2-4b97-bc17-2de44ae57d04:tech.cariad.arche.arch.security" version="0" />
     <language slang="l:f6fbdd68-b0bc-4170-bcdc-16f361b3132c:tech.cariad.arche.arxml.adaptive.gen" version="0" />
+    <language slang="l:9ecce8d7-4c97-4f9a-83e2-9d201f3c7350:tech.cariad.arche.arxml.classic.intermediate.nip.gen" version="0" />
     <language slang="l:423dff74-9a9b-4712-8070-fc8225d86c4e:tech.cariad.arche.arxml.classic.platform.checks" version="0" />
     <language slang="l:532a99dc-31ef-40cc-a88d-c13eaea7472e:tech.cariad.arche.arxml.export" version="2" />
     <language slang="l:c03dde3c-99a9-453a-8db3-11164a8c5b79:tech.cariad.arche.attributes" version="0" />
@@ -281,6 +282,7 @@
     <module reference="86255e62-4839-480a-a7d0-9ee30f97e2d8(org.iets3.core.expr.typetags.phyunits.si)" version="0" />
     <module reference="1c761cfd-81b1-4794-9999-148fa76881b8(org.iets3.core.expr.typetags.units.si)" version="0" />
     <module reference="1a4f44d8-7795-11ed-a1eb-0242ac120002(org.iets3.variability.artifacts.baseline.ide)" version="0" />
+    <module reference="c37007a4-a9a7-404a-a4bc-87529ae42c37(tech.cariad.arche.nip.genplan)" version="0" />
     <module reference="70279fbc-af91-4065-a7ef-2bf38ce4e494(tech.cariad.arche.tutorial)" version="0" />
   </dependencyVersions>
 </solution>

@@ -3,8 +3,8 @@
   <persistence version="9" />
   <attribute name="doNotGenerate" value="true" />
   <languages>
-    <devkit ref="0eef1ab3-92ca-4383-a28c-c4bef22da5e9(ArchDevKit)" />
     <devkit ref="9fed6e70-7da7-4afd-a179-3005ac19876f(CoreDevKit)" />
+    <devkit ref="5608cb3c-d615-406f-8d4d-f2b3769a60b9(NIPDevkit)" />
   </languages>
   <imports>
     <import index="8sga" ref="r:4e74bcdd-25ab-4834-93c1-4bdb9b97db38(X_Global_Communication_Cluster)" />
@@ -13,7 +13,6 @@
     <import index="a8fj" ref="r:75e85213-a8f3-490b-a9c2-9fd81a541def(com.applied.arche.lights.LSG_L)" />
     <import index="ck06" ref="r:252ba9e8-5d0e-4c7b-a6df-be18e98501cd(com.applied.arche.lights.LSG_R)" />
     <import index="5h6n" ref="r:aaf17285-4da7-4b12-af91-fe40fbfd40e8(com.applied.arche.lights._30_software_architecture)" />
-    <import index="xv0w" ref="r:00e1a04b-e834-4554-9609-05172aa1a658(com.applied.arche.lights._20_architecture)" />
     <import index="1cyd" ref="r:ed9a14fb-771f-4944-8884-da924a0141f8(com.applied.arche.lights._40_hardware_architecture_data_links)" implicit="true" />
   </imports>
 </model>

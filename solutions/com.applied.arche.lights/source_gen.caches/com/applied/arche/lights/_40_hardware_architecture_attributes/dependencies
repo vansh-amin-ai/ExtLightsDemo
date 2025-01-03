@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <uses language="l:952013ed-5e6c-4f56-afbe-070aef09d3c7:com.cariad.arche.buildconfig" />
-  <uses language="l:68b16187-1d03-4fff-975a-475207b3ad31:com.cso.enabler.arch.components" />
-  <uses language="l:6d748e6b-551b-4de0-9fe5-a49087de00ac:com.cso.enabler.arch.components.physical" />
-  <uses language="l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base" />
-  <uses language="l:532a99dc-31ef-40cc-a88d-c13eaea7472e:tech.cariad.arche.arxml.export" />
-  <uses language="l:12b01245-fdd7-4e58-a30d-74873dc45626:tech.cariad.arche.tca" />
+  <uses language="l:db43f37c-62f3-48fe-bc20-b66d850662bd:com.cariad.arche.codeowners.solutions" />
+  <uses language="l:a8e09340-2af4-4f0d-8c8d-80f85e9b0085:com.cso.enabler.arch.components.physical.config" />
   <uses module="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" kind="dp" />
   <uses module="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt+dp" />
   <uses module="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt+dp" />
@@ -18,8 +14,10 @@
   <uses module="5841b3b0-e306-4a21-8e9a-9c517b600b78(com.applied.arche.lights)" kind="dp" />
   <uses module="7a899b9f-2c76-4a56-9827-17b273c1ade8(com.cso.enabler.base.diagramView.rt)" kind="rt" />
   <uses module="360a4e25-e902-4667-a0a6-0e971c4f3177(com.mbeddr.mpsutil.blutil.rt)" kind="rt" />
+  <uses module="7ac49bcb-77fb-4f0f-9036-e31b86b854b2(com.mbeddr.mpsutil.grammarcells.runtime)" kind="rt" />
   <uses module="735f86bc-17fb-4d1c-a664-82c2b8e8a34e(com.mbeddr.mpsutil.interpreter.rt)" kind="rt" />
   <uses module="726886d1-ef90-4249-a08f-1e3ec23a7113(com.mbeddr.mpsutil.traceExplorer)" kind="dp" />
+  <uses module="664f2630-ebf5-429d-b331-94ccdf5410f6(com.mbeddr.mpsutil.userstyles.runtime)" kind="rt" />
   <uses module="8e4567d9-0513-47fd-bfe7-fa3b33fe03ab(com.mbeddr.mpsutil.varscope.runtime)" kind="rt" />
   <uses module="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" kind="dp" />
   <uses module="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" kind="dp" />

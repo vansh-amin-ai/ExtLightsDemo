@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:b57f2573-d022-42c7-b357-681330acda7a(com.applied.arche.lights.BuildConfigs)" content="header">
+  <persistence version="9" />
+  <languages>
+    <devkit ref="5608cb3c-d615-406f-8d4d-f2b3769a60b9(NIPDevkit)" />
+  </languages>
+  <imports>
+    <import index="a2sm" ref="r:fd31ced4-cf2a-4479-a6c9-876337d7e668(com.applied.arche.lights.communication_cluster)" />
+    <import index="wxj5" ref="r:06fa685c-93ad-4629-a0a3-403776b01e83(com.applied.arche.lights.network_integration_package)" />
+  </imports>
+</model>
+

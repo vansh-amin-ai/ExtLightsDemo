@@ -8,8 +8,8 @@
     <SDGS>
       <SDG GID="BaselineInfo">
         <SD GID="ArchEVersion">0.54.0.162.8e2ca25</SD>
-        <SD GID="Repository">ARCHE_LOCAL</SD>
-        <SD GID="Branch">ARCHE_LOCAL</SD>
+        <SD GID="Repository">https://github.com/vansh-amin-ai/ExtLightsDemo.git</SD>
+        <SD GID="Branch">main</SD>
         <SD GID="BuildEnvironment">ARCHE</SD>
       </SDG>
       <SDG GID="ExportInfo">        
@@ -498,7 +498,7 @@
                               <SW-VALUE-CONT>
                                 <UNIT-REF DEST="UNIT">/VW/Global/Units/Unit_nounit</UNIT-REF>
                                 <SW-VALUES-PHYS>
-                                  <VT>ADT_Hazard_Activation_ON</VT>
+                                  <V>0</V>
                                 </SW-VALUES-PHYS>
                               </SW-VALUE-CONT>
                             </APPLICATION-VALUE-SPECIFICATION>
@@ -513,7 +513,7 @@
                               <SW-VALUE-CONT>
                                 <UNIT-REF DEST="UNIT">/VW/Global/Units/Unit_nounit</UNIT-REF>
                                 <SW-VALUES-PHYS>
-                                  <VT>ADT_Hazard_Stalk_ON</VT>
+                                  <V>0</V>
                                 </SW-VALUES-PHYS>
                               </SW-VALUE-CONT>
                             </APPLICATION-VALUE-SPECIFICATION>
@@ -647,8 +647,8 @@
                               <SDG GID="BaselineInfo">
                                 <SD GID="ArchEVersion">0.54.0.162.8e2ca25</SD>
                                 <SD GID="SWCVersion">-</SD>
-                                <SD GID="Repository">ARCHE_LOCAL</SD>
-                                <SD GID="Branch">ARCHE_LOCAL</SD>
+                                <SD GID="Repository">https://github.com/vansh-amin-ai/ExtLightsDemo.git</SD>
+                                <SD GID="Branch">main</SD>
                                 <SD GID="BuildEnvironment">ARCHE</SD>
                               </SDG>
                               <SDG GID="ExportInfo">
@@ -771,8 +771,8 @@
                               <SDG GID="BaselineInfo">
                                 <SD GID="ArchEVersion">0.54.0.162.8e2ca25</SD>
                                 <SD GID="SWCVersion">-</SD>
-                                <SD GID="Repository">ARCHE_LOCAL</SD>
-                                <SD GID="Branch">ARCHE_LOCAL</SD>
+                                <SD GID="Repository">https://github.com/vansh-amin-ai/ExtLightsDemo.git</SD>
+                                <SD GID="Branch">main</SD>
                                 <SD GID="BuildEnvironment">ARCHE</SD>
                               </SDG>
                               <SDG GID="ExportInfo">
@@ -831,8 +831,8 @@
                               <SDG GID="BaselineInfo">
                                 <SD GID="ArchEVersion">0.54.0.162.8e2ca25</SD>
                                 <SD GID="SWCVersion">-</SD>
-                                <SD GID="Repository">ARCHE_LOCAL</SD>
-                                <SD GID="Branch">ARCHE_LOCAL</SD>
+                                <SD GID="Repository">https://github.com/vansh-amin-ai/ExtLightsDemo.git</SD>
+                                <SD GID="Branch">main</SD>
                                 <SD GID="BuildEnvironment">ARCHE</SD>
                               </SDG>
                               <SDG GID="ExportInfo">

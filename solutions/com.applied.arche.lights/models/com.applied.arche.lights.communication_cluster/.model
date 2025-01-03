@@ -2,7 +2,9 @@
 <model ref="r:fd31ced4-cf2a-4479-a6c9-876337d7e668(com.applied.arche.lights.communication_cluster)" content="header">
   <persistence version="9" />
   <languages>
-    <devkit ref="0eef1ab3-92ca-4383-a28c-c4bef22da5e9(ArchDevKit)" />
+    <use id="9d0c9fbf-b98e-4c9a-97d0-3687efba3509" name="com.cso.enabler.arch.signals" version="9" />
+    <use id="12b01245-fdd7-4e58-a30d-74873dc45626" name="tech.cariad.arche.tca" version="4" />
+    <devkit ref="9fed6e70-7da7-4afd-a179-3005ac19876f(CoreDevKit)" />
   </languages>
   <imports>
     <import index="5h6n" ref="r:aaf17285-4da7-4b12-af91-fe40fbfd40e8(com.applied.arche.lights._30_software_architecture)" />

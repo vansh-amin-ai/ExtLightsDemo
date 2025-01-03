@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:fd31ced4-cf2a-4479-a6c9-876337d7e668(com.applied.arche.lights.communication_cluster)" content="root">
+<model ref="r:b57f2573-d022-42c7-b357-681330acda7a(com.applied.arche.lights.BuildConfigs)" content="root">
   <persistence version="9" />
-  <imports />
+  <imports>
+    <import index="a2sm" ref="r:fd31ced4-cf2a-4479-a6c9-876337d7e668(com.applied.arche.lights.communication_cluster)" implicit="true" />
+  </imports>
   <registry>
     <language id="952013ed-5e6c-4f56-afbe-070aef09d3c7" name="com.cariad.arche.buildconfig">
       <concept id="6460427838659621195" name="com.cariad.arche.buildconfig.structure.ArcheBuildConfig" flags="ng" index="2HWvQC">
@@ -29,18 +31,21 @@
       </concept>
     </language>
   </registry>
-  <node concept="2HWvQC" id="1CVjKIzxJV9">
+  <node concept="2HWvQC" id="qCHa_AgLUz">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="ExportNIP" />
-    <node concept="1jlm2D" id="1CVjKIzxJVa" role="2HWvIb">
-      <node concept="3Q4CQ7" id="1CVjKIzxJVb" role="3pf35a">
+    <node concept="1jlm2D" id="qCHa_AgLU$" role="2HWvIb">
+      <node concept="3Q4CQ7" id="qCHa_AgLU_" role="3pf35a">
         <property role="TrG5h" value="Code Centric Dev" />
       </node>
-      <node concept="1jlm2C" id="1CVjKIzxJVc" role="COUMH">
-        <ref role="CNQQm" node="1CVjKIz9MUK" resolve="FrontExteriorZonal_Deployment_Group" />
+      <node concept="1jlm2C" id="qCHa_AEsSl" role="COUMH">
+        <ref role="CNQQm" to="a2sm:1CVjKIzHPf9" resolve="LSG_L_Deployment_Group" />
       </node>
-      <node concept="1jlm2C" id="1CVjKIzy54F" role="COUMH">
-        <ref role="CNQQm" node="3k3sWXiT29F" resolve="Communication_Cluster" />
+      <node concept="1jlm2C" id="qCHa_AESbX" role="COUMH">
+        <ref role="CNQQm" to="a2sm:1CVjKIzKsEq" resolve="LSG_R_Deployment_Group" />
+      </node>
+      <node concept="1jlm2C" id="qCHa_ALANd" role="COUMH">
+        <ref role="CNQQm" to="a2sm:1CVjKIz9MUK" resolve="FrontExteriorZonal_Deployment_Group" />
       </node>
     </node>
   </node>

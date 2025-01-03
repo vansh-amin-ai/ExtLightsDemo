@@ -30,9 +30,9 @@
   <node concept="ACseO" id="1CVjKIzHcVx">
     <property role="3GE5qa" value="01_CAN" />
     <property role="TrG5h" value="SMLWS_Deployment_Group_SystemSignals" />
-    <ref role="ACiht" to="a2sm:1CVjKIzHyl6" resolve="SMLWS_Deployment_Group" />
+    <ref role="ACiht" to="a2sm:qCHa_ARq4I" resolve="SLMWS_Deployment_Group" />
     <node concept="ACfYX" id="1CVjKIzHFuX" role="ACidg">
-      <ref role="AClZQ" to="a2sm:1CVjKIzH$Pj" resolve="StalkControl" />
+      <ref role="AClZQ" to="a2sm:qCHa_ARvT2" resolve="StalkControl" />
       <node concept="ACi9E" id="1CVjKIzHFuY" role="ACf8X">
         <ref role="ACd$B" node="1CVjKIzGdjH" resolve="hazard_triggered" />
       </node>
