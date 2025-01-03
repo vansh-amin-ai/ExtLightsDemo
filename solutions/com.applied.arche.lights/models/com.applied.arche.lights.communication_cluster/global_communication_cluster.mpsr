@@ -42,7 +42,9 @@
       <concept id="6261379980321279573" name="tech.cariad.arche.tca.structure.IDiagnosableNodeInstance" flags="ngI" index="2GbyQZ">
         <child id="6261379980321287650" name="targetDiagnosableNodeInstance" index="2GbwS8" />
       </concept>
-      <concept id="8308017947762192269" name="tech.cariad.arche.tca.structure.DeploymentGroupInstance" flags="ng" index="KCQR3" />
+      <concept id="8308017947762192269" name="tech.cariad.arche.tca.structure.DeploymentGroupInstance" flags="ng" index="KCQR3">
+        <reference id="3335805796730768179" name="deploymentGroupConnectionAspect" index="3JAaa1" />
+      </concept>
       <concept id="8308017947761904515" name="tech.cariad.arche.tca.structure.GlobalCommunicationCluster" flags="ng" index="KDKBd">
         <reference id="55717038047058703" name="hardwareRoot" index="3kvE_m" />
       </concept>
@@ -98,6 +100,34 @@
             </node>
             <node concept="1BWLEi" id="1CVjKIzGb$G" role="30czhm">
               <ref role="1BWLEl" to="jhet:1CVjKIzGb6k" resolve="SMLWS" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="KCQR3" id="1CVjKIzKzlq" role="2_BitV">
+        <ref role="3UVpu6" node="1CVjKIzHPf9" resolve="LSG_L_Deployment_Group" />
+        <ref role="3JAaa1" node="1CVjKIzKzEQ" resolve="Front_Exterior_Deployment_Group_Connections" />
+        <node concept="2Ykaia" id="1CVjKIzKzls" role="2GbwS8">
+          <node concept="1QScDb" id="1CVjKIzKzlN" role="3qv8pl">
+            <node concept="1ztHcM" id="1CVjKIzKzmi" role="1QScD9">
+              <ref role="1ztEIp" to="jhet:1CVjKIzHLUn" resolve="LSG_L" />
+            </node>
+            <node concept="1BWLEi" id="1CVjKIzKzlx" role="30czhm">
+              <ref role="1BWLEl" to="jhet:3k3sWXiLzHu" resolve="LSG_L" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="KCQR3" id="1CVjKIzKzm$" role="2_BitV">
+        <ref role="3UVpu6" node="1CVjKIzKsEq" resolve="LSG_R_Deployment_Group" />
+        <ref role="3JAaa1" node="1CVjKIzKzJE" resolve="LSG_R_Deployment_Group_Connections" />
+        <node concept="2Ykaia" id="1CVjKIzKzmA" role="2GbwS8">
+          <node concept="1QScDb" id="1CVjKIzKzmX" role="3qv8pl">
+            <node concept="1ztHcM" id="1CVjKIzKzns" role="1QScD9">
+              <ref role="1ztEIp" to="jhet:1CVjKIzHLUp" resolve="LSG_R" />
+            </node>
+            <node concept="1BWLEi" id="1CVjKIzKzmF" role="30czhm">
+              <ref role="1BWLEl" to="jhet:3k3sWXiLzHV" resolve="LSG_R" />
             </node>
           </node>
         </node>

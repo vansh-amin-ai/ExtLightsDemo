@@ -3,6 +3,9 @@
   <persistence version="9" />
   <imports />
   <registry>
+    <language id="c03dde3c-99a9-453a-8db3-11164a8c5b79" name="tech.cariad.arche.attributes">
+      <concept id="5044343550159376448" name="tech.cariad.arche.attributes.structure.IDatalinkTypeDefinitionAttribute" flags="ngI" index="3uikJV" />
+    </language>
     <language id="6d748e6b-551b-4de0-9fe5-a49087de00ac" name="com.cso.enabler.arch.components.physical">
       <concept id="835524074399112442" name="com.cso.enabler.arch.components.physical.structure.EmptyLine" flags="ng" index="cgfL2" />
       <concept id="8815374828296102156" name="com.cso.enabler.arch.components.physical.structure.BusTypeDefinition" flags="ng" index="CPe6Z">
@@ -46,6 +49,7 @@
           <property role="30bXRw" value="500000" />
         </node>
       </node>
+      <node concept="3uikJV" id="1CVjKIzJ5PV" role="3uicdN" />
     </node>
   </node>
 </model>

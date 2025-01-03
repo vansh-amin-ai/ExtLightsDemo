@@ -151,6 +151,27 @@
         <ref role="1OsDsW" to="5h6n:4Lde1QTqjTN" resolve="ADT_StalkControl" />
       </node>
     </node>
+    <node concept="KEQq7" id="1CVjKIzHN$X" role="KEPPH" />
+    <node concept="KDKBc" id="1CVjKIzHPf9" role="KEPPH">
+      <property role="TrG5h" value="LSG_L_Deployment_Group" />
+      <ref role="1DVD4K" node="1CVjKIzKzlq" resolve="LSG_L_Deployment_Group" />
+      <node concept="1zFlyX" id="1CVjKIzHPfb" role="3EYflY" />
+      <node concept="1Xg0xb" id="1CVjKIzHPfc" role="1Xg0x9" />
+      <node concept="3USqFc" id="1CVjKIzKal$" role="u$ofW">
+        <ref role="1OsDsW" to="a8fj:4Lde1QSQRzu" resolve="IF_ALU_L_440_PWM" />
+      </node>
+    </node>
+    <node concept="KEQq7" id="1CVjKIzKqb9" role="KEPPH" />
+    <node concept="KDKBc" id="1CVjKIzKsEq" role="KEPPH">
+      <property role="TrG5h" value="LSG_R_Deployment_Group" />
+      <ref role="1DVD4K" node="1CVjKIzKzm$" resolve="LSG_R_Deployment_Group" />
+      <node concept="1zFlyX" id="1CVjKIzKsEs" role="3EYflY" />
+      <node concept="1Xg0xb" id="1CVjKIzKsEt" role="1Xg0x9" />
+      <node concept="3USqFc" id="1CVjKIzKyv1" role="u$ofW">
+        <ref role="1OsDsW" to="ck06:4Lde1QT6189" resolve="IF_ALU_R_440_PWM" />
+      </node>
+    </node>
+    <node concept="KEQq7" id="1CVjKIzKbaO" role="KEPPH" />
   </node>
 </model>
 

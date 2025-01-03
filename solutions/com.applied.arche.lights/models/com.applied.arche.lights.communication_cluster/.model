@@ -9,6 +9,7 @@
     <import index="jhet" ref="r:8d060444-61b3-4980-a082-01a119c43480(com.applied.arche.lights._40_hardware_architecture)" />
     <import index="a8fj" ref="r:75e85213-a8f3-490b-a9c2-9fd81a541def(com.applied.arche.lights.LSG_L)" />
     <import index="ck06" ref="r:252ba9e8-5d0e-4c7b-a6df-be18e98501cd(com.applied.arche.lights.LSG_R)" />
+    <import index="8sga" ref="r:4e74bcdd-25ab-4834-93c1-4bdb9b97db38(X_Global_Communication_Cluster)" />
   </imports>
 </model>
 

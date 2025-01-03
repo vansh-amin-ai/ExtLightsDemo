@@ -270,6 +270,12 @@
         <property role="TrG5h" value="12V_supply" />
         <node concept="2g4tRY" id="3k3sWXiLzFb" role="2S2oia" />
       </node>
+      <node concept="1t5WMz" id="1CVjKIzHLUn" role="uRJon">
+        <property role="TrG5h" value="LSG_L" />
+        <node concept="1t5aIm" id="1CVjKIzHLUo" role="1rEfZd">
+          <ref role="1t5aIn" node="5Q2iukduyaN" resolve="can_connector" />
+        </node>
+      </node>
     </node>
     <node concept="cgfL2" id="5Q2iukduyaR" role="3$f$VV" />
     <node concept="3$f$Kf" id="5Q2iukduyaT" role="3$f$VV">
@@ -292,6 +298,12 @@
         <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
         <property role="TrG5h" value="12V_supply" />
         <node concept="2g4tRY" id="3k3sWXiLzF4" role="2S2oia" />
+      </node>
+      <node concept="1t5WMz" id="1CVjKIzHLUp" role="uRJon">
+        <property role="TrG5h" value="LSG_R" />
+        <node concept="1t5aIm" id="1CVjKIzHLUq" role="1rEfZd">
+          <ref role="1t5aIn" node="5Q2iukduyaW" resolve="can_connector" />
+        </node>
       </node>
     </node>
     <node concept="cgfL2" id="3k3sWXiRLMP" role="3$f$VV" />
