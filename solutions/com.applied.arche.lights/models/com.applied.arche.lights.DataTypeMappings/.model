@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:5dde8077-a5f5-45dc-9b63-e6bf8f6362e0(com.applied.arche.lights.deployed_services)" content="header">
+<model ref="r:5334f390-a3e0-4429-b069-1d455ddd2ba7(com.applied.arche.lights.DataTypeMappings)" content="header">
   <persistence version="9" />
   <attribute name="doNotGenerate" value="true" />
   <languages>
     <devkit ref="9fed6e70-7da7-4afd-a179-3005ac19876f(CoreDevKit)" />
   </languages>
   <imports>
-    <import index="a2sm" ref="r:fd31ced4-cf2a-4479-a6c9-876337d7e668(com.applied.arche.lights.communication_cluster)" />
+    <import index="5h6n" ref="r:aaf17285-4da7-4b12-af91-fe40fbfd40e8(com.applied.arche.lights._30_software_architecture)" />
   </imports>
 </model>
 

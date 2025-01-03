@@ -9,8 +9,8 @@
       </concept>
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
-      <concept id="7061117989422575803" name="org.iets3.core.expr.toplevel.structure.EnumType" flags="ng" index="5mh7t">
-        <reference id="7061117989422575859" name="enum" index="5mh6l" />
+      <concept id="7740953487936184022" name="org.iets3.core.expr.toplevel.structure.TypedefType" flags="ng" index="1WbbFT">
+        <reference id="7740953487936184023" name="typedef" index="1WbbFS" />
       </concept>
     </language>
     <language id="cecacbca-321e-4b4a-96e0-5f862b1b1e21" name="com.cso.enabler.arch.components.software">
@@ -27,7 +27,6 @@
       </concept>
     </language>
     <language id="68b16187-1d03-4fff-975a-475207b3ad31" name="com.cso.enabler.arch.components">
-      <concept id="5578245729748776074" name="com.cso.enabler.arch.components.structure.EmptyLine" flags="ng" index="3UUxL_" />
       <concept id="5578245729748776069" name="com.cso.enabler.arch.components.structure.ComponentArchitectureContainer" flags="ng" index="3UUxLE">
         <child id="2077607355813627051" name="realm" index="3QPU1a" />
         <child id="5578245729748776077" name="content" index="3UUxLy" />
@@ -39,7 +38,7 @@
     </language>
   </registry>
   <node concept="3UUxLE" id="4Lde1QTqjTH">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="LightManager" />
     <property role="TrG5h" value="_14_data_interfaces" />
     <node concept="1vKqid" id="4Lde1QTqjTG" role="3QPU1a" />
     <node concept="3vTeBB" id="4Lde1QTqjTN" role="3UUxLy">
@@ -47,19 +46,18 @@
       <node concept="1vKqid" id="4Lde1QTqjTO" role="2Ve3hN" />
       <node concept="3N6GrK" id="1CVjKIz1CKm" role="3UVubv">
         <property role="TrG5h" value="hazard_triggered" />
-        <node concept="5mh7t" id="1CVjKIz1CKl" role="2S399n">
-          <ref role="5mh6l" node="1CVjKIz1$$T" resolve="ADT_Hazard_Stalk" />
+        <node concept="1WbbFT" id="1CVjKIzBemA" role="2S399n">
+          <ref role="1WbbFS" node="1CVjKIzBdEF" resolve="ADT_Hazard_Stalk" />
         </node>
       </node>
     </node>
-    <node concept="3UUxL_" id="1CVjKIz2YqV" role="3UUxLy" />
     <node concept="3vTeBB" id="1CVjKIz2YqZ" role="3UUxLy">
       <property role="TrG5h" value="ADT_HazardActivate" />
       <node concept="1vKqid" id="1CVjKIz2Yr0" role="2Ve3hN" />
       <node concept="3N6GrK" id="1CVjKIz30by" role="3UVubv">
         <property role="TrG5h" value="hazard_activation" />
-        <node concept="5mh7t" id="1CVjKIz30bx" role="2S399n">
-          <ref role="5mh6l" node="5hfmkJoclfk" resolve="ADT_Hazard_Activation" />
+        <node concept="1WbbFT" id="1CVjKIzBemC" role="2S399n">
+          <ref role="1WbbFS" node="1CVjKIzBdTw" resolve="ADT_Hazard_Activation" />
         </node>
       </node>
     </node>

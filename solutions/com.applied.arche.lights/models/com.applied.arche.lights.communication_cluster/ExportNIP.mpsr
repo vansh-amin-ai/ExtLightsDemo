@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:fd31ced4-cf2a-4479-a6c9-876337d7e668(com.applied.arche.lights.communication_cluster)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="952013ed-5e6c-4f56-afbe-070aef09d3c7" name="com.cariad.arche.buildconfig">
+      <concept id="6460427838659621195" name="com.cariad.arche.buildconfig.structure.ArcheBuildConfig" flags="ng" index="2HWvQC">
+        <child id="6460427838659622760" name="items" index="2HWvIb" />
+      </concept>
+    </language>
+    <language id="532a99dc-31ef-40cc-a88d-c13eaea7472e" name="tech.cariad.arche.arxml.export">
+      <concept id="6316274758420301816" name="tech.cariad.arche.arxml.export.structure.ClassicArxmlBuildConfigEntry" flags="ng" index="CNQQl">
+        <reference id="6316274758420301819" name="genEntryPoint" index="CNQQm" />
+      </concept>
+      <concept id="6316274758421071549" name="tech.cariad.arche.arxml.export.structure.ClassicArxmlBuildConfigItem" flags="ng" index="COUNg">
+        <child id="6316274758421071552" name="content" index="COUMH" />
+        <child id="2888422663735839825" name="downstreamTechnology" index="3pf35a" />
+      </concept>
+      <concept id="2383617666200973067" name="tech.cariad.arche.arxml.export.structure.NIPClassicArxmlBuildConfigEntry" flags="ng" index="1jlm2C" />
+      <concept id="2383617666200973066" name="tech.cariad.arche.arxml.export.structure.NIPClassicArxmlBuildConfigItem" flags="ng" index="1jlm2D" />
+      <concept id="8897859564534825382" name="tech.cariad.arche.arxml.export.structure.CodeCentricDevTechnology" flags="ng" index="3Q4CQ7" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2HWvQC" id="1CVjKIzxJV9">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="ExportNIP" />
+    <node concept="1jlm2D" id="1CVjKIzxJVa" role="2HWvIb">
+      <node concept="3Q4CQ7" id="1CVjKIzxJVb" role="3pf35a">
+        <property role="TrG5h" value="Code Centric Dev" />
+      </node>
+      <node concept="1jlm2C" id="1CVjKIzxJVc" role="COUMH">
+        <ref role="CNQQm" node="1CVjKIz9MUK" resolve="FrontExteriorZonal_Deployment_Group" />
+      </node>
+      <node concept="1jlm2C" id="1CVjKIzy54F" role="COUMH">
+        <ref role="CNQQm" node="3k3sWXiT29F" resolve="Communication_Cluster" />
+      </node>
+    </node>
+  </node>
+</model>
+

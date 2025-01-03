@@ -35,7 +35,7 @@
     <property role="3GE5qa" value="" />
     <ref role="1$UK5a" to="jhet:4Lde1QTskXC" resolve="_11_discrete_physical_components" />
     <ref role="1$ULSX" to="jhet:3k3sWXiS5sO" />
-    <ref role="1$ULo8" to="jhet:3k3sWXiS5sQ" resolve="can0" />
+    <ref role="1$ULo8" to="jhet:3k3sWXiS5uC" resolve="can3" />
     <node concept="2uyxzj" id="3k3sWXiS5sS" role="19aAfb" />
     <node concept="3DXDZ3" id="3k3sWXiS5sT" role="gLvUq">
       <property role="3DXDZo" value="120" />

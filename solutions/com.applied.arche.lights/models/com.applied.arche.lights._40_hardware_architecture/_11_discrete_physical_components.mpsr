@@ -234,7 +234,21 @@
       </node>
     </node>
     <node concept="cgfL2" id="5Q2iukduyaB" role="3$f$VV" />
-    <node concept="cgfL2" id="1CVjKIzcp9x" role="3$f$VV" />
+    <node concept="3$f$Kf" id="1CVjKIzGb5J" role="3$f$VV">
+      <property role="TrG5h" value="SMLWS" />
+      <node concept="3$f$Kn" id="1CVjKIzGb5M" role="3$f$R_">
+        <property role="2I4AYg" value="52bCGvYAsOQ/EAST" />
+        <property role="TrG5h" value="can_connector" />
+        <node concept="3$f$RY" id="1CVjKIzGb5L" role="2S2oia" />
+      </node>
+      <node concept="1t5WMz" id="1CVjKIzGb5R" role="uRJon">
+        <property role="TrG5h" value="SMLWS" />
+        <node concept="1t5aIm" id="1CVjKIzGb5S" role="1rEfZd">
+          <ref role="1t5aIn" node="1CVjKIzGb5M" resolve="can_connector" />
+        </node>
+      </node>
+    </node>
+    <node concept="cgfL2" id="1CVjKIzGb5I" role="3$f$VV" />
     <node concept="3$f$Kf" id="5Q2iukduyaD" role="3$f$VV">
       <property role="TrG5h" value="LSG_L" />
       <node concept="3$f$Kn" id="5Q2iukduyaN" role="3$f$R_">

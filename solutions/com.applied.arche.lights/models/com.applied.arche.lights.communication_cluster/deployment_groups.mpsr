@@ -70,6 +70,16 @@
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="deployment_groups" />
     <node concept="KEQq7" id="1CVjKIz9MUJ" role="KEPPH" />
+    <node concept="KDKBc" id="3k3sWXiT2tU" role="KEPPH">
+      <property role="TrG5h" value="RearZonal_Deployment_Group" />
+      <ref role="1DVD4K" node="3k3sWXiT2tM" resolve="RearZonal" />
+      <node concept="1zFlyX" id="3k3sWXiT2tW" role="3EYflY" />
+      <node concept="1Xg0xb" id="3k3sWXiT2tX" role="1Xg0x9" />
+      <node concept="3UVpuK" id="3k3sWXiT2tZ" role="2_BitV">
+        <ref role="3UVpu6" to="5h6n:4Lde1QTs575" resolve="RearDrivingLights_Root" />
+      </node>
+    </node>
+    <node concept="KEQq7" id="3k3sWXiSnRJ" role="KEPPH" />
     <node concept="KDKBc" id="1CVjKIz9MUK" role="KEPPH">
       <property role="TrG5h" value="FrontExteriorZonal_Deployment_Group" />
       <ref role="1DVD4K" node="1CVjKIzd9p7" resolve="FrontExteriorZonal_Deployment_Group" />
@@ -130,17 +140,17 @@
       </node>
       <node concept="1zFlyX" id="1CVjKIzd4nA" role="3EYflY" />
     </node>
-    <node concept="KEQq7" id="1CVjKIzdbU7" role="KEPPH" />
-    <node concept="KDKBc" id="3k3sWXiT2tU" role="KEPPH">
-      <property role="TrG5h" value="RearZonal_Deployment_Group" />
-      <ref role="1DVD4K" node="3k3sWXiT2tM" resolve="RearZonal" />
-      <node concept="1Xg0xb" id="3k3sWXiT2tX" role="1Xg0x9" />
-      <node concept="3UVpuK" id="3k3sWXiT2tZ" role="2_BitV">
-        <ref role="3UVpu6" to="5h6n:4Lde1QTs575" resolve="RearDrivingLights_Root" />
+    <node concept="KEQq7" id="1CVjKIzFTh9" role="KEPPH" />
+    <node concept="KDKBc" id="1CVjKIzHyl6" role="KEPPH">
+      <property role="TrG5h" value="SMLWS_Deployment_Group" />
+      <ref role="1DVD4K" node="1CVjKIzG62h" resolve="SMLWS" />
+      <node concept="1zFlyX" id="1CVjKIzHyl8" role="3EYflY" />
+      <node concept="1Xg0xb" id="1CVjKIzHyl9" role="1Xg0x9" />
+      <node concept="3USqFc" id="1CVjKIzH$Pj" role="u_$oX">
+        <property role="TrG5h" value="StalkControl" />
+        <ref role="1OsDsW" to="5h6n:4Lde1QTqjTN" resolve="ADT_StalkControl" />
       </node>
-      <node concept="1zFlyX" id="1CVjKIzdcJe" role="3EYflY" />
     </node>
-    <node concept="KEQq7" id="1CVjKIzdbU8" role="KEPPH" />
   </node>
 </model>
 

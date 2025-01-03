@@ -20,7 +20,6 @@
       <concept id="3255474692907211276" name="com.cso.enabler.arch.components.busCommunication.structure.AbstractBusFrame" flags="ng" index="bbXVK">
         <property id="3255474692907632367" name="ID" index="b9k8j" />
       </concept>
-      <concept id="1761563064785964480" name="com.cso.enabler.arch.components.busCommunication.structure.EmptyBusFrameContainerContent" flags="ng" index="It_A6" />
       <concept id="1761563064785964477" name="com.cso.enabler.arch.components.busCommunication.structure.BusFrameContainer" flags="ng" index="It_BV">
         <child id="1761563064785964479" name="content" index="It_BT" />
       </concept>
@@ -28,7 +27,7 @@
     </language>
   </registry>
   <node concept="It_BV" id="3A0beLmNnc2">
-    <property role="TrG5h" value="LSG_CAN_Frames" />
+    <property role="TrG5h" value="CAN_Frames" />
     <property role="3GE5qa" value="01_CAN.Domain_CAN" />
     <node concept="ItS2Y" id="1CVjKIzxtxl" role="It_BT">
       <property role="b9k8j" value="1B7" />
@@ -38,7 +37,10 @@
       <property role="b9k8j" value="1C7" />
       <ref role="3foWvc" node="1CVjKIzxtvA" resolve="RightHazardOutSignal" />
     </node>
-    <node concept="It_A6" id="1CVjKIzdfhm" role="It_BT" />
+    <node concept="ItS2Y" id="1CVjKIzHFv3" role="It_BT">
+      <property role="b9k8j" value="0B5" />
+      <ref role="3foWvc" node="1CVjKIzdDH6" resolve="HazardLightsReq" />
+    </node>
   </node>
 </model>
 

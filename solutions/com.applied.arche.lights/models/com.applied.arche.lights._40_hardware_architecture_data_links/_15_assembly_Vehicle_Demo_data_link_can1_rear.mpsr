@@ -45,40 +45,40 @@
       </concept>
     </language>
   </registry>
-  <node concept="p7lvI" id="3k3sWXiM0sr">
+  <node concept="p7lvI" id="3k3sWXiRLUw">
     <ref role="1CK$ij" to="jhet:3k3sWXiKjl9" resolve="_15_assembly" />
     <ref role="1CK$ii" to="jhet:3k3sWXiKjla" resolve="Vehicle_Demo" />
-    <node concept="pfJCL" id="3k3sWXiM0tZ" role="1CK$iJ">
-      <property role="TrG5h" value="can3" />
+    <node concept="pfJCL" id="3k3sWXiRLV2" role="1CK$iJ">
+      <property role="TrG5h" value="can1_rear" />
       <ref role="3geEN0" to="jhet:3k3sWXiLHc0" resolve="can_fd" />
-      <node concept="3$f$RY" id="3k3sWXiM0tY" role="3geENW" />
-      <node concept="3geENd" id="3k3sWXiM0u2" role="3geENa">
-        <node concept="1QScDb" id="3k3sWXiM0ux" role="3geENc">
-          <node concept="3aczKx" id="3k3sWXiM0v4" role="1QScD9">
-            <ref role="3aczK$" to="jhet:4Lde1QTstIA" resolve="can3" />
+      <node concept="3$f$RY" id="3k3sWXiRLV1" role="3geENW" />
+      <node concept="3geENd" id="3k3sWXiRLV5" role="3geENa">
+        <node concept="1QScDb" id="3k3sWXiRLVL" role="3geENc">
+          <node concept="3aczKx" id="3k3sWXiRLWk" role="1QScD9">
+            <ref role="3aczK$" to="jhet:4Lde1QTstNG" resolve="can1" />
           </node>
-          <node concept="1BWLEi" id="3k3sWXiM0u9" role="30czhm">
-            <ref role="1BWLEl" to="jhet:3k3sWXiLzD9" resolve="FrontExteriorZonal" />
-          </node>
-        </node>
-      </node>
-      <node concept="3geENd" id="3k3sWXiM0zX" role="3geENa">
-        <node concept="1QScDb" id="3k3sWXiM0Au" role="3geENc">
-          <node concept="3aczKx" id="3k3sWXiM0C1" role="1QScD9">
-            <ref role="3aczK$" to="jhet:5Q2iukduyaW" resolve="can_conn" />
-          </node>
-          <node concept="1BWLEi" id="3k3sWXiM0_6" role="30czhm">
-            <ref role="1BWLEl" to="jhet:3k3sWXiLzHV" resolve="LSG_R" />
+          <node concept="1BWLEi" id="3k3sWXiRLVc" role="30czhm">
+            <ref role="1BWLEl" to="jhet:3k3sWXiLzD_" resolve="RearZonal" />
           </node>
         </node>
       </node>
-      <node concept="3geENd" id="3k3sWXiM0vC" role="3geENa">
-        <node concept="1QScDb" id="3k3sWXiM0xQ" role="3geENc">
-          <node concept="3aczKx" id="3k3sWXiM0yT" role="1QScD9">
-            <ref role="3aczK$" to="jhet:5Q2iukduyaN" resolve="can_conn" />
+      <node concept="3geENd" id="3k3sWXiRLWS" role="3geENa">
+        <node concept="1QScDb" id="3k3sWXiRM8b" role="3geENc">
+          <node concept="3aczKx" id="3k3sWXiRM9e" role="1QScD9">
+            <ref role="3aczK$" to="jhet:3k3sWXiRLMU" resolve="can_connector" />
           </node>
-          <node concept="1BWLEi" id="3k3sWXiM0wh" role="30czhm">
-            <ref role="1BWLEl" to="jhet:3k3sWXiLzHu" resolve="LSG_L" />
+          <node concept="1BWLEi" id="3k3sWXiRM7j" role="30czhm">
+            <ref role="1BWLEl" to="jhet:3k3sWXiRM1q" resolve="SHL_Li1" />
+          </node>
+        </node>
+      </node>
+      <node concept="3geENd" id="3k3sWXiRMay" role="3geENa">
+        <node concept="1QScDb" id="3k3sWXiRMdj" role="3geENc">
+          <node concept="3aczKx" id="3k3sWXiRMeQ" role="1QScD9">
+            <ref role="3aczK$" to="jhet:3k3sWXiRLO$" resolve="can_connector" />
+          </node>
+          <node concept="1BWLEi" id="3k3sWXiRMbV" role="30czhm">
+            <ref role="1BWLEl" to="jhet:3k3sWXiRM1R" resolve="SHL_Li2" />
           </node>
         </node>
       </node>

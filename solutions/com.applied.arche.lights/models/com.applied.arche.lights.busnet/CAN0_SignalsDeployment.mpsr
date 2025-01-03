@@ -49,6 +49,7 @@
         <child id="1114034913559281569" name="softwarePorts" index="3PoatS" />
       </concept>
       <concept id="1114034913559192793" name="com.cso.enabler.arch.components.partition.structure.IEndpoint" flags="ngI" index="3PovK0">
+        <reference id="1247227122212198213" name="fromEndpoint" index="2OZXOK" />
         <child id="1114034913559211056" name="connector" index="3PorjD" />
       </concept>
       <concept id="3763766854323429809" name="com.cso.enabler.arch.components.partition.structure.DeployedCANFrame" flags="ng" index="1PrvuM" />
@@ -71,7 +72,24 @@
     <property role="3GE5qa" value="01_CAN.Domain_CAN" />
     <ref role="3QobDn" to="8sga:5nkghVrve5Z" resolve="Sandbox_Global_Communication_Cluster" />
     <ref role="3QobDo" to="a2sm:3k3sWXiT29F" resolve="Communication_Cluster" />
+    <node concept="wbcd1" id="1CVjKIzG1_x" role="hpKK9" />
     <node concept="wbcd1" id="1CVjKIyYzLJ" role="hpKK9" />
+    <node concept="hpFXx" id="1CVjKIzG63R" role="hpKK9">
+      <ref role="wiYY_" to="a2sm:1CVjKIzHyl6" resolve="SMLWS_Deployment_Group" />
+      <node concept="3Pofvg" id="1CVjKIzG63V" role="hpAoy">
+        <node concept="2I2cAB" id="1CVjKIzG9on" role="3PoatS">
+          <ref role="2I2cJW" to="a2sm:1CVjKIzH$Pj" resolve="StalkControl" />
+        </node>
+        <node concept="1PhAnn" id="1CVjKIzHFvT" role="3PorjD">
+          <node concept="1$GXoo" id="1CVjKIzHFvV" role="1$F2Mk">
+            <ref role="1FviI_" to="jhet:1CVjKIzGb5S" resolve="can_connector" />
+          </node>
+          <node concept="1PhAnD" id="1CVjKIzHFvX" role="3ypgBU">
+            <ref role="3AuJy1" node="1CVjKIzHFvI" resolve="HazardLightsReq" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="hpFXx" id="1CVjKIyYBSQ" role="hpKK9">
       <ref role="wiYY_" to="a2sm:1CVjKIz9MUK" resolve="FrontExteriorZonal_Deployment_Group" />
       <node concept="3Pofvg" id="1CVjKIyZ7JO" role="hpAoy">
@@ -93,13 +111,17 @@
           <ref role="2I2cJW" to="a2sm:1CVjKIzb6pM" resolve="RightHazardOutSignal" />
         </node>
       </node>
-      <node concept="3Pofvg" id="1CVjKIzdfhH" role="hpAoy">
-        <node concept="1PhAnn" id="1CVjKIzdfhE" role="3PorjD">
-          <node concept="1$GXoo" id="1CVjKIzdfhI" role="1$F2Mk">
+      <node concept="3Pofvg" id="1CVjKIzEZ0o" role="hpAoy">
+        <ref role="2OZXOK" node="1CVjKIzG63V" resolve="Tx_[SMLWS]_can1_front_exterior" />
+        <node concept="1PhAnn" id="1CVjKIzEZ0l" role="3PorjD">
+          <node concept="1$GXoo" id="1CVjKIzEZ0p" role="1$F2Mk">
             <ref role="1FviI_" to="jhet:3k3sWXiS5uA" resolve="can1" />
           </node>
+          <node concept="1PhAnD" id="1CVjKIzHFwd" role="3ypgBU">
+            <ref role="3AuJy1" node="1CVjKIzHFvI" resolve="HazardLightsReq" />
+          </node>
         </node>
-        <node concept="2I2cAB" id="1CVjKIzdfhK" role="3PoatS">
+        <node concept="2I2cAB" id="1CVjKIzEZ0r" role="3PoatS">
           <ref role="2I2cJW" to="a2sm:1CVjKIzaTVt" resolve="StalkControl" />
         </node>
       </node>
@@ -113,6 +135,12 @@
       </node>
       <node concept="1PrvuM" id="1CVjKIzxt_R" role="1PrF3T">
         <ref role="Fn4FL" node="1CVjKIzxtxH" resolve="RightHazardOut" />
+      </node>
+    </node>
+    <node concept="1PrQh8" id="1CVjKIzGdjC" role="hpKK9">
+      <ref role="q_dGw" to="1cyd:1CVjKIzGbp_" resolve="can1_front_exterior" />
+      <node concept="1PrvuM" id="1CVjKIzHFvI" role="1PrF3T">
+        <ref role="Fn4FL" node="1CVjKIzHFv3" resolve="HazardLightsReq" />
       </node>
     </node>
     <node concept="wbcd1" id="1NlPKYvkJ4R" role="hpKK9" />

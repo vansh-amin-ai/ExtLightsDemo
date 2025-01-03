@@ -4,6 +4,7 @@
   <imports>
     <import index="a8fj" ref="r:75e85213-a8f3-490b-a9c2-9fd81a541def(com.applied.arche.lights.LSG_L)" implicit="true" />
     <import index="ck06" ref="r:252ba9e8-5d0e-4c7b-a6df-be18e98501cd(com.applied.arche.lights.LSG_R)" implicit="true" />
+    <import index="5h6n" ref="r:aaf17285-4da7-4b12-af91-fe40fbfd40e8(com.applied.arche.lights._30_software_architecture)" implicit="true" />
   </imports>
   <registry>
     <language id="9d0c9fbf-b98e-4c9a-97d0-3687efba3509" name="com.cso.enabler.arch.signals">
@@ -73,6 +74,21 @@
           <property role="2ICyJe" value="1" />
         </node>
         <node concept="34mraV" id="1CVjKIzsJWu" role="2pCWH$" />
+      </node>
+    </node>
+    <node concept="2YfV9$" id="1CVjKIzF0FH" role="2Y1_kt" />
+    <node concept="nMvYx" id="1CVjKIzF0FJ" role="2Y1_kt">
+      <ref role="nMvYw" to="5h6n:4Lde1QTqjTN" resolve="ADT_StalkControl" />
+      <ref role="nMvYz" to="5h6n:1CVjKIzBeow" resolve="ADT_StalkControl_default" />
+      <node concept="9CmzF" id="1CVjKIzGdjH" role="nMkb2">
+        <property role="1dZGNI" value="1" />
+        <ref role="2rWzjG" to="5h6n:1CVjKIzBeoy" resolve="hazard_triggered" />
+        <node concept="2ICyjT" id="1CVjKIzGdjM" role="2ICyjS">
+          <property role="2ICyJe" value="0" />
+        </node>
+        <node concept="2ICyJ2" id="1CVjKIzGdjN" role="2ICyj4">
+          <property role="2ICyJe" value="1" />
+        </node>
       </node>
     </node>
   </node>

@@ -36,6 +36,12 @@
     <node concept="nO8oj" id="1CVjKIzdDH6" role="2Y1_kt">
       <property role="TrG5h" value="HazardLightsReq" />
       <node concept="nO8oN" id="1CVjKIzdDH7" role="nO8oi" />
+      <node concept="9BD4s" id="1CVjKIzHFuZ" role="nO2hP">
+        <property role="9BD4v" value="38" />
+      </node>
+      <node concept="nO2mf" id="1CVjKIzHFv1" role="nO2hP">
+        <ref role="2mzgcz" node="1CVjKIzHFuY" resolve="StalkControl_X_hazard_triggered" />
+      </node>
     </node>
     <node concept="2YfV9$" id="1CVjKIzvK_n" role="2Y1_kt" />
     <node concept="nO8oj" id="1CVjKIzvK_p" role="2Y1_kt">
