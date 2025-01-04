@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:60537d62-e6f9-4adc-93ce-9e4cc928fa02(com.applied.arche.lights.SHL)" content="root">
+  <persistence version="9" />
+  <imports>
+    <import index="ot3b" ref="r:a008d86c-8388-43c3-a25e-3956913df3be(defaultmappingtargets)" implicit="true" />
+    <import index="a8fj" ref="r:75e85213-a8f3-490b-a9c2-9fd81a541def(com.applied.arche.lights.LSG_L)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="c891df8f-6012-4437-98e4-751104e4baaf" name="com.cso.enabler.arch.components.datatypeMapping">
+      <concept id="2243319143485085545" name="com.cso.enabler.arch.components.datatypeMapping.structure.TypeDeclarationImplementationDatatype" flags="ng" index="6oGA9">
+        <reference id="2243319143485086446" name="typeDeclarationMapping" index="6oGge" />
+      </concept>
+      <concept id="1587480819556169072" name="com.cso.enabler.arch.components.datatypeMapping.structure.DataInterfaceTypeMapping" flags="ng" index="noYwl">
+        <reference id="1587480819556169073" name="interface" index="noYwk" />
+      </concept>
+      <concept id="1587480819556169106" name="com.cso.enabler.arch.components.datatypeMapping.structure.DataInterfaceMemberTypeMapping" flags="ng" index="noYzR">
+        <reference id="1587480819556169528" name="member" index="noYDt" />
+      </concept>
+      <concept id="4187246639253825837" name="com.cso.enabler.arch.components.datatypeMapping.structure.IDatatypeMappingBundleWithImplTypes" flags="ngI" index="tG3Yf">
+        <child id="4187246639254068587" name="mappings" index="tGWJ9" />
+      </concept>
+      <concept id="6546961366461154138" name="com.cso.enabler.arch.components.datatypeMapping.structure.DatatypeMappingAspect" flags="ng" index="2OLfBQ">
+        <reference id="1600684218211050189" name="target" index="36fust" />
+        <child id="4669078398497982925" name="content" index="2a9YZt" />
+      </concept>
+      <concept id="4551201735354641238" name="com.cso.enabler.arch.components.datatypeMapping.structure.TypedefImplementationDatatype" flags="ng" index="1fRnqb" />
+      <concept id="4929246982341569475" name="com.cso.enabler.arch.components.datatypeMapping.structure.SwArchDatatypeMappingAspect" flags="ng" index="3$MDZ0" />
+      <concept id="3467259382550903157" name="com.cso.enabler.arch.components.datatypeMapping.structure.IMappingToImplementationType" flags="ngI" index="3L21tW">
+        <child id="3467259382551710027" name="implementationDatatype" index="3Lfat2" />
+      </concept>
+    </language>
+    <language id="deb4d624-41e8-4a3c-96c6-a1223f64be20" name="com.cso.enabler.base">
+      <concept id="5771122443223957568" name="com.cso.enabler.base.structure.IArcheRootAspectTab" flags="ngI" index="1vGik9">
+        <reference id="4669078398497979925" name="root" index="2a81w5" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="3$MDZ0" id="qCHa_BmNEY">
+    <ref role="2a81w5" node="4Lde1QTqjTH" resolve="Interfaces" />
+    <ref role="36fust" to="ot3b:1s2YR1PnG7z" resolve="default" />
+    <node concept="noYwl" id="qCHa_BmNEZ" role="2a9YZt">
+      <ref role="noYwk" node="qCHa_B31KD" resolve="IF_HLM_M_W_MULTI_2_1_DATA0" />
+      <node concept="noYzR" id="qCHa_BmNFj" role="tGWJ9">
+        <ref role="noYDt" node="qCHa_BmKfC" resolve="DE_HLM_M_W_MULTI_2_1_DATA0" />
+        <node concept="1fRnqb" id="qCHa_BmNFk" role="3Lfat2">
+          <ref role="6oGge" to="a8fj:4Lde1QSQLBk" resolve="uint8_default" />
+        </node>
+      </node>
+    </node>
+    <node concept="noYwl" id="qCHa_BmNF0" role="2a9YZt">
+      <ref role="noYwk" node="qCHa_BmKne" resolve="IF_HLM_M_W_MULTI_2_1_DATA2" />
+      <node concept="noYzR" id="qCHa_BmNFl" role="tGWJ9">
+        <ref role="noYDt" node="qCHa_BmKng" resolve="DE_HLM_M_W_MULTI_2_1_DATA2" />
+        <node concept="1fRnqb" id="qCHa_BmNFm" role="3Lfat2">
+          <ref role="6oGge" to="a8fj:4Lde1QSQLBk" resolve="uint8_default" />
+        </node>
+      </node>
+    </node>
+    <node concept="noYwl" id="qCHa_BmNF1" role="2a9YZt">
+      <ref role="noYwk" node="qCHa_BmKnN" resolve="IF_HLM_M_W_MULTI_2_1_DATA3" />
+      <node concept="noYzR" id="qCHa_BmNFn" role="tGWJ9">
+        <ref role="noYDt" node="qCHa_BmKnP" resolve="DE_HLM_M_W_MULTI_2_1_DATA3" />
+        <node concept="1fRnqb" id="qCHa_BmNFo" role="3Lfat2">
+          <ref role="6oGge" to="a8fj:4Lde1QSQLBk" resolve="uint8_default" />
+        </node>
+      </node>
+    </node>
+    <node concept="noYwl" id="qCHa_BmNF2" role="2a9YZt">
+      <ref role="noYwk" node="qCHa_BmKoq" resolve="IF_HLM_M_W_MULTI_2_1_DATA4" />
+      <node concept="noYzR" id="qCHa_BmNFp" role="tGWJ9">
+        <ref role="noYDt" node="qCHa_BmKos" resolve="DE_HLM_M_W_MULTI_2_1_DATA4" />
+        <node concept="1fRnqb" id="qCHa_BmNFq" role="3Lfat2">
+          <ref role="6oGge" to="a8fj:4Lde1QSQLBk" resolve="uint8_default" />
+        </node>
+      </node>
+    </node>
+    <node concept="noYwl" id="qCHa_BmNF3" role="2a9YZt">
+      <ref role="noYwk" node="qCHa_BmKp3" resolve="IF_HLM_M_W_MULTI_2_1_DATA6" />
+      <node concept="noYzR" id="qCHa_BmNFr" role="tGWJ9">
+        <ref role="noYDt" node="qCHa_BmKp5" resolve="DE_HLM_M_W_MULTI_2_1_DATA6" />
+        <node concept="1fRnqb" id="qCHa_BmNFs" role="3Lfat2">
+          <ref role="6oGge" to="a8fj:4Lde1QSQLBk" resolve="uint8_default" />
+        </node>
+      </node>
+    </node>
+    <node concept="noYwl" id="qCHa_BmNF4" role="2a9YZt">
+      <ref role="noYwk" node="qCHa_BmKpE" resolve="IF_HLM_M_W_MULTI_2_1_DATA8" />
+      <node concept="noYzR" id="qCHa_BmNFt" role="tGWJ9">
+        <ref role="noYDt" node="qCHa_BmKpG" resolve="DE_HLM_M_W_MULTI_2_1_DATA8" />
+        <node concept="1fRnqb" id="qCHa_BmNFu" role="3Lfat2">
+          <ref role="6oGge" to="a8fj:4Lde1QSQLBk" resolve="uint8_default" />
+        </node>
+      </node>
+    </node>
+    <node concept="noYwl" id="qCHa_BmNF5" role="2a9YZt">
+      <ref role="noYwk" node="qCHa_BmKqn" resolve="IF_HLM_M_W_MULTI_2_1_DATA10" />
+      <node concept="noYzR" id="qCHa_BmNFv" role="tGWJ9">
+        <ref role="noYDt" node="qCHa_BmKqp" resolve="DE_HLM_M_W_MULTI_2_1_DATA10" />
+        <node concept="1fRnqb" id="qCHa_BmNFw" role="3Lfat2">
+          <ref role="6oGge" to="a8fj:4Lde1QSQLBk" resolve="uint8_default" />
+        </node>
+      </node>
+    </node>
+    <node concept="noYwl" id="qCHa_BmNF6" role="2a9YZt">
+      <ref role="noYwk" node="qCHa_BmKr6" resolve="IF_HLM_M_W_MULTI_2_1_DATA12" />
+      <node concept="noYzR" id="qCHa_BmNFx" role="tGWJ9">
+        <ref role="noYDt" node="qCHa_BmKr8" resolve="DE_HLM_M_W_MULTI_2_1_DATA12" />
+        <node concept="1fRnqb" id="qCHa_BmNFy" role="3Lfat2">
+          <ref role="6oGge" to="a8fj:4Lde1QSQLBk" resolve="uint8_default" />
+        </node>
+      </node>
+    </node>
+    <node concept="noYwl" id="qCHa_BmNF7" role="2a9YZt">
+      <ref role="noYwk" node="qCHa_BmKrI" resolve="IF_HLM_M_W_MULTI_2_1_DATA14" />
+      <node concept="noYzR" id="qCHa_BmNFz" role="tGWJ9">
+        <ref role="noYDt" node="qCHa_BmKrK" resolve="DE_HLM_M_W_MULTI_2_1_DATA14" />
+        <node concept="1fRnqb" id="qCHa_BmNF$" role="3Lfat2">
+          <ref role="6oGge" to="a8fj:4Lde1QSQLBk" resolve="uint8_default" />
+        </node>
+      </node>
+    </node>
+    <node concept="noYwl" id="qCHa_BmNF8" role="2a9YZt">
+      <ref role="noYwk" node="qCHa_BmKsn" resolve="IF_HLM_M_W_MULTI_2_1_DATA15" />
+      <node concept="noYzR" id="qCHa_BmNF_" role="tGWJ9">
+        <ref role="noYDt" node="qCHa_BmKsp" resolve="DE_HLM_M_W_MULTI_2_1_DATA15" />
+        <node concept="1fRnqb" id="qCHa_BmNFA" role="3Lfat2">
+          <ref role="6oGge" to="a8fj:4Lde1QSQLBk" resolve="uint8_default" />
+        </node>
+      </node>
+    </node>
+    <node concept="noYwl" id="qCHa_BmNF9" role="2a9YZt">
+      <ref role="noYwk" node="qCHa_BmLeT" resolve="IF_HLM_M_W_MULTI_3_2_DATA0" />
+      <node concept="noYzR" id="qCHa_BmNFB" role="tGWJ9">
+        <ref role="noYDt" node="qCHa_BmLeV" resolve="DE_HLM_M_W_MULTI_3_2_DATA0" />
+        <node concept="1fRnqb" id="qCHa_BmNFC" role="3Lfat2">
+          <ref role="6oGge" to="a8fj:4Lde1QSQLBk" resolve="uint8_default" />
+        </node>
+      </node>
+    </node>
+    <node concept="noYwl" id="qCHa_BmNFa" role="2a9YZt">
+      <ref role="noYwk" node="qCHa_BmLf1" resolve="IF_HLM_M_W_MULTI_3_2_DATA2" />
+      <node concept="noYzR" id="qCHa_BmNFD" role="tGWJ9">
+        <ref role="noYDt" node="qCHa_BmLf3" resolve="DE_HLM_M_W_MULTI_3_2_DATA2" />
+        <node concept="1fRnqb" id="qCHa_BmNFE" role="3Lfat2">
+          <ref role="6oGge" to="a8fj:4Lde1QSQLBk" resolve="uint8_default" />
+        </node>
+      </node>
+    </node>
+    <node concept="noYwl" id="qCHa_BmNFb" role="2a9YZt">
+      <ref role="noYwk" node="qCHa_BmLf5" resolve="IF_HLM_M_W_MULTI_3_2_DATA3" />
+      <node concept="noYzR" id="qCHa_BmNFF" role="tGWJ9">
+        <ref role="noYDt" node="qCHa_BmLf7" resolve="DE_HLM_M_W_MULTI_3_2_DATA3" />
+        <node concept="1fRnqb" id="qCHa_BmNFG" role="3Lfat2">
+          <ref role="6oGge" to="a8fj:4Lde1QSQLBk" resolve="uint8_default" />
+        </node>
+      </node>
+    </node>
+    <node concept="noYwl" id="qCHa_BmNFc" role="2a9YZt">
+      <ref role="noYwk" node="qCHa_BmLf9" resolve="IF_HLM_M_W_MULTI_3_2_DATA4" />
+      <node concept="noYzR" id="qCHa_BmNFH" role="tGWJ9">
+        <ref role="noYDt" node="qCHa_BmLfb" resolve="DE_HLM_M_W_MULTI_3_2_DATA4" />
+        <node concept="1fRnqb" id="qCHa_BmNFI" role="3Lfat2">
+          <ref role="6oGge" to="a8fj:4Lde1QSQLBk" resolve="uint8_default" />
+        </node>
+      </node>
+    </node>
+    <node concept="noYwl" id="qCHa_BmNFd" role="2a9YZt">
+      <ref role="noYwk" node="qCHa_BmLfd" resolve="IF_HLM_M_W_MULTI_3_2_DATA6" />
+      <node concept="noYzR" id="qCHa_BmNFJ" role="tGWJ9">
+        <ref role="noYDt" node="qCHa_BmLff" resolve="DE_HLM_M_W_MULTI_3_2_DATA6" />
+        <node concept="1fRnqb" id="qCHa_BmNFK" role="3Lfat2">
+          <ref role="6oGge" to="a8fj:4Lde1QSQLBk" resolve="uint8_default" />
+        </node>
+      </node>
+    </node>
+    <node concept="noYwl" id="qCHa_BmNFe" role="2a9YZt">
+      <ref role="noYwk" node="qCHa_BmLfh" resolve="IF_HLM_M_W_MULTI_3_2_DATA8" />
+      <node concept="noYzR" id="qCHa_BmNFL" role="tGWJ9">
+        <ref role="noYDt" node="qCHa_BmLfj" resolve="DE_HLM_M_W_MULTI_3_2_DATA8" />
+        <node concept="1fRnqb" id="qCHa_BmNFM" role="3Lfat2">
+          <ref role="6oGge" to="a8fj:4Lde1QSQLBk" resolve="uint8_default" />
+        </node>
+      </node>
+    </node>
+    <node concept="noYwl" id="qCHa_BmNFf" role="2a9YZt">
+      <ref role="noYwk" node="qCHa_BmLfl" resolve="IF_HLM_M_W_MULTI_3_2_DATA10" />
+      <node concept="noYzR" id="qCHa_BmNFN" role="tGWJ9">
+        <ref role="noYDt" node="qCHa_BmLfn" resolve="DE_HLM_M_W_MULTI_3_2_DATA10" />
+        <node concept="1fRnqb" id="qCHa_BmNFO" role="3Lfat2">
+          <ref role="6oGge" to="a8fj:4Lde1QSQLBk" resolve="uint8_default" />
+        </node>
+      </node>
+    </node>
+    <node concept="noYwl" id="qCHa_BmNFg" role="2a9YZt">
+      <ref role="noYwk" node="qCHa_BmLfp" resolve="IF_HLM_M_W_MULTI_3_2_DATA12" />
+      <node concept="noYzR" id="qCHa_BmNFP" role="tGWJ9">
+        <ref role="noYDt" node="qCHa_BmLfr" resolve="DE_HLM_M_W_MULTI_3_2_DATA12" />
+        <node concept="1fRnqb" id="qCHa_BmNFQ" role="3Lfat2">
+          <ref role="6oGge" to="a8fj:4Lde1QSQLBk" resolve="uint8_default" />
+        </node>
+      </node>
+    </node>
+    <node concept="noYwl" id="qCHa_BmNFh" role="2a9YZt">
+      <ref role="noYwk" node="qCHa_BmLft" resolve="IF_HLM_M_W_MULTI_3_2_DATA14" />
+      <node concept="noYzR" id="qCHa_BmNFR" role="tGWJ9">
+        <ref role="noYDt" node="qCHa_BmLfv" resolve="DE_HLM_M_W_MULTI_3_2_DATA14" />
+        <node concept="1fRnqb" id="qCHa_BmNFS" role="3Lfat2">
+          <ref role="6oGge" to="a8fj:4Lde1QSQLBk" resolve="uint8_default" />
+        </node>
+      </node>
+    </node>
+    <node concept="noYwl" id="qCHa_BmNFi" role="2a9YZt">
+      <ref role="noYwk" node="qCHa_BmLfx" resolve="IF_HLM_M_W_MULTI_3_2_DATA15" />
+      <node concept="noYzR" id="qCHa_BmNFT" role="tGWJ9">
+        <ref role="noYDt" node="qCHa_BmLfz" resolve="DE_HLM_M_W_MULTI_3_2_DATA15" />
+        <node concept="1fRnqb" id="qCHa_BmNFU" role="3Lfat2">
+          <ref role="6oGge" to="a8fj:4Lde1QSQLBk" resolve="uint8_default" />
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+

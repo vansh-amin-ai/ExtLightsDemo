@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:60537d62-e6f9-4adc-93ce-9e4cc928fa02(com.applied.arche.lights.SHL)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="deb4d624-41e8-4a3c-96c6-a1223f64be20" name="com.cso.enabler.base">
+      <concept id="8029273007114094721" name="com.cso.enabler.base.structure.IImportConfig" flags="ngI" index="YLFR3">
+        <property id="4854939051747438649" name="importFilePath" index="iWWlx" />
+        <child id="1459364347922522207" name="model" index="1ByxhV" />
+      </concept>
+    </language>
+    <language id="8486447b-033d-48d4-8686-1549cc6d9ee5" name="tech.cariad.arche.systemdesk.arxml">
+      <concept id="8731862511796506194" name="tech.cariad.arche.systemdesk.arxml.structure.SystemDeskArxmlImport" flags="ng" index="2i0S3y" />
+    </language>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+      </concept>
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2i0S3y" id="qCHa_B03M8">
+    <property role="3GE5qa" value="" />
+    <property role="iWWlx" value="/home/vansh/Downloads/E3_1_2_Premium_HCP4_uC1_1.arxml" />
+    <property role="TrG5h" value="hcp4" />
+    <node concept="1Xw6AR" id="qCHa_B03M9" role="1ByxhV">
+      <node concept="1dCxOl" id="qCHa_B03Me" role="1XwpL7">
+        <property role="1XweGQ" value="r:60537d62-e6f9-4adc-93ce-9e4cc928fa02" />
+        <node concept="1j_P7g" id="qCHa_B03Mf" role="1j$8Uc">
+          <property role="1j_P7h" value="com.applied.arche.lights.SHL" />
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+

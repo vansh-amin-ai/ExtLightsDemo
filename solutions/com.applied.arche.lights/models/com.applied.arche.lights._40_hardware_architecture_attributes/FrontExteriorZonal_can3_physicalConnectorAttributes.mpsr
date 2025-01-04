@@ -16,6 +16,11 @@
         <reference id="6276868737156049814" name="container" index="1$UK5a" />
         <reference id="6276868737156054228" name="connector" index="1$ULo8" />
         <reference id="6276868737156052193" name="diagnosableNode" index="1$ULSX" />
+        <child id="1581098412318969403" name="content" index="gLvUq" />
+      </concept>
+      <concept id="4278415938684543843" name="com.cso.enabler.arch.components.physical.config.structure.PhysicalConnectorAttributeGroup" flags="ng" index="3DXDZ3">
+        <property id="4278415938684543864" name="busTermination" index="3DXDZo" />
+        <property id="4278415938684543869" name="daisyChainPosition" index="3DXDZt" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -30,6 +35,11 @@
     <ref role="1$ULSX" to="jhet:3k3sWXiS5sO" />
     <ref role="1$ULo8" to="jhet:3k3sWXiS5wX" resolve="can3" />
     <node concept="2uyxzj" id="3k3sWXiS5sS" role="19aAfb" />
+    <node concept="3DXDZ3" id="qCHa_AW_E$" role="gLvUq">
+      <property role="3DXDZo" value="120" />
+      <property role="3DXDZt" value="3HvZa3iEmoc/UNDEFINED" />
+      <node concept="2uyxzj" id="qCHa_AW_E_" role="19aAfb" />
+    </node>
   </node>
 </model>
 

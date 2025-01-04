@@ -151,6 +151,9 @@
       <node concept="2WwbCY" id="1CVjKIz7Cqj" role="2TxlRo">
         <ref role="2WwbCx" to="xv0w:4Lde1QTr44Y" resolve="ExteriorLightControl" />
       </node>
+      <node concept="2WwbCY" id="qCHa_AXX36" role="2TxlRo">
+        <ref role="2WwbCx" to="xv0w:4Lde1QTqW5G" resolve="ExteriorLightManager" />
+      </node>
       <node concept="2tCwly" id="4Lde1QTiXyA" role="3H0OkN">
         <node concept="2tCNv2" id="4Lde1QTiXyP" role="3H3S$n">
           <node concept="2tCNv8" id="4Lde1QTiXyR" role="2tCNFm" />
@@ -254,6 +257,7 @@
     <node concept="3UUxL_" id="1CVjKIz3gVt" role="3UUxLy" />
     <node concept="28NA_B" id="1CVjKIz3n$h" role="3UUxLy">
       <property role="TrG5h" value="FrontLightControlMaster" />
+      <node concept="KA5Nk" id="qCHa_AX5ml" role="3H0OkN" />
       <node concept="1vKqid" id="1CVjKIz3n$i" role="3EYflY" />
       <node concept="2tCwly" id="1CVjKIz3qSL" role="3H0OkN">
         <node concept="2tCNv2" id="1CVjKIz3udg" role="3H3S$n">
@@ -286,12 +290,23 @@
       <node concept="2C2Vii" id="4Lde1QTs6PI" role="2TxlRo">
         <property role="2C2Vjz" value="AyQv_Ni6L7/Undefined" />
       </node>
+      <node concept="2WwbCY" id="qCHa_AY3Jp" role="2TxlRo">
+        <ref role="2WwbCx" to="xv0w:4Lde1QTr44Y" resolve="ExteriorLightControl" />
+      </node>
+      <node concept="2WwbCY" id="qCHa_AY3JX" role="2TxlRo">
+        <ref role="2WwbCx" to="xv0w:4Lde1QTqW5G" resolve="ExteriorLightManager" />
+      </node>
     </node>
     <node concept="3UUxL_" id="4Lde1QTu1gH" role="3UUxLy" />
     <node concept="28NA_B" id="4Lde1QTu2UV" role="3UUxLy">
       <property role="3QutVU" value="true" />
       <property role="TrG5h" value="RearHazardsMaster" />
       <node concept="1vKqid" id="4Lde1QTu2UW" role="3EYflY" />
+    </node>
+    <node concept="3UUxL_" id="qCHa_AY3Kc" role="3UUxLy" />
+    <node concept="28NA_B" id="qCHa_AYdHu" role="3UUxLy">
+      <property role="TrG5h" value="RearLightControlMaster" />
+      <node concept="1vKqid" id="qCHa_AYdHv" role="3EYflY" />
     </node>
     <node concept="3UUxL_" id="4Lde1QTm09k" role="3UUxLy" />
   </node>

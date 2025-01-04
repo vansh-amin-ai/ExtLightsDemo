@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="5h6n" ref="r:aaf17285-4da7-4b12-af91-fe40fbfd40e8(com.applied.arche.lights._30_software_architecture)" />
+    <import index="dtyo" ref="r:60537d62-e6f9-4adc-93ce-9e4cc928fa02(com.applied.arche.lights.SHL)" />
   </imports>
 </model>
 

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:60537d62-e6f9-4adc-93ce-9e4cc928fa02(com.applied.arche.lights.SHL)" content="root">
+  <persistence version="9" />
+  <imports>
+    <import index="ot3b" ref="r:a008d86c-8388-43c3-a25e-3956913df3be(defaultmappingtargets)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="c891df8f-6012-4437-98e4-751104e4baaf" name="com.cso.enabler.arch.components.datatypeMapping">
+      <concept id="6546961366461143321" name="com.cso.enabler.arch.components.datatypeMapping.structure.LibraryDatatypeMappingAspect" flags="ng" index="2OL2eP" />
+      <concept id="6546961366461154138" name="com.cso.enabler.arch.components.datatypeMapping.structure.DatatypeMappingAspect" flags="ng" index="2OLfBQ">
+        <reference id="1600684218211050189" name="target" index="36fust" />
+        <child id="4669078398497982925" name="content" index="2a9YZt" />
+      </concept>
+      <concept id="4551201735354640476" name="com.cso.enabler.arch.components.datatypeMapping.structure.TypedefTypeMapping" flags="ng" index="1fRnm1" />
+      <concept id="1101780486490240123" name="com.cso.enabler.arch.components.datatypeMapping.structure.TypeDeclarationTypeMapping" flags="ng" index="3qZRJS">
+        <reference id="1101780486490240355" name="typeDeclaration" index="3qZRFw" />
+      </concept>
+      <concept id="3467259382550903157" name="com.cso.enabler.arch.components.datatypeMapping.structure.IMappingToImplementationType" flags="ngI" index="3L21tW">
+        <child id="3467259382551710027" name="implementationDatatype" index="3Lfat2" />
+      </concept>
+    </language>
+    <language id="deb4d624-41e8-4a3c-96c6-a1223f64be20" name="com.cso.enabler.base">
+      <concept id="5771122443223957568" name="com.cso.enabler.base.structure.IArcheRootAspectTab" flags="ngI" index="1vGik9">
+        <reference id="4669078398497979925" name="root" index="2a81w5" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="61416bee-cc3d-4eef-966e-9502c5ff021e" name="com.cso.enabler.implementationDatatypes">
+      <concept id="7015533061433004780" name="com.cso.enabler.implementationDatatypes.structure.UInt32Type" flags="ng" index="_TjNa" />
+      <concept id="7015533061433004781" name="com.cso.enabler.implementationDatatypes.structure.UInt64Type" flags="ng" index="_TjNb" />
+      <concept id="7015533061433004779" name="com.cso.enabler.implementationDatatypes.structure.UInt16Type" flags="ng" index="_TjNd" />
+      <concept id="7015533061433004777" name="com.cso.enabler.implementationDatatypes.structure.UInt8Type" flags="ng" index="_TjNf" />
+      <concept id="6646555452169939691" name="com.cso.enabler.implementationDatatypes.structure.BoolType" flags="ng" index="1uIMgj" />
+    </language>
+  </registry>
+  <node concept="2OL2eP" id="4Lde1QSQLBi">
+    <property role="3GE5qa" value="AUTOSAR_PlatformTypes" />
+    <ref role="2a81w5" node="4Lde1QSQLBb" />
+    <ref role="36fust" to="ot3b:1s2YR1PnG7z" resolve="default" />
+    <node concept="1fRnm1" id="4Lde1QSQLBk" role="2a9YZt">
+      <property role="TrG5h" value="uint8" />
+      <ref role="3qZRFw" node="4Lde1QSQLBc" />
+      <node concept="_TjNf" id="4Lde1QSQLBl" role="3Lfat2" />
+    </node>
+    <node concept="1fRnm1" id="4Lde1QSQLBp" role="2a9YZt">
+      <property role="TrG5h" value="boolean" />
+      <ref role="3qZRFw" node="4Lde1QSQLBm" />
+      <node concept="1uIMgj" id="4Lde1QSQLBq" role="3Lfat2" />
+    </node>
+    <node concept="1fRnm1" id="4Lde1QSQLBz" role="2a9YZt">
+      <property role="TrG5h" value="uint16" />
+      <ref role="3qZRFw" node="4Lde1QSQLBs" />
+      <node concept="_TjNd" id="4Lde1QSQLB$" role="3Lfat2" />
+    </node>
+    <node concept="1fRnm1" id="4Lde1QSQN3o" role="2a9YZt">
+      <property role="TrG5h" value="uint64" />
+      <ref role="3qZRFw" node="4Lde1QSQN3h" />
+      <node concept="_TjNb" id="4Lde1QSQN3p" role="3Lfat2" />
+    </node>
+    <node concept="1fRnm1" id="4Lde1QSQN3x" role="2a9YZt">
+      <property role="TrG5h" value="uint32" />
+      <ref role="3qZRFw" node="4Lde1QSQN3q" />
+      <node concept="_TjNa" id="4Lde1QSQN3y" role="3Lfat2" />
+    </node>
+  </node>
+</model>
+

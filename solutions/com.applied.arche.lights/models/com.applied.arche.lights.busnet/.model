@@ -13,6 +13,7 @@
     <import index="a8fj" ref="r:75e85213-a8f3-490b-a9c2-9fd81a541def(com.applied.arche.lights.LSG_L)" />
     <import index="ck06" ref="r:252ba9e8-5d0e-4c7b-a6df-be18e98501cd(com.applied.arche.lights.LSG_R)" />
     <import index="5h6n" ref="r:aaf17285-4da7-4b12-af91-fe40fbfd40e8(com.applied.arche.lights._30_software_architecture)" />
+    <import index="dtyo" ref="r:60537d62-e6f9-4adc-93ce-9e4cc928fa02(com.applied.arche.lights.SHL)" />
     <import index="1cyd" ref="r:ed9a14fb-771f-4944-8884-da924a0141f8(com.applied.arche.lights._40_hardware_architecture_data_links)" implicit="true" />
   </imports>
 </model>

@@ -30,6 +30,7 @@
       </concept>
     </language>
     <language id="68b16187-1d03-4fff-975a-475207b3ad31" name="com.cso.enabler.arch.components">
+      <concept id="5578245729748776074" name="com.cso.enabler.arch.components.structure.EmptyLine" flags="ng" index="3UUxL_" />
       <concept id="5578245729748776069" name="com.cso.enabler.arch.components.structure.ComponentArchitectureContainer" flags="ng" index="3UUxLE">
         <child id="2077607355813627051" name="realm" index="3QPU1a" />
         <child id="5578245729748776077" name="content" index="3UUxLy" />
@@ -233,6 +234,8 @@
         </node>
       </node>
     </node>
+    <node concept="3UUxL_" id="qCHa_BmI8n" role="3UUxLy" />
+    <node concept="3UUxL_" id="qCHa_BmI8o" role="3UUxLy" />
     <node concept="3vTeBB" id="4Lde1QSQQi0" role="3UUxLy">
       <property role="TrG5h" value="IF_ALU_L_006_Diag" />
       <node concept="1vKqid" id="4Lde1QSQQi1" role="2Ve3hN" />
